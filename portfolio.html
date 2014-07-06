@@ -7,342 +7,482 @@
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" href="css/foundation.css" />
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
 	<script src="js/vendor/modernizr.js"></script>
 	<script src="js/holder.js"></script>
 	<style type="text/css">
+	body {}
 	section {padding:15px 0;}
-	#intro {background-color:#0B3861}
-	#portfolio {background-color:#92B7DA}
+	.top-bar, 
+	.top-bar-section li:not(.has-form) a:not(.button),
+	.top-bar.expanded .title-area {background-color: #3F3F3F; 
+		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/stardust.png"); 
+		background-repeat: repeat-x;	
+		background-attachment: fixed}
+	.top-bar-section li:not(.has-form) a:not(.button):hover,
+	.top-bar .name h1 a:hover {color: #00C09E}
+	.top-bar-section ul li > a,
+	.top-bar .name h1 a {color: #fff}
+	#intro {
+		background-color:#3F3F3F;
+		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/stardust.png"); 
+		background-repeat: repeat-x;	
+		background-attachment: fixed;
+		padding-top: 50px;}
+	#intro h1 {
+		font-family: 'Amatic SC', cursive; 
+		letter-spacing:3px; 
+		font-weight: bold; 
+		font-size: 5.75rem;}
+	#intro h2 {
+		font-family: 'Amatic SC', cursive; 
+		letter-spacing:3px;}
+	#portfolio {
+		background-color:#BBB;
+		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/triangular.png"); 
+		background-repeat: repeat;	
+		background-attachment: fixed}
 	#portfolio p {font-size: 13px;}
-	#otherwork {background-color:#92B7DA}
+	#portfolio a img {border: solid 2px #888; 
+		padding: 5px; 
+		margin:10px 0; 
+		width:200px; 
+		height:150px;}
+	#otherwork {
+		background-color:#BBB;
+		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/triangular.png"); 
+		background-repeat: repeat;	
+		background-attachment: fixed}
 	#aboutme {background-color:#C7D3DE}
 	#resume {background-color:#E4ECF3}
 	#aboutsite {background-color:#F2F5F8}
-	</style>
-</head>
-<body>
-	<div class="fixed sticky">
-		<nav class="top-bar" data-topbar data-options="is_hover: false">
-			<ul class="title-area">
-				<li class="name">
-					<h1><a id="nav_intro" href="#intro"><i class="fa fa-lemon-o"></i></a></h1>
-				</li>
-				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-			</ul>
-			<section class="top-bar-section" style="padding:0;">
-				<ul class="right">
-					<li><a id="nav_portfolio" href="#portfolio">Portfolio</a></li>
-					<li><a id="nav_aboutme" href="#aboutme">About Me</a></li>
-					<li><a id="nav_resume" href="#resume">Resumé</a></li>
-					<li><a id="nav_aboutsite" href="#aboutsite">About Site</a></li>
-				</ul>
-			</section>
-		</nav>
-	</div>
-	<section id="intro"><!-- Intro -->
-		<div class="row">
-			<div class="small-12 columns">
-				<h1 class="text-center" style="color:#fff;">Dominic Gan</h1>
-				<h2 class="subheader text-center" style="color:#ccc;">Welcome to my portfolio</h2>
-			</div>
-		</div>
-	</section>
-	<section id="portfolio"><!-- Portfolio-->
-		<div class="row centered-text"><!-- Portfolio-->
-			<div class="small-12 columns">
-				<h2 class="text-center">This is a selection of my work</h2>
-				<div class="columns large-3 medium-4">
-					<a href="#" data-reveal-id="modal1">
-						<img src="holder.js/200x150" style="margin:10px 0;"/>
-						<h4>Project 1 Title</h4>
-					</a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
-					<div id="modal1" class="reveal-modal" data-reveal>
-						<div class="columns medium-4">
-							<img src="holder.js/300x500/vine"/>
-						</div>
-						<div class="columns medium-8">
-							<h1>Project 1</h1>
-							<h2>Awesome. I have it.</h2>
-							<p class="lead">Your couch.  It is mine.</p>
-							<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
-							<a class="close-reveal-modal">&#215;</a>
-							<div class="show-for-medium-up-only">
-								<h4>Screens</h4>
-								<ul class="medium-block-grid-6">
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="columns large-3 medium-4">
-					<a href="#" data-reveal-id="modal2">
-						<img src="holder.js/200x150" style="margin:10px 0;"/>
-						<h4>Project 2 Title</h4>
-					</a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
-					<div id="modal2" class="reveal-modal" data-reveal>
-						<div class="columns medium-4">
-							<img src="holder.js/300x500/vine"/>
-						</div>
-						<div class="columns medium-8">
-							<h1>Project 2</h1>
-							<h2>Awesome. I have it.</h2>
-							<p class="lead">Your couch.  It is mine.</p>
-							<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
-							<a class="close-reveal-modal">&#215;</a>
-							<div class="show-for-medium-up-only">
-								<h4>Screens</h4>
-								<ul class="medium-block-grid-6">
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="columns large-3 medium-4">
-					<a href="#" data-reveal-id="modal3">
-						<img src="holder.js/200x150" style="margin:10px 0;"/>
-						<h4>Project 3 Title</h4>
-					</a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<div id="modal3" class="reveal-modal" data-reveal>
-						<div class="columns medium-4">
-							<img src="holder.js/300x500/vine"/>
-						</div>
-						<div class="columns medium-8">
-							<h1>Project 3</h1>
-							<h2>Awesome. I have it.</h2>
-							<p class="lead">Your couch.  It is mine.</p>
-							<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
-							<a class="close-reveal-modal">&#215;</a>
-							<div class="show-for-medium-up-only">
-								<h4>Screens</h4>
-								<ul class="medium-block-grid-6">
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="columns large-3 medium-4">
-					<a href="#" data-reveal-id="modal4">
-						<img src="holder.js/200x150" style="margin:10px 0;"/>
-						<h4>Project 4 Title</h4>
-					</a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<div id="modal4" class="reveal-modal" data-reveal>
-						<div class="columns medium-4">
-							<img src="holder.js/300x500/vine"/>
-						</div>
-						<div class="columns medium-8">
-							<h1>Project 4</h1>
-							<h2>Awesome. I have it.</h2>
-							<p class="lead">Your couch.  It is mine.</p>
-							<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
-							<a class="close-reveal-modal">&#215;</a>
-							<div class="show-for-medium-up-only">
-								<h4>Screens</h4>
-								<ul class="medium-block-grid-6">
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="columns large-3 medium-4">
-					<a href="#" data-reveal-id="modal5">
-						<img src="holder.js/200x150" style="margin:10px 0;"/>
-						<h4>Project 5 Title</h4>
-					</a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<div id="modal5" class="reveal-modal" data-reveal>
-						<div class="columns medium-4">
-							<img src="holder.js/300x500/vine"/>
-						</div>
-						<div class="columns medium-8">
-							<h1>Project 5</h1>
-							<h2>Awesome. I have it.</h2>
-							<p class="lead">Your couch.  It is mine.</p>
-							<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
-							<a class="close-reveal-modal">&#215;</a>
-							<div class="show-for-medium-up-only">
-								<h4>Screens</h4>
-								<ul class="medium-block-grid-6">
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="columns large-3 medium-4">
-					<a href="#" data-reveal-id="modal6">
-						<img src="holder.js/200x150" style="margin:10px 0;"/>
-						<h4>Project 6 Title</h4>
-					</a>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<div id="modal6" class="reveal-modal" data-reveal>
-						<div class="columns medium-4">
-							<img src="holder.js/300x500/vine"/>
-						</div>
-						<div class="columns medium-8">
-							<h1>Project 6</h1>
-							<h2>Awesome. I have it.</h2>
-							<p class="lead">Your couch.  It is mine.</p>
-							<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
-							<a class="close-reveal-modal">&#215;</a>
-							<div class="show-for-medium-up-only">
-								<h4>Screens</h4>
-								<ul class="medium-block-grid-6">
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-									<li><img src="holder.js/50x70"></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="otherwork"><!-- Other Work -->
-		<div class="row centered-text">
-			<div class="columns small-12">
-				<h4 class="text-center">I also do design etc etc</h4>
-				<h5 class="subheader text-center">To see some other work I have done, please visit</h5>
-				<a href="http://dominicgan.strikingly.com"><h4 class="text-center">dominicgan.strikingly.com</h4></a>
-			</div>
-		</div>
-	</section>
-	<section id="aboutme"><!-- About Me -->
-		<div class="row">
-			<div class="medium-6 large-6 columns">
-				<div class="small-12 columns">
-					<h3>About Myself</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-			</div>
-			<div class="medium-6 large-6 columns">
-				<div class="small-12 columns">
-					<h3>Links Out</h3>
-				</div>
-				<div class="small-4 columns text-center"><a href="#"><i class="fa fa-facebook-square" style="font-size:36px;"></i></a></div>
-				<div class="small-4 columns text-center"><a href="#"><i class="fa fa-linkedin" style="font-size:36px;"></i></a></div>
-				<div class="small-4 columns text-center"><a href="#"><i class="fa fa-flickr" style="font-size:36px;"></i></a></div>
-				<div class="small-12 columns">
-					<h3>Say Hello!</h3>
-				</div>
-				<div class="columns small-6">
-					<label>Name</label>
-					<input type="text" placeholder="Name"/>
-				</div>
-				<div class="columns small-6">
-					<label>E-Mail</label>
-					<input type="text" placeholder="E-Mail"/>
-				</div>
-				<div class="small-12 columns">
-					<label>Your Message</label>
-					<textarea type="text" placeholder="Type Here"></textarea>
-					<a href="#" class="button">Send</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="resume"><!-- Resume -->
-		<div class="row">
-			<div class="small-12 columns">
-				<div class="small-12 medium-9 columns">
-					<h3>CV</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</div>
-				<div class="medium-3 show-for-medium-up columns"></div>
-			</div>
-		</div>
-	</section>
-	<section id="aboutsite"><!-- About Site -->
-		<div class="row">
-			<div class="small-12 columns">
-				<div class="small-12 medium-9 columns">
-					<h3>Site Specs</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-				<div class="medium-3 show-for-medium-up columns"></div>
-			</div>
-		</div>
-	</section>
-	<section id="ending"><!-- Ending -->
-		<div class="row centered-text">
-			<div class="small-12 columns">
-				<div class="small-12 columns">
-					<h1 class="text-center">Thank you for visiting!</h1>
-				</div>
-				<div class="small-12 columns">
-					<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+	#portfolio h2,
+	#aboutme h2 {
+		font-family: 'Amatic SC', 
+		cursive; letter-spacing:3px; 
+		font-weight: bold;  
+		font-size: 2.85rem;}
+	#aboutme h3 {
+		font-family: 'Amatic SC', cursive; 
+		letter-spacing:3px; 
+		font-size: 2.5rem; 
+		font-weight: bold;}
+	#otherwork h1,
+	#otherwork-2 {
+		font-family: 'Amatic SC', 
+		cursive; letter-spacing:2px; 
+		font-weight: bold;}
+	#otherwork-2 {color: #00C09E; text-shadow:2px 2px #666;}
+	#otherwork a h1:hover {color: #fff;}
 
-	<script src="js/vendor/jquery.js"></script>
-	<script src="js/foundation.min.js"></script>
-	<script>
-	$(document).foundation();
-	</script>
-	<script>
-	var isMobile = {
-		Android: function() {
-			return navigator.userAgent.match(/Android/i) ? true : false;
-		},
-		BlackBerry: function() {
-			return navigator.userAgent.match(/BlackBerry/i) ? true : false;
-		},
-		iOS: function() {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
-		},
-		Windows: function() {
-			return navigator.userAgent.match(/IEMobile/i) ? true : false;
-		},
-		any: function() {
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
-		}
-	};
-	
+
+
+			</style>
+		</head>
+		<body>
+			<section id="intro"><!-- Intro -->
+				<div class="row">
+					<div class="small-12 columns">
+						<h2 class="text-center" style="color:#fff; margin-bottom:0.2rem; font-weight:bold;">Hello, my name is</h2>
+						<h1 class="text-center" style="color:#fff;">Dominic Gan</h1>
+						<h2 class="subheader text-center" style="color:#ccc;">and this is my Portfolio</h2>
+					</div>
+				</div>
+			</section>
+			<div class="sticky"><!-- Nav Bar -->
+				<nav class="top-bar" data-topbar data-options="is_hover: false">
+					<ul class="title-area">
+						<li class="name">
+							<h1><a id="nav_intro" href="#intro"><i class="fa fa-home"></i></a></h1>
+						</li>
+						<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+						<li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+					</ul>
+					<section class="top-bar-section" style="padding:0;">
+						<ul class="right">
+							<li><a id="nav_portfolio" href="#portfolio">Portfolio</a></li>
+							<li><a id="nav_aboutme" href="#aboutme">About Me</a></li>
+							<li><a id="nav_resume" href="#resume">Resumé</a></li>
+							<li><a id="nav_aboutsite" href="#aboutsite">About Site</a></li>
+						</ul>
+					</section>
+				</nav>
+			</div>
+			<section id="portfolio"><!-- Portfolio-->
+				<div class="row centered-text"><!-- Portfolio-->
+					<div class="small-12 columns small-centered">
+						<h2 class="text-center">Here are some of my work</h2>
+						<div class="columns large-3 medium-4">
+							<a href="#" data-reveal-id="modal1">
+								<div>
+									<img src="https://dl.dropboxusercontent.com/u/69919934/githubpage/project1.png"/>
+								</div>
+								<h4>ChangeNodes</h4>
+							</a>
+							<div style="float:left;">
+								<span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Designed">
+										<i class="fa fa-laptop"></i>
+									</span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Developed">
+										<i class="fa fa-code"></i>
+									</span>
+								</span>
+							</div>
+							<div class="columns row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+							<div id="modal1" class="reveal-modal" data-reveal>
+								<div class="columns medium-4">
+									<img src="holder.js/300x500/vine"/>
+								</div>
+								<div class="columns medium-8">
+									<h1>Project 1</h1>
+									<h2>Awesome. I have it.</h2>
+									<p class="lead">Your couch.  It is mine.</p>
+									<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+									<a class="close-reveal-modal">&#215;</a>
+									<div class="show-for-medium-up-only">
+										<h4>Screens</h4>
+										<ul class="medium-block-grid-6">
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns large-3 medium-4">
+							<a href="#" data-reveal-id="modal2">
+								<img src="holder.js/200x150" style="margin:10px 0;"/>
+								<h4>Project 2 Title</h4>
+							</a>
+							<div style="float:left;">
+								<span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Designed">
+										<i class="fa fa-laptop"></i>
+									</span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Developed">
+										<i class="fa fa-code"></i>
+									</span>
+								</span>
+							</div>
+							<div class="columns row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+							<div id="modal2" class="reveal-modal" data-reveal>
+								<div class="columns medium-4">
+									<img src="holder.js/300x500/vine"/>
+								</div>
+								<div class="columns medium-8">
+									<h1>Project 2</h1>
+									<h2>Awesome. I have it.</h2>
+									<p class="lead">Your couch.  It is mine.</p>
+									<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+									<a class="close-reveal-modal">&#215;</a>
+									<div class="show-for-medium-up-only">
+										<h4>Screens</h4>
+										<ul class="medium-block-grid-6">
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns large-3 medium-4">
+							<a href="#" data-reveal-id="modal3">
+								<img src="holder.js/200x150" style="margin:10px 0;"/>
+								<h4>Project 3 Title</h4>
+							</a>
+							<div style="float:left;">
+								<span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Designed">
+										<i class="fa fa-laptop"></i>
+									</span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Developed">
+										<i class="fa fa-code"></i>
+									</span>
+								</span>
+							</div>
+							<div class="columns row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+							<div id="modal3" class="reveal-modal" data-reveal>
+								<div class="columns medium-4">
+									<img src="holder.js/300x500/vine"/>
+								</div>
+								<div class="columns medium-8">
+									<h1>Project 3</h1>
+									<h2>Awesome. I have it.</h2>
+									<p class="lead">Your couch.  It is mine.</p>
+									<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+									<a class="close-reveal-modal">&#215;</a>
+									<div class="show-for-medium-up-only">
+										<h4>Screens</h4>
+										<ul class="medium-block-grid-6">
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns large-3 medium-4">
+							<a href="#" data-reveal-id="modal4">
+								<img src="holder.js/200x150" style="margin:10px 0;"/>
+								<h4>Project 4 Title</h4>
+							</a>
+							<div style="float:left;">
+								<span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Designed">
+										<i class="fa fa-laptop"></i>
+									</span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Developed">
+										<i class="fa fa-code"></i>
+									</span>
+								</span>
+							</div>
+							<div class="columns row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+							<div id="modal4" class="reveal-modal" data-reveal>
+								<div class="columns medium-4">
+									<img src="holder.js/300x500/vine"/>
+								</div>
+								<div class="columns medium-8">
+									<h1>Project 4</h1>
+									<h2>Awesome. I have it.</h2>
+									<p class="lead">Your couch.  It is mine.</p>
+									<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+									<a class="close-reveal-modal">&#215;</a>
+									<div class="show-for-medium-up-only">
+										<h4>Screens</h4>
+										<ul class="medium-block-grid-6">
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns large-3 medium-4">
+							<a href="#" data-reveal-id="modal5">
+								<img src="holder.js/200x150" style="margin:10px 0;"/>
+								<h4>Project 5 Title</h4>
+							</a>
+							<div style="float:left;">
+								<span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Designed">
+										<i class="fa fa-laptop"></i>
+									</span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Developed">
+										<i class="fa fa-code"></i>
+									</span>
+								</span>
+							</div>
+							<div class="columns row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+							<div id="modal5" class="reveal-modal" data-reveal>
+								<div class="columns medium-4">
+									<img src="holder.js/300x500/vine"/>
+								</div>
+								<div class="columns medium-8">
+									<h1>Project 5</h1>
+									<h2>Awesome. I have it.</h2>
+									<p class="lead">Your couch.  It is mine.</p>
+									<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+									<a class="close-reveal-modal">&#215;</a>
+									<div class="show-for-medium-up-only">
+										<h4>Screens</h4>
+										<ul class="medium-block-grid-6">
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="columns large-3 medium-4" style="float:left;">
+							<a href="#" data-reveal-id="modal6">
+								<img src="holder.js/200x150" style="margin:10px 0;"/>
+								<h4>Project 6 Title</h4>
+							</a>
+							<div style="float:left;">
+								<span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Designed">
+										<i class="fa fa-laptop"></i>
+									</span>
+									<span data-tooltip data-options="disable_for_touch:true" class="has-tip tip-top" title="Developed">
+										<i class="fa fa-code"></i>
+									</span>
+								</span>
+							</div>
+							<div class="columns row">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+							</div>
+							<div id="modal6" class="reveal-modal" data-reveal>
+								<div class="columns medium-4">
+									<img src="holder.js/300x500/vine"/>
+								</div>
+								<div class="columns medium-8">
+									<h1>Project 6</h1>
+									<h2>Awesome. I have it.</h2>
+									<p class="lead">Your couch.  It is mine.</p>
+									<p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+									<a class="close-reveal-modal">&#215;</a>
+									<div class="show-for-medium-up-only">
+										<h4>Screens</h4>
+										<ul class="medium-block-grid-6">
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+											<li><img src="holder.js/50x70"></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="otherwork"><!-- Other Work -->
+				<div class="row centered-text">
+					<div class="columns small-12">
+						<h1 class="text-center">I also do design etc etc!</h1>
+						<h1 class="subheader text-center"id="otherwork-2">To see some other work I've done, please visit</h2>
+						<a href="http://dominicgan.strikingly.com">
+							<h1 class="text-center">dominicgan.strikingly.com</h1>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section id="aboutme"><!-- About Me -->
+				<div class="row">
+					<div class="medium-7 large-7 columns">
+						<div class="small-12 columns">
+							<h2>About Myself</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+					</div>
+					<div class="medium-5 large-5 columns">
+						<div class="small-12 columns">
+							<h3>Links Out</h3>
+						</div>
+						<div class="small-4 columns text-center"><a href="#"><i class="fa fa-facebook-square" style="font-size:36px;"></i></a></div>
+						<div class="small-4 columns text-center"><a href="#"><i class="fa fa-linkedin" style="font-size:36px;"></i></a></div>
+						<div class="small-4 columns text-center"><a href="#"><i class="fa fa-flickr" style="font-size:36px;"></i></a></div>
+						<div class="small-12 columns" style="padding-top:30px;">
+							<h3>Say Hello!</h3>
+						</div>
+						<div class="columns small-6">
+							<label>Name</label>
+							<input type="text" placeholder="Name"/>
+						</div>
+						<div class="columns small-6">
+							<label>E-Mail</label>
+							<input type="text" placeholder="E-Mail"/>
+						</div>
+						<div class="small-12 columns">
+							<label>Your Message</label>
+							<textarea type="text" placeholder="Type Here"></textarea>
+							<a href="#" class="button">Send</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="resume"><!-- Resume -->
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="small-12 medium-9 columns">
+							<h3>CV</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+						</div>
+						<div class="medium-3 show-for-medium-up columns"></div>
+					</div>
+				</div>
+			</section>
+			<section id="aboutsite"><!-- About Site -->
+				<div class="row">
+					<div class="small-12 columns">
+						<div class="small-12 medium-9 columns">
+							<h3>Site Specs</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						</div>
+						<div class="medium-3 show-for-medium-up columns"></div>
+					</div>
+				</div>
+			</section>
+			<section id="ending"><!-- Ending -->
+				<div class="row centered-text">
+					<div class="small-12 columns">
+						<div class="small-12 columns">
+							<h1 class="text-center">Thank you for visiting!</h1>
+						</div>
+						<div class="small-12 columns">
+							<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<script src="js/vendor/jquery.js"></script>
+			<script src="js/foundation.min.js"></script>
+			<script>
+			$(document).foundation();
+			</script>
+			<script>
+			var isMobile = {
+				Android: function() {
+					return navigator.userAgent.match(/Android/i) ? true : false;
+				},
+				BlackBerry: function() {
+					return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+				},
+				iOS: function() {
+					return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+				},
+				Windows: function() {
+					return navigator.userAgent.match(/IEMobile/i) ? true : false;
+				},
+				any: function() {
+					return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+				}
+			};
+
 	// The function actually applying the offset
 	function offsetAnchor() {
     // This if statement is optional. It is just making sure that
@@ -358,13 +498,23 @@
 			offsetAnchor();
 		}
 	});
-
 	// This is here so that when you enter the page with a hash,
 	// it can provide the offset in that case too. Having a timeout
 	// seems necessary to allow the browser to jump to the anchor first.
 	window.setTimeout(function() {
 		offsetAnchor();
 	}, 1); // The delay of 1 is arbitrary and may not always work right (although it did in my testing).
+	
+	$(document).scroll(function () {
+		if(! isMobile.any()){
+			var y = $(this).scrollTop();
+			if (y > 190) {
+				$('.title-area').fadeIn();
+			} else {
+				$('.title-area').fadeOut();
+			}
+		}
+	});
 	$(document).ready(function(){
 		if(! isMobile.any()){
 			$('#nav_intro').on('click', function(){
