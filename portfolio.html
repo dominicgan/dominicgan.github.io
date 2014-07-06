@@ -6,12 +6,14 @@
 	<title>Dominic Gan | Portfolio</title>
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<link rel="stylesheet" href="css/foundation.css" />
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<script src="js/vendor/modernizr.js"></script>
 	<script src="js/holder.js"></script>
 	<style type="text/css">
 	section {padding:15px 0;}
 	#intro {background-color:#0B3861}
 	#portfolio {background-color:#92B7DA}
+	#portfolio p {font-size: 13px;}
 	#otherwork {background-color:#92B7DA}
 	#aboutme {background-color:#C7D3DE}
 	#resume {background-color:#E4ECF3}
@@ -19,6 +21,25 @@
 	</style>
 </head>
 <body>
+	<div class="fixed sticky">
+		<nav class="top-bar" data-topbar data-options="is_hover: false">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a id="nav_intro" href="#intro"><i class="fa fa-lemon-o"></i></a></h1>
+				</li>
+				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+			<section class="top-bar-section" style="padding:0;">
+				<ul class="right">
+					<li><a id="nav_portfolio" href="#portfolio">Portfolio</a></li>
+					<li><a id="nav_aboutme" href="#aboutme">About Me</a></li>
+					<li><a id="nav_resume" href="#resume">Resumé</a></li>
+					<li><a id="nav_aboutsite" href="#aboutsite">About Site</a></li>
+				</ul>
+			</section>
+		</nav>
+	</div>
 	<section id="intro"><!-- Intro -->
 		<div class="row">
 			<div class="small-12 columns">
@@ -33,7 +54,7 @@
 				<h2 class="text-center">This is a selection of my work</h2>
 				<div class="columns large-3 medium-4">
 					<a href="#" data-reveal-id="modal1">
-						<img src="holder.js/200x150"/>
+						<img src="holder.js/200x150" style="margin:10px 0;"/>
 						<h4>Project 1 Title</h4>
 					</a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -64,7 +85,7 @@
 				</div>
 				<div class="columns large-3 medium-4">
 					<a href="#" data-reveal-id="modal2">
-						<img src="holder.js/200x150"/>
+						<img src="holder.js/200x150" style="margin:10px 0;"/>
 						<h4>Project 2 Title</h4>
 					</a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -95,7 +116,7 @@
 				</div>
 				<div class="columns large-3 medium-4">
 					<a href="#" data-reveal-id="modal3">
-						<img src="holder.js/200x150"/>
+						<img src="holder.js/200x150" style="margin:10px 0;"/>
 						<h4>Project 3 Title</h4>
 					</a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -125,7 +146,7 @@
 				</div>
 				<div class="columns large-3 medium-4">
 					<a href="#" data-reveal-id="modal4">
-						<img src="holder.js/200x150"/>
+						<img src="holder.js/200x150" style="margin:10px 0;"/>
 						<h4>Project 4 Title</h4>
 					</a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -155,7 +176,7 @@
 				</div>
 				<div class="columns large-3 medium-4">
 					<a href="#" data-reveal-id="modal5">
-						<img src="holder.js/200x150"/>
+						<img src="holder.js/200x150" style="margin:10px 0;"/>
 						<h4>Project 5 Title</h4>
 					</a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -185,7 +206,7 @@
 				</div>
 				<div class="columns large-3 medium-4">
 					<a href="#" data-reveal-id="modal6">
-						<img src="holder.js/200x150"/>
+						<img src="holder.js/200x150" style="margin:10px 0;"/>
 						<h4>Project 6 Title</h4>
 					</a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -237,10 +258,9 @@
 				<div class="small-12 columns">
 					<h3>Links Out</h3>
 				</div>
-				<div class="small-3 columns"><a href="#"><img src="holder.js/50x50"/></a></div>
-				<div class="small-3 columns"><a href="#"><img src="holder.js/50x50"/></a></div>
-				<div class="small-3 columns"><a href="#"><img src="holder.js/50x50"/></a></div>
-				<div class="small-3 columns"><a href="#"><img src="holder.js/50x50"/></a></div>
+				<div class="small-4 columns text-center"><a href="#"><i class="fa fa-facebook-square" style="font-size:36px;"></i></a></div>
+				<div class="small-4 columns text-center"><a href="#"><i class="fa fa-linkedin" style="font-size:36px;"></i></a></div>
+				<div class="small-4 columns text-center"><a href="#"><i class="fa fa-flickr" style="font-size:36px;"></i></a></div>
 				<div class="small-12 columns">
 					<h3>Say Hello!</h3>
 				</div>
@@ -303,6 +323,27 @@
 	<script src="js/foundation.min.js"></script>
 	<script>
 	$(document).foundation();
+	</script>
+	<script>
+
+	$(document).ready(function(){
+		$('#nav_intro').on('click', function(){
+			$('html,body').animate({scrollTop: $('#intro').offset().top -45}, 800);
+		}); 
+		$('#nav_portfolio').on('click', function(){
+			$('html,body').animate({scrollTop: $('#portfolio').offset().top -45}, 800);
+		}); 
+		$('#nav_aboutme').on('click', function(){
+			$('html,body').animate({scrollTop: $('#aboutme').offset().top -45}, 800);
+		}); 
+		$('#nav_resume').on('click', function(){
+			$('html,body').animate({scrollTop: $('#resume').offset().top -45}, 800);
+		}); 
+		$('#nav_aboutsite').on('click', function(){
+			$('html,body').animate({scrollTop: $('#aboutsite').offset().top -45}, 800);
+		}); 
+	});  
+
 	</script>
 </body>
 </html>
