@@ -51,7 +51,7 @@
 		background-color:#BBB;
 		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/triangular.png"); 
 		background-repeat: repeat;	
-		background-attachment: fixed
+		background-attachment: fixed;
 	}
 	#portfolio p {font-size: 13px;}
 	#portfolio a img {border: solid 2px #888; 
@@ -64,11 +64,27 @@
 		background-color:#BBB;
 		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/triangular.png"); 
 		background-repeat: repeat;	
-		background-attachment: fixed
+		background-attachment: fixed;
 	}
-	#aboutme {background-color:#C7D3DE}
-	#resume {background-color:#E4ECF3}
-	#aboutsite {background-color:#F2F5F8}
+	#aboutme {
+		background-color:#C7D3DE;
+		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/shattered.png");
+		background-repeat: repeat;
+	}
+	#resume {
+		background-color:#E4ECF3;
+		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/lightpaperfibers.png");
+		background-attachment: fixed;
+	}
+	#aboutsite {
+		background-color:#F2F5F8;
+		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/ps_neutral.png");
+		background-attachment: fixed;
+	}
+	#ending {
+		background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/ps_neutral.png");
+		background-attachment: fixed;
+	}
 	#portfolio h2,
 	#aboutme h2 {
 		font-family: 'Helvetica Neue', 'Helvetica', 'Trebuchet', sans-serif;
@@ -90,6 +106,13 @@
 	}
 	#aboutme p,  #resume p, #aboutsite p, #ending p {
 		font-size: 13px;
+	}
+	#aboutme p a, #aboutme p a:visited, #aboutsite p a, #aboutsite p a:visited{
+		color: #222;
+		font-weight: bold;
+	}
+	#aboutme p a:hover, #aboutme p b:hover, #aboutsite p a:hover {
+		color: #00C09E;
 	}
 	#otherwork h2,
 	#otherwork-2 {
@@ -412,21 +435,21 @@
 		<section id="aboutme"><!-- About Me -->
 			<div class="row">
 				<div class="medium-7 large-7 columns">
-					<div class="small-12 columns">
+					<div class="small-12 columns ">
 						<h3>About Myself</h3>
 						<p>I'm an aspiring front-end developer, and I just graduated from the National University of Singapore with a Bachelor's Degree in Computing (E-Commerce).</p>
 						<p>I love designing and developing webpages, and I hope to pursue a career in this field. I specialize in <b>HTML5</b>, <b>CSS3</b>, <b>JS & jQuery</b>, <b>Groovy & Grails</b> and <b>MySQL</b>. I am competent in responsive  web design, and have worked with front-end frameworks such as Bootstrap and Foundation  for my projects. I also have had experience working with <b>C</b>, <b>Java</b>, and <b>Python & Django</b>. Additionally, I enjoy designing and creating things in <b>Photoshop</b>.</p>
-						<p>In my spare time, I enjoy swimming, <a href="http://www.flickr.com/photos/dggx">photography</a>, <a href="http://www.arsenal.com">watching football</a> and playing <a href="http://www.footballmanager.com">football manager</a>.</p>
+						<p>In my spare time, I enjoy <b>swimming</b>, <a href="http://www.flickr.com/photos/dggx">photography</a>, <a href="http://www.arsenal.com">watching football</a> and playing <a href="http://www.footballmanager.com">football manager</a>.</p>
 					</div>
 				</div>
-				<div class="medium-5 large-5 columns">
+				<div class="medium-5 large-5 columns ">
 					<div class="small-12 columns">
 						<h4>Links Out</h4>
 					</div>
 					<div class="small-4 columns text-center"><a href="#"><i class="fa fa-facebook-square" style="font-size:36px;"></i></a></div>
 					<div class="small-4 columns text-center"><a href="#"><i class="fa fa-linkedin" style="font-size:36px;"></i></a></div>
 					<div class="small-4 columns text-center"><a href="#"><i class="fa fa-flickr" style="font-size:36px;"></i></a></div>
-					<div class="small-12 columns" style="padding-top:30px;">
+					<div class="small-12 columns " style="padding-top:30px;">
 						<h4>Say Hello!</h4>
 					</div>
 					<div class="columns small-6">
@@ -468,6 +491,7 @@
 						<h5 class="subheader">Airport Guide</h5>
 						<h6 class="subheader">Jan 08 - Mar 08</h6>
 						<p>Served as an airport guide in the transit area of Terminal 3, during its opening months. Guided travellers by providing directions in order to alleiviate the issue of passengers losing their way due to the reworking of flight arrivals/departures.</p>
+						<hr>
 						<h4>Education</h4>
 						<h5>National University of Singapore</h5>
 						<h5 class="subheader">Bachelor of Computing with Honours – Electronic Commerce</h5>
@@ -487,7 +511,8 @@
 				<div class="small-12 columns">
 					<div class="small-12 medium-9 columns">
 						<h3>Site Specs</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>This page was built in <a href="http://www.sublimetext.com/">Sublime Text 2</a> with <a href="http://foundation.zurb.com/">Foundation 5.3.0</a>, <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> icons, <a href="https://www.google.com/fonts">Google Fonts</a> and content from <a href="http://subtlepatterns.com/">SubtlePatterns.com</a>. Content is hosted on <a href="http://www.github.com/dominicgan">Github</a> & <a href="http://www.dropbox.com/">Dropbox</a>.</p> 
+						<p>Copyright © 2014 by Dominic Gan. All Rights Reserved.</p>
 					</div>
 					<div class="medium-3 show-for-medium-up columns"></div>
 				</div>
