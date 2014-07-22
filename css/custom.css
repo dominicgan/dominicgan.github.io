@@ -25,6 +25,9 @@ section {padding:15px 0;}
 	font-weight: 100; 
 	/*font-size: 5.75rem;*/
 }
+#intro h1:hover {
+	color: #00C09E;
+}
 #intro h2 {
 	/*font-family: 'Josefin Sans', sans-serif;*/
 	font-family: 'Helvetica Neue', 'Helvetica', 'Trebuchet', sans-serif;
