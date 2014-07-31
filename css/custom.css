@@ -7,6 +7,11 @@ section {padding:15px 0;}
 	background-repeat: repeat-x;	
 	background-attachment: fixed
 }
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/stardust.png"); 
+	background-repeat: repeat-x;	
+	background-attachment: fixed
+}
 .top-bar-section li:not(.has-form) a:not(.button):hover,
 .top-bar .name h1 a:hover {color: #00C09E}
 .top-bar-section ul li > a,
@@ -25,7 +30,10 @@ section {padding:15px 0;}
 	font-weight: 100; 
 	/*font-size: 5.75rem;*/
 }
-#intro h1:hover {
+#intro h1 a {
+	color: #fff;
+}
+#intro h1 a:hover {
 	color: #00C09E;
 }
 #intro h2 {
@@ -118,7 +126,7 @@ section {padding:15px 0;}
 #otherwork-2 {color: #00C09E; text-shadow:2px 2px #666;}
 #otherwork a h3:hover {color: #fff;
 }
-#resume h1, h2, h3, h4, h5, h6{
+#resume h1, h2, h3, h4, h5, h6, #ending h1 {
 	font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;
 }
 #sample-desc p{
