@@ -113,6 +113,13 @@ section {padding:15px 0;}
 #resume h1, h2, h3, h4, h5, h6{
 	font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;
 }
+#sample-desc p{
+	font-size: 13px;
+}
+#sample-link li a {
+	color: #444;
+	font-size: 13px;
+}
 @media only screen and (min-width: 1200px) {
 	#intro h1 {
 		font-size: 5.75rem;
