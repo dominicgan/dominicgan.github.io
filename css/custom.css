@@ -53,6 +53,11 @@ section {padding:15px 0;}
 	background-repeat: repeat;	
 	background-attachment: fixed;
 }
+#otherwork hr {
+	border-color: #555;
+	border-width: 5px;
+	margin: 1.25rem 5.5rem 3.1875rem;
+}
 #aboutme {
 	background-color:#dddddd;
 	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/shattered.png");
@@ -62,6 +67,9 @@ section {padding:15px 0;}
 	background-color:#E4ECF3;
 	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/lightpaperfibers.png");
 	background-attachment: fixed;
+}
+#resume hr {
+	border-color:#444; 
 }
 #aboutsite {
 	background-color:#F2F5F8;
