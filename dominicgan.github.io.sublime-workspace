@@ -57,26 +57,38 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/dominicgangx/dominicgan.github.io"
+		"/Users/dominicgangx/dominicgan.github.io",
+		"/Users/dominicgangx/dominicgan.github.io/css"
 	],
 	"file_history":
 	[
+		"/Users/dominicgangx/dominicgan.github.io/index.html",
+		"/Users/dominicgangx/dominicgan.github.io/IS4227/Sample_4_Product.html",
+		"/Users/dominicgangx/dominicgan.github.io/IS4227/Sample_1_Index.html",
+		"/Users/dominicgangx/dominicgan.github.io/css/custom.css",
+		"/Users/dominicgangx/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/dominicgangx/dominicgan.github.io/font-awesome/scss/_bordered-pulled.scss",
+		"/Users/dominicgangx/dominicgan.github.io/font-awesome/scss/_rotated-flipped.scss",
+		"/Users/dominicgangx/dominicgan.github.io/font-awesome/less/rotated-flipped.less",
+		"/Users/dominicgangx/dominicgan.github.io/font-awesome/less/bordered-pulled.less",
+		"/Users/dominicgangx/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/dominicgangx/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/dominicgangx/Desktop/ourtimes.torrent",
 		"/Users/dominicgangx/Desktop/fargo.s02e10.720p.hdtv.x264-0sec.nfo",
 		"/Users/dominicgangx/Desktop/Fres.m3u",
 		"/Users/dominicgangx/Desktop/phpinfo.php",
-		"/Users/dominicgangx/Desktop/Balsamiq Mockups v3.2.2 + Key {TechieAce}/Registration Key.txt",
-		"/Users/dominicgangx/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap"
+		"/Users/dominicgangx/Desktop/Balsamiq Mockups v3.2.2 + Key {TechieAce}/Registration Key.txt"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -84,6 +96,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font",
+			"&",
+			" & "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -91,6 +106,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			" &amp; "
 		],
 		"reverse": false,
 		"show_context": true,
@@ -108,7 +124,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -145,7 +161,7 @@
 	"project": "dominicgan.github.io.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
