@@ -1,0 +1,15 @@
+- name: Linkedin
+  link: http://www.google.com/
+  icon: fa-linkedin
+
+- name: Github
+  link: http://www.google.com/
+  icon: fa-github
+
+- name: Behance
+  link: http://www.google.com/
+  icon: fa-behance
+
+- name: Flickr
+  link: http://www.google.com/
+  icon: fa-flickr

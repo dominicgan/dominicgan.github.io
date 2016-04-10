@@ -1,0 +1,21 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Dominic Gan
+subtitle: Web Designer/Front-end Developer
+email: dominicgangx@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Hey, I'm Dominic, and I am a web designer and front-end developer based in Singapore. I make web things!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dominicgan.github.io" # the base hostname & protocol for your site
+build-info: Site built with Jekyll, Gulp, Sass.
+twitter_username: jekyllrb
+github_username:  dominicgan
+
+# Build settings
+markdown: kramdown

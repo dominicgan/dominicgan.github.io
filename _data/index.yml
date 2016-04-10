@@ -1,0 +1,26 @@
+# Index yml file
+#
+# this file contains content for the index page that *probably* won't be 
+# edited often. 
+# Splitting 'em up from the template file, see!
+
+# section.about
+about-title: About Me
+about-description: >
+  I am a web designer and front-end developer currently employed at Balanced Consultancy/Novitee Pte Ltd. I graduated from the National University of Singapore in 2014 with a Bachelor’s Degree (Honours) in Computing, majoring in E-Commerce.
+
+  I am passionate about designing user interfaces, in particular for websites and mobile apps. I aim to design clear and usable interfaces, and I always base my designs upon this principle. I work primarily in Photoshop, as well as in Illustrator occasionally.
+
+  In addition to designing user interfaces, I am also highly competent in client side development, specialising in HTML, CSS, JS & PHP. I have a deep understanding of major CMS systems such as WordPress & Magento, having used them extensively in my work.
+
+  I enjoy swimming, photography, watching football, movies and a great deal of american dramas, and collecting mechanical keyboards.
+
+# section.recent-work
+recent-title: Recent Works
+recent-description: >
+  Here's some of the stuff I've worked on recently
+
+# section.contact-me
+contact-title: Get in Touch
+contact-description: >
+  Hit me up! (unless its for spam. then perhaps don’t.)

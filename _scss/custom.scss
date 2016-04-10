@@ -1,0 +1,55 @@
+@import 'bourbon/bourbon';
+
+section {
+	&:not(.hero):not(:first-child){
+		margin: rem(100) 0;
+	}
+
+}
+
+section.hero {
+	height: rem(400);
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+
+	.content {
+		margin: rem(50) 0;
+	}
+
+	.title {
+		font-size: rem(44);
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+}
+
+.page-heading {
+	font-size: rem(36);
+	font-weight: 300;
+}
+
+.right { float: right;}
+
+.clearfix { clear: both;}
+
+.about {
+	.skills {
+		list-style: none;
+		margin: 0;
+		float: left;
+
+		li {
+			display: inline-block;
+			float: left;
+		}
+
+		li span {
+			margin: rem(3);
+			padding: rem(8) rem(12);
+			border: solid 1px black;
+			display: block;
+			// float: left;
+		}
+	}
+}

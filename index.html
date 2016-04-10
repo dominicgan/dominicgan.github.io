@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="content">
+    <h1 class="title">{{ site.title }}</h1>
+    <h2 class="subtitle">{{ site.subtitle }}</h2>
+  </div>
+  
+</section>
+
+<section class="about">
+  <h1 class="page-heading">{{ site.data.index.about-title }}</h1>
+  <h3 class="description">{{ site.data.index.about-description }}</h3>
+
+  <ul class="skills">
+    {% for skill in site.data.skills %}
+    <li>
+      <span>{{ skill.name}}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="clearfix"></div>
+  
+</section>
+
+<section class="recent-work">
+
+  <h1 class="page-heading">{{ site.data.index.recent-title }}</h1>
+  <h3 class="description">{{ site.data.index.recent-description }}</h3>
+
+  <ul class="post-list">
+    {% for post in site.posts limit:4 %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <a class="" href="/portfolio/">See more</a>
+
+</section>
+
+<section class="contact-me">
+  <h1 class="page-heading">{{ site.data.index.contact-title }}</h1>
+  <h3 class="description">{{ site.data.index.contact-description }}</h3>
+
+  <ul class="links-out">
+    {% for contact-link in site.data.contact-links %}
+    <li>
+      <a href="{{ contact-link.link }}">
+        <span class="icon">{{ contact-link.icon }}</span>
+        <span class="title">{{ contact-link.name }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  
+</section>

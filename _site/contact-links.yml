@@ -1,0 +1,11 @@
+- name: Linkedin
+  icon: fa-linkedin
+
+- name: Github
+  icon: fa-github
+
+- name: Behance
+  icon: fa-behance
+
+- name: Flickr
+  icon: fa-flickr
