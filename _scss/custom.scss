@@ -49,7 +49,7 @@ section.hero {
 		@extend .inline-lists;
 
 		li span {
-			margin: rem(3);
+			margin: rem(3) rem(6) rem(3) 0;
 			padding: rem(8) rem(12);
 			border: solid 1px black;
 			display: block;

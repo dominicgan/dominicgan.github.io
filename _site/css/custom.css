@@ -32,7 +32,7 @@ section.hero {
     float: left; }
 
 .about .skills li span {
-  margin: 0.1875rem;
+  margin: 0.1875rem 0.375rem 0.1875rem 0;
   padding: 0.5rem 0.75rem;
   border: solid 1px black;
   display: block; }
