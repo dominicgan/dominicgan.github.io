@@ -1,0 +1,183 @@
+<<<<<<< HEAD
+section:not(.hero):not(:first-child) {
+  margin: 6.25rem 0; }
+
+section.hero {
+  height: 25rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start; }
+  section.hero .content {
+    margin: 3.125rem 0; }
+  section.hero .title {
+    font-size: 2.75rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+
+.page-heading {
+  font-size: 2.25rem;
+  font-weight: 300; }
+
+.right {
+  float: right; }
+
+.clearfix {
+  clear: both; }
+
+.about .skills {
+  list-style: none;
+  margin: 0;
+  float: left; }
+  .about .skills li {
+    display: inline-block;
+    float: left; }
+  .about .skills li span {
+    margin: 0.1875rem;
+    padding: 0.5rem 0.75rem;
+    border: solid 1px black;
+    display: block; }
+=======
+body {}
+section {padding:15px 0;}
+.top-bar, 
+.top-bar-section li:not(.has-form) a:not(.button),
+.top-bar.expanded .title-area {background-color: #3F3F3F; 
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/stardust.png"); 
+	background-repeat: repeat-x;	
+	background-attachment: fixed
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/stardust.png"); 
+	background-repeat: repeat-x;	
+	background-attachment: fixed
+}
+.top-bar-section li:not(.has-form) a:not(.button):hover,
+.top-bar .name h1 a:hover {color: #00C09E}
+.top-bar-section ul li > a,
+.top-bar .name h1 a {color: #fff}
+#intro {
+	background-color:#3F3F3F;
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/stardust.png"); 
+	background-repeat: repeat-x;	
+	background-attachment: fixed;
+	padding-top: 50px;
+}
+#intro h1 {
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	font-family: 'Josefin Slab', serif;
+	letter-spacing:-3px; 
+	font-weight: 100; 
+	/*font-size: 5.75rem;*/
+}
+#intro h1 a {
+	color: #fff;
+}
+#intro h1 a:hover {
+	color: #00C09E;
+}
+#intro h2 {
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	font-family: 'Helvetica Neue', 'Helvetica', 'Trebuchet', sans-serif;
+	letter-spacing:0px;
+	font-weight: 100;
+}
+#portfolio {
+	background-color:#BBB;
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/triangular.png"); 
+	background-repeat: repeat;	
+	background-attachment: fixed;
+}
+#portfolio p {font-size: 13px;}
+#portfolio a img {border: solid 2px #888; 
+	padding: 5px; 
+	margin:10px 0; 
+	width:200px; 
+	height:150px;
+}
+#otherwork {
+	background-color:#BBB;
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/triangular.png"); 
+	background-repeat: repeat;	
+	background-attachment: fixed;
+}
+#otherwork hr {
+	border-color: #555;
+	border-width: 5px;
+	margin: 1.25rem 5.5rem 3.1875rem;
+}
+#aboutme {
+	background-color:#dddddd;
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/shattered.png");
+	background-repeat: repeat;
+}
+#resume {
+	background-color:#E4ECF3;
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/lightpaperfibers.png");
+	background-attachment: fixed;
+}
+#resume hr {
+	border-color:#444; 
+}
+#aboutsite {
+	background-color:#F2F5F8;
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/ps_neutral.png");
+	background-attachment: fixed;
+}
+#ending {
+	background-image: url("https://dl.dropboxusercontent.com/u/69919934/githubpage/ps_neutral.png");
+	background-attachment: fixed;
+}
+#portfolio h2,
+#aboutme h2 {
+	font-family: 'Helvetica Neue', 'Helvetica', 'Trebuchet', sans-serif;
+	letter-spacing:-0.5px; 
+	font-weight: 100; 
+	/*font-size: 2.85rem;*/
+}
+#aboutme h3,
+#aboutme h4 {
+	font-family: 'Helvetica Neue', 'Helvetica', 'Trebuchet', sans-serif;
+	letter-spacing:0px; 
+	/*font-size: 2rem; */
+}
+#aboutme h3 {
+	font-weight: 100;
+}
+#aboutme h4 {
+	font-weight: 100;
+}
+#aboutme p,  #resume p, #aboutsite p, #ending p {
+	font-size: 13px;
+}
+#aboutme p a, #aboutme p a:visited, #aboutsite p a, #aboutsite p a:visited{
+	color: #222;
+	font-weight: bold;
+}
+#aboutme p a:hover, #aboutme p b:hover, #aboutsite p a:hover {
+	color: #00C09E;
+}
+#otherwork h2,
+#otherwork-2 {
+	font-family: 'Helvetica Neue', 'Helvetica', 'Trebuchet', sans-serif;
+	letter-spacing:-1px; 
+	font-weight: 100;
+}
+#otherwork-2 {color: #00C09E; text-shadow:2px 2px #666;}
+#otherwork a h3:hover {color: #fff;
+}
+#resume h1, h2, h3, h4, h5, h6, #ending h1 {
+	font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;
+}
+#sample-desc p{
+	font-size: 13px;
+}
+#sample-link li a {
+	color: #444;
+	font-size: 13px;
+}
+@media only screen and (min-width: 1200px) {
+	#intro h1 {
+		font-size: 5.75rem;
+	}
+}
+>>>>>>> bc1ad561075349e2ce522e5e8a48733e53fb8acb
