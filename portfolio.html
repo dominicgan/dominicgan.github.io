@@ -11,7 +11,7 @@ permalink: /Portfolio/
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
+      <li class="{% for category in post.categories %}{{ category }} {% endfor %}">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
