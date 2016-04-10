@@ -1,3 +1,7 @@
+@media (min-width: 601px) {
+  nav .page-link {
+    font-size: 0.875rem; } }
+
 section:not(.hero):not(:first-child) {
   margin: 6.25rem 0; }
 

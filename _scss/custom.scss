@@ -1,5 +1,12 @@
 @import 'bourbon/bourbon';
 
+nav {
+	.page-link {
+		@media (min-width: 601px){
+			font-size: rem(14);
+		}
+	}
+}
 section {
 	&:not(.hero):not(:first-child){
 		margin: rem(100) 0;
