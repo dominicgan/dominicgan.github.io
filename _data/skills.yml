@@ -7,6 +7,7 @@
 - name: HAML
 - name: Sass
 - name: Markdown
+- name: Git
 - name: PHP
 - name: Ruby/Rails
 - name: Jekyll

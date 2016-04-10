@@ -33,16 +33,20 @@ section.hero {
 
 .clearfix { clear: both;}
 
+.inline-lists {
+	list-style: none;
+	margin: 0;
+	float: left;
+
+	li {
+		display: inline-block;
+		float: left;
+	}
+}
+
 .about {
 	.skills {
-		list-style: none;
-		margin: 0;
-		float: left;
-
-		li {
-			display: inline-block;
-			float: left;
-		}
+		@extend .inline-lists;
 
 		li span {
 			margin: rem(3);
@@ -50,6 +54,50 @@ section.hero {
 			border: solid 1px black;
 			display: block;
 			// float: left;
+		}
+	}
+}
+
+.contact-me {
+	.links-out {
+		@extend .inline-lists;
+
+		li a {
+			margin: rem(3);
+			padding: rem(10) rem(5);
+			// padding-left: 0;
+			display: block;
+
+			&:first-child {
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+		}
+
+		li:not(:last-child) a:after{
+			content: '-';
+			padding-left: rem(5);
+		}
+	}
+}
+
+// Remove once done
+header.notice {
+	background-color: tint(navy, 20%);
+	margin: 0;
+	border: 0;
+	padding: rem(15);
+	display: block;
+	position: relative;
+	span {
+		color: white;
+		// font-weight: 300;
+		font-size: rem(16);
+
+		a {
+			color: white;
+			text-decoration: underline;
 		}
 	}
 }

@@ -23,15 +23,41 @@ section.hero {
 .clearfix {
   clear: both; }
 
-.about .skills {
+.inline-lists, .about .skills, .contact-me .links-out {
   list-style: none;
   margin: 0;
   float: left; }
-  .about .skills li {
+  .inline-lists li, .about .skills li, .contact-me .links-out li {
     display: inline-block;
     float: left; }
-  .about .skills li span {
-    margin: 0.1875rem;
-    padding: 0.5rem 0.75rem;
-    border: solid 1px black;
-    display: block; }
+
+.about .skills li span {
+  margin: 0.1875rem;
+  padding: 0.5rem 0.75rem;
+  border: solid 1px black;
+  display: block; }
+
+.contact-me .links-out li a {
+  margin: 0.1875rem;
+  padding: 0.625rem 0.3125rem;
+  display: block; }
+  .contact-me .links-out li a:first-child {
+    margin-left: 0;
+    padding-left: 0; }
+.contact-me .links-out li:not(:last-child) a:after {
+  content: '-';
+  padding-left: 0.3125rem; }
+
+header.notice {
+  background-color: #333399;
+  margin: 0;
+  border: 0;
+  padding: 0.9375rem;
+  display: block;
+  position: relative; }
+  header.notice span {
+    color: white;
+    font-size: 1rem; }
+    header.notice span a {
+      color: white;
+      text-decoration: underline; }
