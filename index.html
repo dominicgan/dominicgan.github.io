@@ -14,22 +14,22 @@ layout: default
 
 <section class="about">
   <div class="row">
-  <div class="content">
-    <h1 class="page-heading">{{ site.data.index.about-title }}</h1>
-    <p class="description">{{ site.data.index.about-description }}</p>
+    <div class="image-wrapper">
+      <div class="avatar"><img src="https://unsplash.it/558/558" alt="avatar"></div>
+    </div>
+    <div class="content">
+      <h1 class="page-heading">{{ site.data.index.about-title }}</h1>
+      <p class="description">{{ site.data.index.about-description }}</p>
 
-    <ul class="skills">
-      {% for skill in site.data.skills %}
-      <li>
-        <span>{{ skill.name}}</span>
-      </li>
-      {% endfor %}
-    </ul>
-    <div class="clearfix"></div>
-  </div>
-  <div class="image-wrapper">
-    <div class="avatar"><img src="https://unsplash.it/558/558" alt="avatar"></div>
-  </div>
+      <ul class="skills">
+        {% for skill in site.data.skills %}
+        <li>
+          <span>{{ skill.name}}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </section>
 
@@ -41,21 +41,21 @@ layout: default
     <ul class="post-list">
       {% for post in site.posts limit:4 %}
       <li class="{% for category in post.categories %}{{ category }} {% endfor %}">
-      <div class="post-img"><img src="https://unsplash.it/600/400" alt="{{ post.name }}" title="{{ post.name }}"></div>
-      <div class="post-desc">
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h3>
-        <!-- <span class="post-categories">{% for category in post.categories %}{{ category }} {% endfor %}</span> -->
-      </div>
+        <div class="post-img"><img src="https://unsplash.it/600/400" alt="{{ post.name }}" title="{{ post.name }}"></div>
+        <div class="post-desc">
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+          <!-- <span class="post-categories">{% for category in post.categories %}{{ category }} {% endfor %}</span> -->
+        </div>
       </li>
       {% endfor %}
     </ul>
   </div>
-<div class="row">
+  <div class="row">
     <a class="right" href="/portfolio/">See more</a>
-</div>
+  </div>
 </section>
 
 <section class="contact-me">

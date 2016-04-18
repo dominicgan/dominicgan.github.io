@@ -161,12 +161,21 @@ section {
 
 .about {
 	.content {
-		@include span-columns(8);
+		@include span-columns(12);
+		margin-top: rem(15);
+
+		@media (min-width: $tab-min-width){
+			@include span-columns(8);
+			margin-top: rem(0);
+		}
 	}
 
 	.image-wrapper {
-		@include span-columns(4);
-		@include omega();
+		@media (min-width: $tab-min-width){
+			@include span-columns(4);
+			@include omega();
+			float: right;
+		}
 
 		.avater {
 			display: block;
