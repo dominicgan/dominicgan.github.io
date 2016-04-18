@@ -3,63 +3,75 @@ layout: default
 ---
 
 <section class="hero">
-  <div class="content">
-    <!-- <h1 class="title">{{ site.title }}</h1> -->
-    <h1 class="title">Balian of Ibelin</h1>
-    <h2 class="subtitle">{{ site.subtitle }}</h2>
+  <div class="row">
+    <div class="content">
+      <h1 class="title">{{ site.title }}</h1>
+      <!-- <h1 class="title">Balian of Ibelin</h1> -->
+      <h2 class="subtitle">{{ site.subtitle }}</h2>
+    </div>
   </div>
-  
 </section>
 
 <section class="about">
-  <h1 class="page-heading">{{ site.data.index.about-title }}</h1>
-  <h3 class="description">{{ site.data.index.about-description }}</h3>
+  <div class="row">
+  <div class="content">
+    <h1 class="page-heading">{{ site.data.index.about-title }}</h1>
+    <p class="description">{{ site.data.index.about-description }}</p>
 
-  <ul class="skills">
-    {% for skill in site.data.skills %}
-    <li>
-      <span>{{ skill.name}}</span>
-    </li>
-    {% endfor %}
-  </ul>
-  <div class="clearfix"></div>
-  
+    <ul class="skills">
+      {% for skill in site.data.skills %}
+      <li>
+        <span>{{ skill.name}}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="clearfix"></div>
+  </div>
+  <div class="image-wrapper">
+    <div class="avatar"><img src="https://unsplash.it/558/558" alt="avatar"></div>
+  </div>
+  </div>
 </section>
 
 <section class="recent-work">
+  <div class="row">
+    <h1 class="page-heading">{{ site.data.index.recent-title }}</h1>
+    <p class="description">{{ site.data.index.recent-description }}</p>
 
-  <h1 class="page-heading">{{ site.data.index.recent-title }}</h1>
-  <h3 class="description">{{ site.data.index.recent-description }}</h3>
-
-  <ul class="post-list">
-    {% for post in site.posts limit:4 %}
-      <li>
+    <ul class="post-list">
+      {% for post in site.posts limit:4 %}
+      <li class="{% for category in post.categories %}{{ category }} {% endfor %}">
+      <div class="post-img"><img src="https://unsplash.it/600/400" alt="{{ post.name }}" title="{{ post.name }}"></div>
+      <div class="post-desc">
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h3>
+        <!-- <span class="post-categories">{% for category in post.categories %}{{ category }} {% endfor %}</span> -->
+      </div>
       </li>
-    {% endfor %}
-  </ul>
-
-  <a class="" href="/portfolio/">See more</a>
-
+      {% endfor %}
+    </ul>
+  </div>
+<div class="row">
+    <a class="right" href="/portfolio/">See more</a>
+</div>
 </section>
 
 <section class="contact-me">
-  <h1 class="page-heading">{{ site.data.index.contact-title }}</h1>
-  <h3 class="description">{{ site.data.index.contact-description }}</h3>
+  <div class="row">
+    <h1 class="page-heading">{{ site.data.index.contact-title }}</h1>
+    <p class="description">{{ site.data.index.contact-description }}</p>
 
-  <ul class="links-out">
-    {% for contact-link in site.data.contact-links %}
-    <li>
-      <a href="{{ contact-link.link }}">
-        <!-- <span class="icon">{{ contact-link.icon }}</span> -->
-        <span class="title">{{ contact-link.name }}</span>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-  
+    <ul class="links-out">
+      {% for contact-link in site.data.contact-links %}
+      <li>
+        <a href="{{ contact-link.link }}">
+          <!-- <span class="icon">{{ contact-link.icon }}</span> -->
+          <span class="title">{{ contact-link.name }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>

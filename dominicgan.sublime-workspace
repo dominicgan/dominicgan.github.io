@@ -1,0 +1,916 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"k",
+				"keyboards	(index.yml)"
+			],
+			[
+				"domrae",
+				"domraeholiday	(banner.html)"
+			],
+			[
+				"letter",
+				"letter-spacing"
+			],
+			[
+				"tex",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_data/contact-links.yml",
+			"settings":
+			{
+				"buffer_size": 331,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resume.html",
+			"settings":
+			{
+				"buffer_size": 446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 1403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/post.html",
+			"settings":
+			{
+				"buffer_size": 616,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_includes/head.html",
+			"settings":
+			{
+				"buffer_size": 936,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_data/skills.yml",
+			"settings":
+			{
+				"buffer_size": 544,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 886,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_scss/custom.scss",
+			"settings":
+			{
+				"buffer_size": 2017,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016-04-09-welcome-to-jekyll.markdown",
+			"settings":
+			{
+				"buffer_size": 1219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016-04-08-welcome-to-jekyll.markdown",
+			"settings":
+			{
+				"buffer_size": 1208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016-04-07-welcome-to-jekyll.markdown",
+			"settings":
+			{
+				"buffer_size": 1198,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_posts/2016-04-10-welcome-to-jekyll.markdown",
+			"settings":
+			{
+				"buffer_size": 1204,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/main.scss",
+			"settings":
+			{
+				"buffer_size": 1305,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 715.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/dominicgangx/dominicgan.github.io",
+		"/Users/dominicgangx/dominicgan.github.io/_data",
+		"/Users/dominicgangx/dominicgan.github.io/_includes",
+		"/Users/dominicgangx/dominicgan.github.io/_layouts",
+		"/Users/dominicgangx/dominicgan.github.io/_posts",
+		"/Users/dominicgangx/dominicgan.github.io/_sass",
+		"/Users/dominicgangx/dominicgan.github.io/_scss",
+		"/Users/dominicgangx/dominicgan.github.io/css"
+	],
+	"file_history":
+	[
+		"/Users/dominicgangx/dominicgan.github.io/dominicgan.github.sublime-project",
+		"/Users/dominicgangx/dominicgan.github.io/_data/contact-links.yml",
+		"/Users/dominicgangx/dominicgan.github.io/_includes/head.html",
+		"/Users/dominicgangx/dominicgan.github.io/_scss/custom.scss",
+		"/Users/dominicgangx/dominicgan.github.io/_posts/2016-04-07-welcome-to-jekyll.markdown",
+		"/Users/dominicgangx/dominicgan.github.io/_posts/2016-04-09-welcome-to-jekyll.markdown",
+		"/Users/dominicgangx/dominicgan.github.io/_posts/2016-04-06-welcome-to-jekyll.markdown",
+		"/Users/dominicgangx/dominicgan.github.io/_posts/2016-04-08-welcome-to-jekyll.markdown",
+		"/Users/dominicgangx/dominicgan.github.io/working.md",
+		"/Users/dominicgangx/dominicgan.github.io/test.md",
+		"/Users/dominicgangx/dominicgan.github.io/about.md",
+		"/Users/dominicgangx/domrae.github.io/_site/japan/2016/04/03/day-one-japan.html",
+		"/Users/dominicgangx/domrae.github.io/_includes/head.html",
+		"/Users/dominicgangx/domrae.github.io/js/custom.js",
+		"/Users/dominicgangx/Desktop/DSC00248.jpg",
+		"/Users/dominicgangx/domrae.github.io/_posts/2015-04-08-seven-day-in-japan.markdown",
+		"/Users/dominicgangx/domrae.github.io/_posts/2015-04-07-sixth-day-in-japan.markdown",
+		"/Users/dominicgangx/domrae.github.io/_posts/2015-04-06-fifth-day-in-japan.markdown",
+		"/Users/dominicgangx/domrae.github.io/_posts/2015-04-05-fourth-day-in-japan.markdown",
+		"/Users/dominicgangx/domrae.github.io/_posts/2016-04-04-third-day-in-japan.markdown",
+		"/Users/dominicgangx/domrae.github.io/_posts/2016-04-03-second-day-in-japan.markdown",
+		"/Users/dominicgangx/domrae.github.io/_posts/2016-04-02-first-day-in-japan.markdown",
+		"/Users/dominicgangx/domrae.github.io/_posts/2019-04-04-third-day-in-japan.markdown",
+		"/Users/dominicgangx/domrae.github.io/_layouts/post.html",
+		"/Users/dominicgangx/domrae.github.io/_site/css/custom.css",
+		"/Users/dominicgangx/domrae.github.io/gulpfile.js",
+		"/Users/dominicgangx/domrae.github.io/_includes/banner.html",
+		"/Users/dominicgangx/domrae.github.io/_scss/partial/_banner.scss",
+		"/Users/dominicgangx/domrae.github.io/_posts/draft/2016-03-06-welcome-to-jekyll.markdown",
+		"/Users/dominicgangx/domrae.github.io/css/main.scss",
+		"/Users/dominicgangx/domrae.github.io/.sass-cache/.gitignore",
+		"/Users/dominicgangx/domrae.github.io/_scss/partial/_homepage.scss",
+		"/Users/dominicgangx/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/dominicgangx/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/dominicgangx/domrae.github.io/_sass/_base.scss",
+		"/Users/dominicgangx/domrae.github.io/feed.xml",
+		"/Users/dominicgangx/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/js/custom.js",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/_scss/partial/_post.scss",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/gulpfile.js",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/about.md",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/_layouts/page.html",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/index.html",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/_site/about/index.html",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/_includes/footer.html",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/_includes/icon-instagram.html",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/_site/css/main.css",
+		"/Users/dominicgangx/domrae.github.io/udomraemen/_includes/icon-instagram.svg",
+		"/Users/dominicgangx/Library/BlueStacks/Android/Android.vbox",
+		"/Users/dominicgangx/Desktop/dominicgan-com-default-2-complete-2016-02-24-21-57-33.sql",
+		"/Users/dominicgangx/Library/Preferences/com.BlueStacks.AppPlayer.plist",
+		"/Users/dominicgangx/Library/Preferences/com.BlueStacks.AppPlayer.Guid.plist",
+		"/Users/dominicgangx/Library/Preferences/com.bluestacks.BlueStacks.plist",
+		"/Volumes/Microsoft Office 2016 v15.11.2 [p]/MSO15.11.2Patch",
+		"/Volumes/DOMINIC NEW/Movies/What We Do in the Shadows (2014) [1080p]/What.We.Do.in.the.Shadows.2014.1080p.BluRay.x264.YIFY.ass",
+		"/Volumes/DOMINIC NEW/Movies/What We Do in the Shadows (2014) [1080p]/WWW.YTS.RE.srt",
+		"/Users/dominicgangx/Desktop/.plexignore",
+		"/Users/dominicgangx/Clubsnap Listings",
+		"/Users/dominicgangx/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/dominicgangx/Desktop/Christmas.With.The.Kranks.2004.720p.WEB-DL.H264-HDB [PublicHD]/Christmas.with.the.Kranks.2004.720p.WEB-DL.DD5.1.H.264.srt",
+		"/Users/dominicgangx/dominicgan.github.io/index.html",
+		"/Users/dominicgangx/dominicgan.github.io/IS4227/Sample_4_Product.html",
+		"/Users/dominicgangx/dominicgan.github.io/IS4227/Sample_1_Index.html",
+		"/Users/dominicgangx/dominicgan.github.io/css/custom.css",
+		"/Users/dominicgangx/dominicgan.github.io/font-awesome/scss/_bordered-pulled.scss",
+		"/Users/dominicgangx/dominicgan.github.io/font-awesome/scss/_rotated-flipped.scss",
+		"/Users/dominicgangx/dominicgan.github.io/font-awesome/less/rotated-flipped.less",
+		"/Users/dominicgangx/dominicgan.github.io/font-awesome/less/bordered-pulled.less",
+		"/Users/dominicgangx/Desktop/ourtimes.torrent",
+		"/Users/dominicgangx/Desktop/fargo.s02e10.720p.hdtv.x264-0sec.nfo",
+		"/Users/dominicgangx/Desktop/Fres.m3u",
+		"/Users/dominicgangx/Desktop/phpinfo.php",
+		"/Users/dominicgangx/Desktop/Balsamiq Mockups v3.2.2 + Key {TechieAce}/Registration Key.txt"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 109.0,
+		"where_history":
+		[
+			"/Users/dominicgangx/domrae.github.io/_posts",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h3>",
+			"h3 class=\"description\"",
+			"for post in site.posts limit:4 ",
+			"opacity",
+			"title",
+			"<div>&nbsp;</div>",
+			"+0800",
+			"categories: jekyll update",
+			"kicklinks",
+			"fu",
+			"\n(",
+			"tsuji",
+			"11 mar",
+			"page-content",
+			"flex",
+			"$black",
+			".css",
+			"not",
+			">\n",
+			"moz",
+			"console.log",
+			"991px",
+			"$spacing-unit",
+			"wrapper",
+			"line",
+			"post.date",
+			"memory",
+			"restart",
+			"frame",
+			"memory",
+			"Camera",
+			"complete",
+			"auto",
+			"opensubtitles",
+			"font",
+			"&",
+			" & "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"p>",
+			"p class=\"description\"",
+			"",
+			"+0900",
+			"categories: japan",
+			"#000",
+			"Camera Body",
+			" &amp; "
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								311,
+								311
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_data/contact-links.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								265,
+								320
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resume.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 446,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								276
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_includes/header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								253,
+								253
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_layouts/post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23,
+								23
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_includes/head.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 936,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								429,
+								429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_data/skills.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "_config.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 886,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								886,
+								886
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "_scss/custom.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2017,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								565,
+								565
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "_posts/2016-04-09-welcome-to-jekyll.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								61,
+								61
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "_posts/2016-04-08-welcome-to-jekyll.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50,
+								50
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "_posts/2016-04-07-welcome-to-jekyll.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40,
+								40
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "_posts/2016-04-10-welcome-to-jekyll.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "css/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "dominicgan.sublime-project",
+	"replace":
+	{
+		"height": 74.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"res",
+				"resume.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"dayone",
+				"_posts/2016-04-03-day-one-japan.markdown"
+			],
+			[
+				"custom",
+				"js/custom.js"
+			],
+			[
+				"post",
+				"_layouts/post.html"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"g",
+				"gulpfile.js"
+			],
+			[
+				"banner",
+				"_scss/partial/_banner.scss"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"",
+				"gulpfile.js"
+			],
+			[
+				"foot",
+				"_includes/footer.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 336.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

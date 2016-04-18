@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Random Project 3"
+title:  "Lorem ipsum dolor sit amet, consectetur adipisicing."
 date:   2016-04-08 22:00:58 +0800
 categories: jekyll update
 ---

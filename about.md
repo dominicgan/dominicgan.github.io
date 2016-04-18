@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: inner_markdown
 title: About
 permalink: /about/
 ---

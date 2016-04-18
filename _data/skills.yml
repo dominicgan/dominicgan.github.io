@@ -8,20 +8,23 @@
 - name: Sass
 - name: Markdown
 - name: Git
-- name: PHP
-- name: Ruby/Rails
+# - name: PHP
+# - name: Ruby/Rails
 - name: Jekyll
-- name: Jquery
+# - name: Jquery
 - name: Bootstrap
 - name: Foundation
-- name: Bourbon
+# - name: Bourbon
 - name: Photoshop
 - name: Illustrator
 - name: Balsamiq
 - name: Justinmind
 - name: Wordpress
-- name: Magento
-- name: Photography
-- name: Mechanical keyboards
-- name: Trackballs
-- name: Football Manager
+- name: More..
+# - name: Magento
+
+
+# - name: Photography
+# - name: Mechanical keyboards
+# - name: Trackballs
+# - name: Football Manager
