@@ -6,9 +6,9 @@
   link: http://www.google.com/
   icon: fa-github
 
-- name: Behance
-  link: http://www.google.com/
-  icon: fa-behance
+# - name: Behance
+#   link: http://www.google.com/
+#   icon: fa-behance
 
 - name: Codepen
   link: http://www.google.com/

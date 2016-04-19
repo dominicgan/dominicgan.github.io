@@ -13,32 +13,47 @@ h1,
 h2 {
   font-family: "Cardo", Georgia, Times, serif; }
 
-nav.site-nav {
-  padding: 0 0.9375rem; }
+nav.site-nav:not(:hover):not(:active):not(:focus) {
+  background: transparent; }
+
+nav.site-nav .menu-icon {
+  height: 36px; }
+
+nav.site-nav .page-link {
+  color: #ebebeb; }
+  @media (640px) {
+    nav.site-nav .page-link {
+      font-size: 0.9375rem; } }
+
+nav.site-nav:hover .page-link, nav.site-nav:active .page-link {
+  color: #2d2d2d; }
   @media (min-width: 640px) {
-    nav.site-nav {
-      padding: 0 1.875rem; } }
-  nav.site-nav .page-link {
-    color: #ebebeb; }
-    @media (640px) {
-      nav.site-nav .page-link {
-        font-size: 0.9375rem; } }
+    nav.site-nav:hover .page-link, nav.site-nav:active .page-link {
+      color: white; } }
 
 .site-header {
-  background: #212121;
-  border-bottom-width: 0; }
-  .site-header * {
-    color: #ebebeb; }
+  background: transparent;
+  border-bottom-width: 0;
+  margin-bottom: -3.5rem;
+  padding: 0 0.9375rem; }
+  @media (min-width: 640px) {
+    .site-header {
+      padding: 0 1.875rem; } }
 
 .fullwidth {
   max-width: 100%; }
 
 .wrapper.fullwidth {
   padding: 0; }
-  .wrapper.fullwidth > section {
+  .wrapper.fullwidth > section:not(.hero) {
+    padding: 4.375rem 0.9375rem; }
+    @media (min-width: 640px) {
+      .wrapper.fullwidth > section:not(.hero) {
+        padding: 6.25rem 1.875rem; } }
+  .wrapper.fullwidth > section.hero {
     padding: 0 0.9375rem; }
     @media (min-width: 640px) {
-      .wrapper.fullwidth > section {
+      .wrapper.fullwidth > section.hero {
         padding: 0 1.875rem; } }
 
 .site-footer .wrapper.fullwidth .row {
@@ -46,10 +61,15 @@ nav.site-nav {
   @media (min-width: 640px) {
     .site-footer .wrapper.fullwidth .row {
       padding: 0 1.875rem; } }
+  .site-footer .wrapper.fullwidth .row .footer-col {
+    padding-left: 0;
+    padding-right: 15px; }
 
-.page-heading {
+.page-heading,
+section header h2 {
   font-size: 2rem;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #3c5d64; }
 
 .row {
   display: block;
@@ -77,26 +97,62 @@ nav.site-nav {
 .page-content {
   padding: 0; }
 
-section:not(.hero) {
-  margin: 6.25rem 0; }
+hr.short,
+span.short {
+  margin: 1.875rem 0;
+  width: 6.25rem;
+  border-width: 3px 0 0 0;
+  border-style: solid; }
+
+hr.red,
+span.red {
+  border-color: #c25a4f; }
 
 .hero {
-  background: #212121; }
+  background-color: #344245;
+  background-image: linear-gradient(135deg, #273234 0%, #344245 100%);
+  padding-top: 0;
+  padding-bottom: 0; }
   .hero * {
     color: #ebebeb; }
+  .hero .hero-wrapper {
+    display: block;
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto; }
   .hero .row {
-    height: 31.25rem;
+    height: 25rem;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start; }
+    @media (min-width: 640px) {
+      .hero .row {
+        height: 28.125rem; } }
+    @media (min-width: 768px) {
+      .hero .row {
+        height: 31.25rem; } }
+    @media (min-width: 1024px) {
+      .hero .row {
+        height: 34.375rem; } }
+    @media (min-width: 1200px) {
+      .hero .row {
+        height: 37.5rem; } }
   .hero .content {
     margin: 3.125rem 0; }
   .hero .title {
-    font-size: 2.75rem;
+    line-height: 1;
     font-weight: 300;
-    margin: 0; }
+    color: #c25a4f;
+    margin: 0;
+    font-size: 3.4375rem; }
   .hero .subtitle {
-    font-size: 1.4375rem; }
+    font-size: 1.375rem;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: darkgray;
+    letter-spacing: 0.3px; }
+    .hero .subtitle a {
+      color: white; }
 
 .about .content {
   float: left;
@@ -136,6 +192,20 @@ section:not(.hero) {
   border: solid 1px black;
   display: block; }
 
+.About {
+  background-color: whitesmoke; }
+
+.recent-work {
+  background: white; }
+
+.portfolio {
+  background-color: whitesmoke; }
+
+a.read-more {
+  color: #2d2d2d; }
+  a.read-more:visited {
+    color: #686868; }
+
 .recent-work ul,
 .portfolio ul {
   max-width: 100%;
@@ -152,8 +222,7 @@ section:not(.hero) {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
-  box-shadow: 0 1px 3px rgba(8, 8, 8, 0.12), 0 1px 2px rgba(8, 8, 8, 0.24); }
+  width: 100%; }
   .recent-work li:last-child,
   .portfolio li:last-child {
     margin-right: 0; }
@@ -199,20 +268,57 @@ section:not(.hero) {
   .recent-work li .post-desc,
   .portfolio li .post-desc {
     padding: 0.625rem 0.9375rem;
-    background: white; }
-    .recent-work li .post-desc h3,
-    .portfolio li .post-desc h3 {
+    padding-left: 0; }
+    .recent-work li .post-desc .post-link,
+    .portfolio li .post-desc .post-link {
       font-family: "Cardo", Georgia, Times, serif;
-      line-height: 1.15; }
-      .recent-work li .post-desc h3 a,
-      .portfolio li .post-desc h3 a {
-        font-size: 1.3125rem; }
+      font-weight: 700;
+      line-height: 1;
+      margin: 0; }
+      .recent-work li .post-desc .post-link a,
+      .portfolio li .post-desc .post-link a {
+        font-size: 1.25rem;
+        color: #4d4d4d; }
+    .recent-work li .post-desc .post-categories,
+    .portfolio li .post-desc .post-categories {
+      display: block;
+      font-size: 0.875rem;
+      color: #828282; }
+      .recent-work li .post-desc .post-categories li,
+      .portfolio li .post-desc .post-categories li {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        margin-right: 0.1875rem;
+        width: auto; }
+        .recent-work li .post-desc .post-categories li:not(:last-child):after,
+        .portfolio li .post-desc .post-categories li:not(:last-child):after {
+          content: ','; }
+
+.contact-me {
+  background-color: whitesmoke; }
+  .contact-me .links-out li:not(:last-child) a:after {
+    content: '/'; }
+  .contact-me .links-out li a {
+    font-family: "Cardo", Georgia, Times, serif;
+    font-size: 1.5rem;
+    color: #4d4d4d;
+    margin: 0.1875rem;
+    padding: 0.625rem 0.625rem;
+    display: block; }
+    .contact-me .links-out li a:first-child {
+      margin-left: 0;
+      padding-left: 0; }
 
 header.page-inner {
-  background: #212121;
-  margin-bottom: 1.875rem; }
+  background-color: #344245;
+  background-image: linear-gradient(135deg, #273234 0%, #344245 100%);
+  padding: 0 0.9375rem; }
   header.page-inner * {
     color: #ebebeb; }
+  @media (min-width: 640px) {
+    header.page-inner {
+      padding: 0 1.875rem; } }
   header.page-inner .row {
     height: 18.75rem;
     display: flex;
@@ -222,48 +328,45 @@ header.page-inner {
       margin: 3.125rem 0; }
     header.page-inner .row .page-heading {
       font-size: 2.75rem;
+      line-height: 1;
       font-weight: 300;
+      color: #c25a4f;
       margin: 0; }
     header.page-inner .row .description {
-      font-size: 1.4375rem; }
+      font-size: 1.375rem;
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 300;
+      color: darkgray;
+      letter-spacing: 0.3px; }
 
-.contact-me .links-out li a {
-  font-size: 1.5rem;
-  margin: 0.1875rem;
-  padding: 0.625rem 0.625rem;
-  display: block; }
-  .contact-me .links-out li a:first-child {
-    margin-left: 0;
-    padding-left: 0; }
-
-.resume .work-experience,
-.resume .education,
-.resume .skills-competency {
-  margin: 1.875rem 0; }
-
-.resume .work-experience,
-.resume .education {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .resume .work-experience:last-child,
-  .resume .education:last-child {
-    margin-right: 0; }
-  @media (min-width: 768px) {
-    .resume .work-experience,
-    .resume .education {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
-      .resume .work-experience:last-child,
-      .resume .education:last-child {
-        margin-right: 0; } }
-
-@media (min-width: 768px) {
+.resume {
+  background-color: whitesmoke; }
+  .resume .work-experience,
+  .resume .education,
+  .resume .skills-competency {
+    margin: 1.875rem 0; }
+  .resume .work-experience,
   .resume .education {
-    margin-right: 0; } }
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .resume .work-experience:last-child,
+    .resume .education:last-child {
+      margin-right: 0; }
+    @media (min-width: 768px) {
+      .resume .work-experience,
+      .resume .education {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%; }
+        .resume .work-experience:last-child,
+        .resume .education:last-child {
+          margin-right: 0; } }
+  @media (min-width: 768px) {
+    .resume .education {
+      margin-right: 0; } }
 
 header.notice {
   background-color: #333399;

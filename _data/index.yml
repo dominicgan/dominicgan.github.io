@@ -7,7 +7,9 @@
 # section.about
 about-title: About Me
 about-description: >
-  I don't know what you're talking about. I am a member of the Imperial Senate on a diplomatic mission to Alderaan-- Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense.
+  <p>I am a web designer and front-end developer currently employed at Balanced Consultancy/Novitee Pte Ltd. I graduated from the National University of Singapore in 2014 with a Bachelor’s Degree (Honours) in Computing, majoring in E-Commerce.</p>
+
+  <p>I am passionate about designing user interfaces, in particular for websites and mobile apps. I aim to design clear and usable interfaces, and I always base my designs upon this principle.</p>
 
 # section.recent-work
 recent-title: Recent Works

@@ -8,13 +8,21 @@ $cardo: "Cardo", Georgia, Times, serif;
 $sourcesans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $black100: tint(black, 3%);
-$black200: tint($black100, 10%);
-$black300: tint($black200, 10%);
+$black200: tint($black100, 15%);
+$black300: tint($black200, 15%);
+$black400: tint($black300, 15%);
 
 $white100: white;
+$white150: shade($white100, 4%);
 $white200: shade($white100, 8%);
 $white300: shade($white200, 8%);
 $white400: shade($white300, 8%);
+
+$khaki100: #344245;
+$khaki200: shade($khaki100, 25%);
+$khaki300: saturate(tint($khaki100, 10%), 15%);
+
+$red100: saturate(tint(#6F5653, 25%), 40%);
 
 $mob-min-width: 640px;
 $tab-min-width: 768px;
@@ -29,12 +37,21 @@ $shadow4: 0 14px 28px rgba($black100,0.25), 0 10px 10px rgba($black100,0.22);
 $shadow5: 0 19px 38px rgba($black100,0.30), 0 15px 12px rgba($black100,0.22);
 
 @mixin hero-colors {
-	background: $black200;
+	background-color: $khaki100;
+	@include background-image(linear-gradient(135deg, $khaki200 0%, $khaki100 100%));
 
 	* {color: $white200};
 }
 
 @mixin sect-padding {
+	padding: rem(70) rem(15);
+
+	@media (min-width: $mob-min-width){
+		padding: rem(100) rem(30);
+	}
+}
+
+@mixin sect-side-padding {
 	padding: 0 rem(15);
 
 	@media (min-width: $mob-min-width){
@@ -44,8 +61,30 @@ $shadow5: 0 19px 38px rgba($black100,0.30), 0 15px 12px rgba($black100,0.22);
 
 @mixin content-bg {
 	padding: rem(10) rem(15);
-	background: $white100;
+	padding-left: 0;
 }
+
+@mixin title-styling {
+	line-height: 1;
+	font-weight: 300;
+	color: $red100;
+	margin: 0;
+}
+
+@mixin subtitle-styling {
+	font-size: rem(22);
+	font-family: $sourcesans;
+	font-weight: 300;
+	color: shade($white400, 15%);
+	letter-spacing: 0.3px;
+}
+
+@mixin inline-block-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+}
+
 
 body {
 	background: $white200;
@@ -58,8 +97,13 @@ h2 {
 
 nav {
 	&.site-nav {
-		@include sect-padding;
-		// padding: 0 rem(30);
+		&:not(:hover):not(:active):not(:focus) {
+			background: transparent;
+		}
+
+		.menu-icon {
+			height: 36px;
+		}
 
 		.page-link {
 			color: $white200;
@@ -68,13 +112,24 @@ nav {
 				font-size: rem(15);
 			}
 		}
+
+		&:hover,
+		&:active {
+			.page-link {
+				color: $black200;
+				@media (min-width: $mob-min-width){
+					color: $white100;
+				}
+			}
+		}
 	}
 }
 
 .site-header {
-	@include hero-colors;
+	background: transparent;
 	border-bottom-width: 0;
-	// border-bottom-color: shade(white, 45%);
+	margin-bottom: rem(-56);
+	@include sect-side-padding;
 }
 
 .fullwidth {
@@ -86,21 +141,33 @@ nav {
 	padding: 0;
 
 	> section {
-		@include sect-padding;
+		&:not(.hero){
+			@include sect-padding;
+		}
+
+		&.hero {
+			@include sect-side-padding;
+		}
 	}
 }
 
 .site-footer {
 	.wrapper.fullwidth .row{
-		@include sect-padding;
+		@include sect-side-padding;
 
+		.footer-col {
+			padding-left: 0;
+			padding-right: 15px;
+		}
+		// @include sect-padding;
 	}
-
 }
 
-.page-heading {
+.page-heading,
+section header h2 {
 	font-size: rem(32);
 	font-weight: 300;
+	color: $khaki300;
 }
 
 .row {
@@ -128,17 +195,46 @@ nav {
 	padding: 0;
 }
 
-section {
-	&:not(.hero){
-		margin: rem(100) 0;
+hr,
+span {
+	&.short {
+		margin: rem(30) 0;
+		width: rem(100);
+		border-width: 3px 0 0 0;
+		border-style: solid;
+	}
+
+	&.red {
+		border-color: $red100;
 	}
 }
 
 .hero {
 	@include hero-colors;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	.hero-wrapper {
+		display: block;
+		position: relative;
+		max-width: rem(1280);
+		margin: 0 auto;
+	}
 
 	.row {
-		height: rem(500);
+		height: rem(400);
+		@media (min-width: $mob-min-width){
+			height: rem(450);
+		}
+		@media (min-width: $tab-min-width){
+			height: rem(500);
+		}
+		@media (min-width: $lap-min-width){
+			height: rem(550);
+		}
+		@media (min-width: $desk-min-width){
+			height: rem(600);
+		}
 		display: flex;
 		align-items: flex-end;
 		justify-content: flex-start;
@@ -149,13 +245,16 @@ section {
 	}
 
 	.title {
-		font-size: rem(44);
-		font-weight: 300;
-		margin: 0;
+		@include title-styling;
+		font-size: rem(55);
 	}
 
 	.subtitle {
-		font-size: rem(23);
+		@include subtitle-styling;
+
+		a {
+			color: $white100;
+		}
 	}
 }
 
@@ -194,6 +293,26 @@ section {
 	}
 }
 
+.About {
+	background-color: $white150;
+}
+
+.recent-work {
+	background: $white100;
+}
+
+.portfolio {
+	background-color: $white150;
+}
+
+a.read-more {
+	color: $black200;
+
+	&:visited {
+		color: $black400;
+	}
+}
+
 .recent-work,
 .portfolio {
 
@@ -201,7 +320,7 @@ section {
 
 	li {
 		@include span-columns(12);
-		box-shadow: $shadow1;
+		// box-shadow: $shadow1;
 
 		@media (min-width: $mob-min-width) and (max-width: $tab-min-width) {
 			@include span-columns(6);
@@ -228,20 +347,80 @@ section {
 		.post-desc {
 			@include content-bg;
 
-			h3 {
+			.post-link {
 				font-family: $cardo;
-				line-height: 1.15;
+				font-weight: 700;
+				line-height: 1;
+				margin: 0;
+
 				a {
-					font-size: rem(21);
+					font-size: rem(20);
+					color: $black300;
 				}
+			}
+
+			.post-categories {
+				display: block;
+				font-size: rem(14);
+				color: #828282;
+
+				li {
+					position: relative;
+					display: inline-block;
+			    	// padding: rem(3) 0;
+			    	margin: 0;
+			    	margin-right: rem(3);
+			    	width: auto;
+
+			    	&:not(:last-child){
+			    		&:after {
+			    			content: ',';
+			    		}
+			    	}
+			    }
 			}
 		}
 	}
 }
 
+.contact-me {
+	background-color: $white150;
+	.links-out {
+		@extend .inline-lists;
+
+		li:not(:last-child){
+			a {
+				&:after {
+					content: '/';
+				}
+			}
+		}
+
+		li a {
+			font-family: $cardo;
+			font-size: rem(24);
+			color: $black300;
+			margin: rem(3);
+			padding: rem(10) rem(10);
+			display: block;
+
+			&:first-child {
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+
+		// li:not(:last-child) a:after{
+		// 	content: '-';
+		// 	padding-left: rem(5);
+		// }
+	}
+}
+
 header.page-inner {
 	@include hero-colors;
-	margin-bottom: rem(30);
+	@include sect-side-padding;
+	// margin-bottom: rem(30);
 
 	.row {
 		height: rem(300);
@@ -255,42 +434,18 @@ header.page-inner {
 
 		.page-heading {
 			font-size: rem(44);
-			font-weight: 300;
-			margin: 0;
+			@include title-styling;
 		}
 
 		.description {
-			font-size: rem(23);
+			@include subtitle-styling;
 		}
-	}
-}
-
-.contact-me {
-	.links-out {
-		@extend .inline-lists;
-
-		li a {
-			font-size: rem(24);
-			margin: rem(3);
-			padding: rem(10) rem(10);
-			// padding-left: 0;
-			display: block;
-
-			&:first-child {
-				margin-left: 0;
-				padding-left: 0;
-			}
-
-		}
-
-		// li:not(:last-child) a:after{
-		// 	content: '-';
-		// 	padding-left: rem(5);
-		// }
 	}
 }
 
 .resume {
+	background-color: $white150;
+
 	.work-experience,
 	.education,
 	.skills-competency {
