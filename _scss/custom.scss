@@ -413,12 +413,12 @@ a.read-more {
 				li {
 					position: relative;
 					display: inline-block;
-			    	padding: rem(2) rem(5);
+			    	padding: rem(3) rem(6);
 			    	margin: 0;
 			    	margin-right: rem(4);
 			    	width: auto;
 			    	border: solid 1px $black500;
-			    	border-radius: 3px;
+			    	// border-radius: 3px;
 
 			    	// &:not(:last-child){
 			    	// 	&:after {
