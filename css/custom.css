@@ -67,6 +67,11 @@ nav.site-nav:hover .page-link, nav.site-nav:active .page-link {
     .site-footer .wrapper.fullwidth .row .footer-col {
       padding-left: 0;
       padding-right: 15px; }
+  .site-footer .footer-col-wrapper {
+    margin-left: 0; }
+    @media (min-width: 1200px) {
+      .site-footer .footer-col-wrapper {
+        margin-left: -1.875rem; } }
 
 .page-heading,
 section header h2 {
@@ -152,7 +157,7 @@ span.header {
     @media (min-width: 1024px) {
       .hero .row {
         height: 34.375rem; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       .hero .row {
         height: 37.5rem; } }
   .hero .content {

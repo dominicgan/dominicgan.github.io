@@ -165,6 +165,20 @@ nav {
 		}
 		// @include sect-padding;
 	}
+
+	.footer-col-wrapper {
+		margin-left: 0;
+
+		// @media (min-width: $mob-min-width){
+		// 	margin-left: rem(-15);
+		// }
+		// @media (min-width: $tab-min-width){
+		// 	margin-left: rem(0);
+		// }
+		@media (min-width: $desk-min-width){
+			margin-left: rem(-30);
+		}
+	}
 }
 
 .page-heading,
@@ -252,7 +266,7 @@ span {
 		@media (min-width: $lap-min-width){
 			height: rem(550);
 		}
-		@media (min-width: $desk-min-width){
+		@media (min-width: $hires-min-width){
 			height: rem(600);
 		}
 		display: flex;

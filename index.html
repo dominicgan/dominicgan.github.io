@@ -45,7 +45,9 @@ layout: default
     <ul class="post-list">
       {% for post in site.posts limit:4 %}
       <li class="{% for category in post.categories %}{{ category }} {% endfor %}">
-        <div class="post-img"><img src="https://unsplash.it/600/400" alt="{{ post.name }}" title="{{ post.name }}"></div>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <img src="https://unsplash.it/600/400" alt="{{ post.name }}" title="{{ post.name }}">
+      </a>
         <div class="post-desc">
           <h3 class="post-link">
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
