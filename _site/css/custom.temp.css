@@ -32,10 +32,11 @@ nav.site-nav:hover .page-link, nav.site-nav:active .page-link {
       color: white; } }
 
 .site-header {
+  padding: 0 0.9375rem;
   background: transparent;
   border-bottom-width: 0;
   margin-bottom: -3.5rem;
-  padding: 0 0.9375rem; }
+  z-index: 10; }
   @media (min-width: 640px) {
     .site-header {
       padding: 0 1.875rem; } }
@@ -56,14 +57,16 @@ nav.site-nav:hover .page-link, nav.site-nav:active .page-link {
       .wrapper.fullwidth > section.hero {
         padding: 0 1.875rem; } }
 
-.site-footer .wrapper.fullwidth .row {
-  padding: 0 0.9375rem; }
-  @media (min-width: 640px) {
-    .site-footer .wrapper.fullwidth .row {
-      padding: 0 1.875rem; } }
-  .site-footer .wrapper.fullwidth .row .footer-col {
-    padding-left: 0;
-    padding-right: 15px; }
+.site-footer {
+  position: relative; }
+  .site-footer .wrapper.fullwidth .row {
+    padding: 0 0.9375rem; }
+    @media (min-width: 640px) {
+      .site-footer .wrapper.fullwidth .row {
+        padding: 0 1.875rem; } }
+    .site-footer .wrapper.fullwidth .row .footer-col {
+      padding-left: 0;
+      padding-right: 15px; }
 
 .page-heading,
 section header h2 {
@@ -86,6 +89,9 @@ section header h2 {
 .clearfix {
   clear: both; }
 
+.text-center {
+  text-align: center; }
+
 .inline-lists, .about .skills, .contact-me .links-out {
   list-style: none;
   margin: 0;
@@ -95,18 +101,30 @@ section header h2 {
     float: left; }
 
 .page-content {
-  padding: 0; }
+  position: relative;
+  padding: 0;
+  z-index: 9; }
 
 hr.short,
 span.short {
   margin: 1.875rem 0;
   width: 6.25rem;
-  border-width: 3px 0 0 0;
+  border-width: 0.1875rem 0 0 0;
   border-style: solid; }
 
 hr.red,
 span.red {
   border-color: #c25a4f; }
+
+hr.center,
+span.center {
+  margin: 0 auto;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem; }
+
+hr.header,
+span.header {
+  margin-top: 0.9375rem; }
 
 .hero {
   background-color: #344245;
@@ -266,6 +284,9 @@ a.read-more {
       .recent-work li:nth-child(4n+4),
       .portfolio li:nth-child(4n+4) {
         margin-right: 0; } }
+  .recent-work li .post-img,
+  .portfolio li .post-img {
+    display: block; }
   .recent-work li .post-desc,
   .portfolio li .post-desc {
     padding: 0.625rem 0.9375rem;
@@ -275,26 +296,32 @@ a.read-more {
       font-family: "Cardo", Georgia, Times, serif;
       font-weight: 700;
       line-height: 1;
-      margin: 0; }
+      margin: 0;
+      padding-left: 0.625rem;
+      border-left: solid 0.1875rem #c25a4f; }
       .recent-work li .post-desc .post-link a,
       .portfolio li .post-desc .post-link a {
         font-size: 1.25rem;
         color: #4d4d4d; }
+    .recent-work li .post-desc .post-meta,
+    .portfolio li .post-desc .post-meta {
+      text-transform: uppercase; }
     .recent-work li .post-desc .post-categories,
     .portfolio li .post-desc .post-categories {
       display: block;
       font-size: 0.875rem;
-      color: #828282; }
+      color: #828282;
+      margin-top: 0.3125rem; }
       .recent-work li .post-desc .post-categories li,
       .portfolio li .post-desc .post-categories li {
         position: relative;
         display: inline-block;
+        padding: 0.125rem 0.3125rem;
         margin: 0;
-        margin-right: 0.1875rem;
-        width: auto; }
-        .recent-work li .post-desc .post-categories li:not(:last-child):after,
-        .portfolio li .post-desc .post-categories li:not(:last-child):after {
-          content: ','; }
+        margin-right: 0.25rem;
+        width: auto;
+        border: solid 1px #828282;
+        border-radius: 3px; }
 
 .contact-me {
   background-color: whitesmoke; }
@@ -321,6 +348,11 @@ header.page-inner {
   @media (min-width: 640px) {
     header.page-inner {
       padding: 0 1.875rem; } }
+  header.page-inner .header-wrapper {
+    display: block;
+    position: relative;
+    max-width: 80rem;
+    margin: 0 auto; }
   header.page-inner .row {
     height: 18.75rem;
     display: flex;
@@ -348,27 +380,74 @@ header.page-inner {
   .resume .skills-competency {
     margin: 1.875rem 0; }
   .resume .work-experience,
-  .resume .education {
+  .resume .education,
+  .resume .pretty-good,
+  .resume .kinda-okay {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
     .resume .work-experience:last-child,
-    .resume .education:last-child {
+    .resume .education:last-child,
+    .resume .pretty-good:last-child,
+    .resume .kinda-okay:last-child {
       margin-right: 0; }
     @media (min-width: 768px) {
       .resume .work-experience,
-      .resume .education {
+      .resume .education,
+      .resume .pretty-good,
+      .resume .kinda-okay {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
         .resume .work-experience:last-child,
-        .resume .education:last-child {
+        .resume .education:last-child,
+        .resume .pretty-good:last-child,
+        .resume .kinda-okay:last-child {
           margin-right: 0; } }
   @media (min-width: 768px) {
-    .resume .education {
+    .resume .education,
+    .resume .kinda-okay {
       margin-right: 0; } }
+  .resume .content {
+    max-width: 31.25rem; }
+  .resume .item {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem; }
+    .resume .item > * {
+      display: block;
+      position: relative; }
+    .resume .item .title {
+      font-family: "Cardo", Georgia, Times, serif;
+      font-size: 1.375rem;
+      font-weight: 600;
+      line-height: 1.15;
+      margin-bottom: 0.625rem; }
+    .resume .item .role,
+    .resume .item .period {
+      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      margin-bottom: 0.3125rem; }
+    .resume .item .role {
+      color: #686868;
+      text-transform: uppercase;
+      font-size: 0.9375rem;
+      letter-spacing: 0.3px; }
+    .resume .item .period {
+      color: #344245;
+      font-size: 0.875rem;
+      margin-bottom: 0.625rem;
+      font-style: italic; }
+    .resume .item .desc {
+      padding-left: 1.25rem; }
+      .resume .item .desc * {
+        line-height: 1.5; }
+      .resume .item .desc li,
+      .resume .item .desc span {
+        margin-bottom: 0.3125rem; }
 
 header.notice {
   background-color: #333399;

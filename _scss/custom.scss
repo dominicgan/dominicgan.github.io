@@ -11,6 +11,7 @@ $black100: tint(black, 3%);
 $black200: tint($black100, 15%);
 $black300: tint($black200, 15%);
 $black400: tint($black300, 15%);
+$black500: #828282;
 
 $white100: white;
 $white150: shade($white100, 4%);
@@ -126,10 +127,11 @@ nav {
 }
 
 .site-header {
+	@include sect-side-padding;
 	background: transparent;
 	border-bottom-width: 0;
 	margin-bottom: rem(-56);
-	@include sect-side-padding;
+	z-index: 10;
 }
 
 .fullwidth {
@@ -152,6 +154,8 @@ nav {
 }
 
 .site-footer {
+	position: relative;
+
 	.wrapper.fullwidth .row{
 		@include sect-side-padding;
 
@@ -180,6 +184,10 @@ section header h2 {
 
 .clearfix { clear: both;}
 
+.text-center {
+	text-align: center;
+}
+
 .inline-lists {
 	list-style: none;
 	margin: 0;
@@ -192,7 +200,9 @@ section header h2 {
 }
 
 .page-content {
+	position: relative;
 	padding: 0;
+	z-index: 9;
 }
 
 hr,
@@ -200,12 +210,22 @@ span {
 	&.short {
 		margin: rem(30) 0;
 		width: rem(100);
-		border-width: 3px 0 0 0;
+		border-width: rem(3) 0 0 0;
 		border-style: solid;
 	}
 
 	&.red {
 		border-color: $red100;
+	}
+
+	&.center {
+		margin: 0 auto;
+		margin-top: rem(30);
+		margin-bottom: rem(30);
+	}
+
+	&.header {
+		margin-top: rem(30/2);
 	}
 }
 
@@ -344,6 +364,10 @@ a.read-more {
 			}
 		}
 
+		.post-img {
+			display: block;
+		}
+
 		.post-desc {
 			@include content-bg;
 
@@ -353,30 +377,40 @@ a.read-more {
 				line-height: 1;
 				margin: 0;
 
+				padding-left: rem(10);
+				border-left: solid rem(3) $red100;
+
 				a {
 					font-size: rem(20);
 					color: $black300;
 				}
 			}
 
+			.post-meta {
+				text-transform: uppercase;
+			}
+
 			.post-categories {
 				display: block;
 				font-size: rem(14);
-				color: #828282;
+				color: $black500;
+				margin-top: rem(5);
 
 				li {
 					position: relative;
 					display: inline-block;
-			    	// padding: rem(3) 0;
+			    	padding: rem(2) rem(5);
 			    	margin: 0;
-			    	margin-right: rem(3);
+			    	margin-right: rem(4);
 			    	width: auto;
+			    	border: solid 1px $black500;
+			    	border-radius: 3px;
 
-			    	&:not(:last-child){
-			    		&:after {
-			    			content: ',';
-			    		}
-			    	}
+			    	// &:not(:last-child){
+			    	// 	&:after {
+			    	// 		content: ',';
+			    	// 	}
+			    	// }
 			    }
 			}
 		}
@@ -422,6 +456,13 @@ header.page-inner {
 	@include sect-side-padding;
 	// margin-bottom: rem(30);
 
+	.header-wrapper {
+		display: block;
+		position: relative;
+		max-width: rem(1280);
+		margin: 0 auto;
+	}
+
 	.row {
 		height: rem(300);
 		display: flex;
@@ -453,7 +494,9 @@ header.page-inner {
 	}
 
 	.work-experience,
-	.education {
+	.education,
+	.pretty-good,
+	.kinda-okay {
 		@include span-columns(12);
 
 		@media (min-width: $tab-min-width){
@@ -461,9 +504,66 @@ header.page-inner {
 		}
 	}
 
-	.education {
+	.education,
+	.kinda-okay {
 		@media (min-width: $tab-min-width){
 			@include omega();
+		}
+	}
+
+	.content {
+		max-width: rem(500);
+	}
+
+	.item {
+		@include inline-block-container;
+		margin-bottom: rem(50);
+
+		> * {
+			display: block;
+			position: relative;
+		}
+
+		.title {
+			font-family: $cardo;
+			font-size: rem(22);
+			font-weight: 600;
+			line-height: 1.15;
+			margin-bottom: rem(10);
+		}
+
+		.role,
+		.period {
+			font-family: $sourcesans;
+			margin: 0;
+			margin-bottom: rem(5);
+		}
+
+		.role {
+			color: $black400;
+			text-transform: uppercase;
+			font-size: rem(15);
+			letter-spacing: 0.3px;
+		}
+
+		.period {
+			color: $khaki100;
+			font-size: rem(14);
+			margin-bottom: rem(10);
+			font-style: italic;
+		}
+
+		.desc {
+			padding-left: rem(20);
+
+			* {
+				line-height: 1.5;
+			}
+
+			li,
+			span {
+				margin-bottom: rem(5);
+			}
 		}
 	}
 }

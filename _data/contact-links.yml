@@ -6,10 +6,6 @@
   link: http://www.google.com/
   icon: fa-github
 
-# - name: Behance
-#   link: http://www.google.com/
-#   icon: fa-behance
-
 - name: Codepen
   link: http://www.google.com/
   icon: fa-codepen
@@ -17,3 +13,7 @@
 - name: Flickr
   link: http://www.google.com/
   icon: fa-flickr
+
+# - name: Behance
+#   link: http://www.google.com/
+#   icon: fa-behance
