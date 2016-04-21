@@ -1,0 +1,14 @@
+- name: UI Design
+  class: ui-design
+
+- name: Mobile App Design
+  class: mobile
+
+- name: Case Study
+  class: case-study
+
+- name: Web Design
+  class: web-design
+
+- name: Front-end Development
+  class: front-end
