@@ -51,27 +51,27 @@ permalink: /resume/
 			<header><h2>Skills &amp; Competencies</h2></header>
 			<hr class="short red header">
 			<div class="pretty-good">
-					<div class="item content">
-						<div class="desc">
+					<div class="item content desc">
+						<!--<div class="desc">-->
 						<p>Fluent and highly competent in these areas:</p>
 							<ul>
 								{% for skill in site.data.skill-good %}
 								<li>{{ skill.name }}</li>
 								{% endfor %}
 							</ul>
-						</div>
+						<!--</div>-->
 					</div>
 			</div>
 			<div class="kinda-okay">
-					<div class="item content">
-						<div class="desc">
+					<div class="item content desc">
+						<!--<div class="desc">-->
 						<p>Working experience in:</p>
 							<ul>
 								{% for skill in site.data.skill-okay %}
 								<li>{{ skill.name }}</li>
 								{% endfor %}
 							</ul>
-						</div>
+						<!--</div>-->
 					</div>
 			</div>
 		</section>
