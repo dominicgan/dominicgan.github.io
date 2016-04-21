@@ -151,11 +151,6 @@ nav {
 			@include sect-side-padding;
 		}
 	}
-
-	article {
-		@include sect-padding;
-		background: $white100;
-	}
 }
 
 .site-footer {

@@ -56,6 +56,12 @@ nav.site-nav:hover .page-link, nav.site-nav:active .page-link {
     @media (min-width: 640px) {
       .wrapper.fullwidth > section.hero {
         padding: 0 1.875rem; } }
+  .wrapper.fullwidth article {
+    padding: 4.375rem 0.9375rem;
+    background: white; }
+    @media (min-width: 640px) {
+      .wrapper.fullwidth article {
+        padding: 6.25rem 1.875rem; } }
 
 .site-footer {
   position: relative; }

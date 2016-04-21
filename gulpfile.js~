@@ -42,7 +42,6 @@ var messages = {
             baseDir: '_site'
         },
         port: 30055,
-	open: false,
         ui: {
             port: 30056,
             weinre: {
