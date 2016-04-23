@@ -1,7 +1,7 @@
 /**
  * Site header
  */
-.site-header {
+ .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -97,7 +97,7 @@
 /**
  * Site footer
  */
-.site-footer {
+ .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
@@ -167,7 +167,7 @@
 /**
  * Page content
  */
-.page-content {
+ .page-content {
     padding: $spacing-unit 0;
 }
 
@@ -199,7 +199,7 @@
 /**
  * Posts
  */
-.post-header {
+ .post-header {
     margin-bottom: $spacing-unit;
 }
 
@@ -213,30 +213,32 @@
     }
 }
 
-.post-content {
+.post-content-wrapper {
     margin-bottom: $spacing-unit;
 
-    h2 {
-        font-size: 32px;
+    .post-content {
+        h2 {
+            font-size: 32px;
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
+            @include media-query($on-laptop) {
+                font-size: 28px;
+            }
         }
-    }
 
-    h3 {
-        font-size: 26px;
+        h3 {
+            font-size: 26px;
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
+            @include media-query($on-laptop) {
+                font-size: 22px;
+            }
         }
-    }
 
-    h4 {
-        font-size: 20px;
+        h4 {
+            font-size: 20px;
 
-        @include media-query($on-laptop) {
-            font-size: 18px;
+            @include media-query($on-laptop) {
+                font-size: 18px;
+            }
         }
     }
 }

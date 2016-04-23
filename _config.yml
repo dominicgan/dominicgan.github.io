@@ -21,3 +21,12 @@ github_username:  dominicgan
 
 # Build settings
 markdown: kramdown
+
+#gems
+# gems:
+  # - jekyll-srcset
+
+#jekyll-srcset settings
+# srcset:
+#   optipng: true
+#   cache: "/tmp/images"

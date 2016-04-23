@@ -1,26 +1,23 @@
 ---
 layout: post
-title:  "Lorem ipsum dolor sit amet."
-date:   2016-04-02 22:00:58 +0800
+title:  "Changenodes"
+date:   2014-01-01 10:00:00 +0800
+<!-- author: Dominic Gan -->
 categories: web-design front-end
 cover-image: https://unsplash.it/600/400/
+attribution: IS4102 E-Business Capstone Project (Coursework)
+
+image1: test.jpg
+image2: jpramen.jpg
+image3:
+image4:
+image5:
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+> ChangeNodes is a web application where social enterprise owners and interested volunteers can get together and interact.
 
-Jekyll also offers powerful support for code snippets:
+This project achieved 2nd place for the best E-Commerce Capstone Project for 13/14 Semester 1.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+![img](/images/{{ page.image1 }}){:srcset="/images/resp-1x/{{ page.image1 }} 480w, /images/resp-2x/{{ page.image1 }} 768w, /images/resp-3x/{{ page.image1 }} 900w, /images/resp-4x/{{ page.image1 }} 1200w"}{:sizes="(max-width: 30em) 480px, (max-width: 64em) 768px, (max-width: 72em) 960px, 100vw"}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+![img](/images/{{ page.image2 }}){:srcset="/images/resp-1x/{{ page.image2 }} 480w, /images/resp-2x/{{ page.image2 }} 768w, /images/resp-3x/{{ page.image2 }} 900w, /images/resp-4x/{{ page.image2 }} 1200w"}{:sizes="(max-width: 30em) 480px, (max-width: 64em) 768px, (max-width: 72em) 960px, 100vw"}

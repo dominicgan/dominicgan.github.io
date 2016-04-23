@@ -684,6 +684,60 @@ header.page-inner {
 	}
 }
 
+article {
+	// @include outer-container();
+
+	header,
+	.post-content-wrapper {
+		@include row();
+	}
+	.post-content {
+		@include span-columns(12);
+		@media (min-width: $tab-min-width){
+			@include span-columns(8);
+		}
+		@media (min-width: $lap-min-width){
+			@include span-columns(9);
+		}
+		// @media (min-width: $desk-min-width){
+		// 	@include span-columns(10);
+		// }
+	}
+
+	.post-meta {
+		@include span-columns(12);
+		@include omega();
+
+		@media (min-width: $tab-min-width){
+			@include span-columns(4);
+		}
+		@media (min-width: $lap-min-width){
+			@include span-columns(3);
+		}
+		// @media (min-width: $desk-min-width){
+		// 	@include span-columns(2);
+		// }
+	}
+
+	blockquote {
+		line-height: 1.2;
+		border-left-color: $red100;
+		margin-left: 0;
+		font-family: $cardo;
+		font-weight: 400;
+		font-style: normal;
+
+		font-size: rem(24);
+		border-left-width: rem(5);
+		@media (min-width: $lap-min-width){
+		font-size: rem(36);
+		border-left-width: rem(10);
+		line-height: 1.15;
+	}
+	}
+
+}
+
 // Remove once done
 header.notice {
 	background-color: $red100;

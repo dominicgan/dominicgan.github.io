@@ -1,3 +1,21 @@
+  function seedFeatherlight(callback){
+    $('img').each(function(){
+      $(this).attr('data-featherlight', $(this).attr('src'));
+    });
+
+    callback();
+  }
+
+  function initFeatherlight(){
+
+
+    var featherScript = '<script type="text/javascript" src="/bower_components/featherlight/release/featherlight.min.js"><\/script>';
+    var featherCss = '<link rel="stylesheet" href="/bower_components/featherlight/release/featherlight.min.css">';
+  
+
+    $('body').prepend(featherCss).append(featherScript);
+  }
+
  function isotopeSeed(){
   var helpers = '<li class="post-sizer-desandro"></li><li class="post-gutter-desandro"></li>';
   $('.portfolio .navigation').removeClass('hidden');
@@ -75,4 +93,9 @@ $(document).ready(function(){
       });
     });
   }
+
+
+    if ($('article').length){
+      seedFeatherlight(initFeatherlight);
+    }
 });
