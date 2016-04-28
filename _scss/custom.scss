@@ -549,13 +549,12 @@ a.read-more {
 	@media (min-width: $lap-min-width){ width: percentage(0.230);}
 	// @media (min-width: $desk-min-width){ width: percentage(0.185);}
 
-	&.featured {
-	@media (min-width: $lap-min-width){ width: percentage(0.230 * 2 + 0.019);}
-	// @media (min-width: $desk-min-width){ width: percentage(0.185 * 2 + 0.014);}
-	}
+	// &.featured {
+	// @media (min-width: $lap-min-width){ width: percentage(0.230 * 2 + 0.019);}
+	// }
 
 	.post-desc {
-		display: none;
+	// display: none;
 	// min-height: rem(140);
 	@media (min-width: $mob-min-width){ min-height: rem(140);}
 	@media (min-width: $tab-min-width){ min-height: rem(170);}

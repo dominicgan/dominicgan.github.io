@@ -448,25 +448,18 @@ a.read-more {
     .post-sizer-desandro,
     .post-item-desandro {
       width: 23%; } }
+  @media (min-width: 640px) {
+    .post-sizer-desandro .post-desc,
+    .post-item-desandro .post-desc {
+      min-height: 8.75rem; } }
+  @media (min-width: 768px) {
+    .post-sizer-desandro .post-desc,
+    .post-item-desandro .post-desc {
+      min-height: 10.625rem; } }
   @media (min-width: 1024px) {
-    .post-sizer-desandro.featured,
-    .post-item-desandro.featured {
-      width: 47.9%; } }
-  .post-sizer-desandro .post-desc,
-  .post-item-desandro .post-desc {
-    display: none; }
-    @media (min-width: 640px) {
-      .post-sizer-desandro .post-desc,
-      .post-item-desandro .post-desc {
-        min-height: 8.75rem; } }
-    @media (min-width: 768px) {
-      .post-sizer-desandro .post-desc,
-      .post-item-desandro .post-desc {
-        min-height: 10.625rem; } }
-    @media (min-width: 1024px) {
-      .post-sizer-desandro .post-desc,
-      .post-item-desandro .post-desc {
-        min-height: 10.375rem; } }
+    .post-sizer-desandro .post-desc,
+    .post-item-desandro .post-desc {
+      min-height: 10.375rem; } }
 
 .post-gutter-desandro {
   width: 0%; }
