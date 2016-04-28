@@ -19,11 +19,16 @@ $white200: shade($white100, 8%);
 $white300: shade($white200, 8%);
 $white400: shade($white300, 8%);
 
-$khaki100: #344245;
+// $khaki100: #344245;
+$khaki100: #002F91;
 $khaki200: shade($khaki100, 25%);
 $khaki300: saturate(tint($khaki100, 10%), 15%);
 
-$red100: saturate(tint(#6F5653, 25%), 40%);
+
+
+// $red100: saturate(tint(#6F5653, 25%), 40%);
+$red100: tint(#002F91, 40%);
+
 
 $mob-min-width: 640px;
 $tab-min-width: 768px;
@@ -68,16 +73,22 @@ $shadow5: 0 19px 38px rgba($black100,0.30), 0 15px 12px rgba($black100,0.22);
 @mixin title-styling {
 	line-height: 1;
 	font-weight: 300;
-	color: $red100;
+	color: tint($red100, 25%);
 	margin: 0;
 }
 
 @mixin subtitle-styling {
-	font-size: rem(22);
+	font-size: rem(18);
 	font-family: $sourcesans;
 	font-weight: 300;
 	color: shade($white400, 15%);
 	letter-spacing: 0.3px;
+	@media (min-width: $mob-min-width){
+		font-size: rem(20);
+	}
+	@media (min-width: $tab-min-width){
+		font-size: rem(22);
+	}
 }
 
 @mixin inline-block-container {
@@ -96,6 +107,14 @@ $shadow5: 0 19px 38px rgba($black100,0.30), 0 15px 12px rgba($black100,0.22);
 
 body {
 	background: $white200;
+	font-size: rem(14);
+
+	@media (min-width: $mob-min-width){
+		font-size: rem(15);
+	}
+	@media (min-width: $tab-min-width){
+		font-size: rem(16);
+	}
 }
 
 h1,
@@ -172,6 +191,10 @@ nav {
 	.wrapper.fullwidth .row{
 		@include sect-side-padding;
 
+		@media (min-width: $desk-min-width){
+			padding: 0;
+		}
+
 		.footer-col {
 			padding-left: 0;
 			padding-right: 15px;
@@ -189,16 +212,25 @@ nav {
 		// 	margin-left: rem(0);
 		// }
 		@media (min-width: $desk-min-width){
-			margin-left: rem(-30);
+			padding-left: rem(30);
+		}
+		@media (min-width: $hires-min-width){
+			padding-left: 0;
 		}
 	}
 }
 
 .page-heading,
 section header h2 {
-	font-size: rem(32);
+	font-size: rem(28);
 	font-weight: 300;
 	color: $khaki300;
+	@media (min-width: $mob-min-width){
+		font-size: rem(30);
+	}
+	@media (min-width: $tab-min-width){
+		font-size: rem(32);
+	}
 }
 
 .row {
@@ -297,7 +329,13 @@ span {
 
 	.title {
 		@include title-styling;
+		font-size: rem(42);
+		@media (min-width: $mob-min-width){
+		font-size: rem(48);
+		}
+		@media (min-width: $tab-min-width){
 		font-size: rem(55);
+		}
 	}
 
 	.subtitle {
@@ -405,12 +443,15 @@ a.read-more {
 		@include content-bg;
 
 		.post-link {
+			// @include transform(translateY(-60px));
+			// background: rgba($white100, 0.7);
+			position: relative;
 			font-family: $cardo;
 			font-weight: 700;
 			line-height: 1;
 			margin: 0;
 
-			padding-left: rem(10);
+			padding: rem(5) rem(10);
 			border-left: solid rem(3) $red100;
 
 			a {
@@ -508,12 +549,13 @@ a.read-more {
 	@media (min-width: $lap-min-width){ width: percentage(0.230);}
 	// @media (min-width: $desk-min-width){ width: percentage(0.185);}
 
-	// &.featured {
-	// @media (min-width: $lap-min-width){ width: percentage(0.230 * 2 + 0.019);}
+	&.featured {
+	@media (min-width: $lap-min-width){ width: percentage(0.230 * 2 + 0.019);}
 	// @media (min-width: $desk-min-width){ width: percentage(0.185 * 2 + 0.014);}
-	// }
+	}
 
 	.post-desc {
+		display: none;
 	// min-height: rem(140);
 	@media (min-width: $mob-min-width){ min-height: rem(140);}
 	@media (min-width: $tab-min-width){ min-height: rem(170);}
@@ -642,10 +684,17 @@ header.page-inner {
 
 		.title {
 			font-family: $cardo;
-			font-size: rem(22);
+			font-size: rem(18);
 			font-weight: 600;
 			line-height: 1.15;
 			margin-bottom: rem(10);
+			font-size: rem(20);
+			@media (min-width: $mob-min-width){
+				font-size: rem(21);
+			}
+			@media (min-width: $tab-min-width){
+				font-size: rem(22);
+			}
 		}
 
 		.role,
@@ -659,7 +708,8 @@ header.page-inner {
 			color: $black400;
 			text-transform: uppercase;
 			font-size: rem(15);
-			letter-spacing: 0.3px;
+			letter-spacing: 0.2px;
+			line-height: 1.35;
 		}
 
 		.period {

@@ -2,7 +2,6 @@
 layout: post
 title:  "Changenodes"
 date:   2014-01-01 10:00:00 +0800
-<!-- author: Dominic Gan -->
 categories: web-design front-end
 cover-image: https://unsplash.it/600/400/
 attribution: IS4102 E-Business Capstone Project (Coursework)
