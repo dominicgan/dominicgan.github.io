@@ -1,0 +1,38 @@
+.about {
+	.content {
+		@include span-columns(12);
+		margin-top: rem(15);
+
+		@media (min-width: $tab-min-width){
+			@include span-columns(8);
+			margin-top: rem(0);
+		}
+
+	.description { max-width: rem(700);}
+
+	}
+
+	.image-wrapper {
+		@media (min-width: $tab-min-width){
+			@include span-columns(4);
+			@include omega();
+			float: right;
+		}
+
+		.avater {
+			display: block;
+		}
+	}
+
+	.skills {
+		@extend .inline-lists;
+
+		li span {
+			@include block-tags;
+		}
+	}
+}
+
+.About {
+	background-color: $white150;
+}

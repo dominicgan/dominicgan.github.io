@@ -1,0 +1,39 @@
+$cardo: "Cardo", Georgia, Times, serif;
+$sourcesans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $sourcesans: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$black100: tint(black, 3%);
+$black200: tint($black100, 15%);
+$black300: tint($black200, 15%);
+$black400: tint($black300, 15%);
+$black500: #828282;
+
+$white100: white;
+$white150: shade($white100, 4%);
+$white200: shade($white100, 8%);
+$white300: shade($white200, 8%);
+$white400: shade($white300, 8%);
+
+// $base-color: #344245;
+// $base-color: #002F91;
+$base-color: $black200;
+$base-color200: shade($base-color, 25%);
+// $base-color300: saturate(tint($base-color, 10%), 15%);
+$base-color300: tint($base-color200, 10%);
+
+// $accent-color: saturate(tint(#6F5653, 25%), 40%);
+// $accent-color: $black400;
+$accent-color: tint(#002F91, 40%);
+// $accent-color: #eca70c;
+
+$mob-min-width: 640px;
+$tab-min-width: 768px;
+$lap-min-width: 1024px;
+$desk-min-width: 1200px;
+$hires-min-width: 1440px;
+
+$shadow1: 0 1px 3px rgba($black100,0.12), 0 1px 2px rgba($black100,0.24);
+$shadow2: 0 10px 20px rgba($black100,0.19), 0 6px 6px rgba($black100,0.23);
+$shadow3: 0 10px 20px rgba($black100,0.19), 0 6px 6px rgba($black100,0.23);
+$shadow4: 0 14px 28px rgba($black100,0.25), 0 10px 10px rgba($black100,0.22);
+$shadow5: 0 19px 38px rgba($black100,0.30), 0 15px 12px rgba($black100,0.22);

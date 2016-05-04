@@ -12,3 +12,12 @@
 
 - name: Front-end Development
   class: front-end
+
+- name: Prototyping
+  class: prototype
+
+- name: Wordpress
+  class: wordpress
+
+- name: Magento
+  class: magento

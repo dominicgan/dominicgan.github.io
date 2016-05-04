@@ -1,0 +1,211 @@
+.recent-work {
+	background: $white100;
+}
+
+.portfolio {
+	background-color: $white150;
+}
+
+.recent-work,
+.portfolio .list {
+
+	ul { @include outer-container(100%);}
+
+	li:not([class$="desandro"]) {
+	// li {
+		@include span-columns(12);
+		// box-shadow: $shadow1;
+
+		@media (min-width: $mob-min-width) and (max-width: $tab-min-width) {
+			@include span-columns(6);
+
+			&:nth-child(2n+2){
+				@include omega();
+			}
+		}
+		@media (min-width: $tab-min-width) and (max-width: $desk-min-width) {
+			@include span-columns(6);
+
+			&:nth-child(2n+2){
+				@include omega();
+			}
+		}
+		@media (min-width: $desk-min-width){
+			@include span-columns(3);
+
+			&:nth-child(4n+4){
+				@include omega();
+			}
+		}
+	}
+
+	.post-img {
+		display: block;
+	}
+
+	.post-desc {
+		@include content-bg;
+
+		.post-link {
+			// @include transform(translateY(-60px));
+			// background: rgba($white100, 0.7);
+			position: relative;
+			font-family: $cardo;
+			font-weight: 700;
+			line-height: 1;
+			margin: 0;
+
+			// padding: rem(5) rem(10);
+			// border-left: solid rem(3) $accent-color;
+			padding: rem(5) rem(10);
+			padding-left: 0;
+
+			a {
+				font-size: rem(20);
+				color: $black300;
+			}
+		}
+
+		.post-meta {
+			text-transform: uppercase;
+		}
+
+		.post-categories {
+			display: block;
+			font-size: rem(14);
+			color: $black500;
+			margin-top: rem(5);
+
+			li {
+				position: relative;
+				display: inline-block;
+				padding: rem(3) rem(6);
+				margin: 0;
+				margin-right: rem(4);
+				margin-bottom: rem(4);
+				width: auto;
+				border: solid 1px tint($black500, 20%);
+			}
+		}
+	}
+}
+
+.portfolio .navigation {
+	nav {
+		@include span-columns(12);
+		margin-bottom: rem(15);
+
+		@media (min-width: $lap-min-width){
+			margin-bottom: rem(30);
+			&.portfolio-filter {@include span-columns(9);}
+			&.portfolio-sort {
+				@include span-columns(3);
+				@include omega();
+			}
+		}
+	}
+	h4 {
+		margin: 0;
+		margin-bottom: rem(5);
+		font-family: $cardo;
+		font-weight: 700;
+	}
+	ul {
+		@extend .inline-lists;
+
+		li {
+			&.checked,
+			&:hover,
+			&:active {
+				cursor: pointer;
+			}
+		}
+
+		li button {
+			@include block-tags;
+			background-color: transparent;
+			font-family: $sourcesans;
+			font-size: rem(14);
+			@include transition(all 0.25s ease-in-out);
+
+			&.checked,
+			&:hover,
+			&:active {
+				border-color: shade($accent-color, 10%);
+				color: shade($accent-color, 10%);
+			}
+		}
+	}
+}
+
+.portfolio .post-list.desandroed  {
+	display: inline-block;
+	width: 100%;
+	// position: relative;
+
+	li {
+		@media (min-width: $mob-min-width){
+			margin-bottom: rem(20);
+		}
+	}
+}
+
+.post-sizer-desandro,
+.portfolio .post-item-desandro {
+	float: left;
+	display: inline-block;
+	position: relative;
+	width: percentage(1);
+	overflow: hidden;
+
+	@media (min-width: $mob-min-width){ width: percentage(0.4745);}
+	@media (min-width: $tab-min-width){ width: percentage(0.3128);}
+	// @media (min-width: $hires-min-width){ width: percentage(0.230);}
+	// @media (min-width: $desk-min-width){ width: percentage(0.185);}
+
+	// &.featured {
+	// @media (min-width: $lap-min-width){ width: percentage(0.230 * 2 + 0.019);}
+	// }
+
+	* {
+		@include transition(0.4s all ease-in-out);
+	}
+
+
+	&:hover,
+	&.no-mouse {
+		img {
+			@include filter(grayscale(10%) brightness(90%));
+		}
+
+		.post-desc {
+			@include transform(translateY(1px));
+		}
+	}
+
+	.post-desc {
+		background-color: rgba($white200, 0.9);
+		// @include background-image(linear-gradient(0deg, rgba($white200, 0.8) 10%, rgba($white200, 0.8) 60%));
+		@include transform(translateY(200px));
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		padding-left: rem(10);
+	// display: none;
+	// min-height: rem(140);
+	// @media (min-width: $mob-min-width){ min-height: rem(140);}
+	// @media (min-width: $tab-min-width){ min-height: rem(170);}
+	// @media (min-width: $lap-min-width){ min-height: rem(166);}
+	// @media (min-width: $desk-min-width){ min-height: rem(170);}
+	// @media (min-width: $hires-min-width){ min-height: rem(160);}
+}
+}
+
+.post-gutter-desandro {
+	width: percentage(0);
+
+	@media (min-width: $mob-min-width){ width: percentage(0.029);}
+	@media (min-width: $tab-min-width){ width: percentage(0.024);}
+	// @media (min-width: $hires-min-width){ width: percentage(0.019);}
+	// @media (min-width: $desk-min-width){ width: percentage(0.014);}
+}

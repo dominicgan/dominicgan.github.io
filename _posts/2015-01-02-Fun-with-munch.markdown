@@ -2,8 +2,9 @@
 layout: post
 title:  "Fun with Munch"
 date:   2015-01-02 10:00:00 +0800
-categories: web-design proj-mgmt
-cover-image: https://unsplash.it/600/400/
+categories: front-end
+cover-image: https://unsplash.it/600/600/
+cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications

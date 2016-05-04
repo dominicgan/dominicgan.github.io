@@ -94,6 +94,11 @@ $(document).ready(function(){
     });
   }
 
+  if (Modernizr.touch) {
+    $('.post-item-desandro').each(function(){
+      $(this).addClass('no-mouse');
+    })
+  }
 
     if ($('article').length){
       seedFeatherlight(initFeatherlight);

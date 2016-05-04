@@ -1,0 +1,93 @@
+
+.resume {
+	background-color: $white100;
+
+	.work-experience,
+	.education,
+	.skills-competency {
+		margin: rem(30) 0;
+	}
+
+	.work-experience,
+	.education,
+	.pretty-good,
+	.kinda-okay {
+		@include span-columns(12);
+
+		@media (min-width: $tab-min-width){
+			@include span-columns(6);
+		}
+	}
+
+	.education,
+	.kinda-okay {
+		@media (min-width: $tab-min-width){
+			@include omega();
+		}
+	}
+
+	.content {
+		max-width: rem(500);
+	}
+
+	.item {
+		@include inline-block-container;
+		margin-bottom: rem(50);
+
+		> * {
+			display: block;
+			position: relative;
+		}
+
+		.title {
+			font-family: $cardo;
+			font-size: rem(18);
+			font-weight: 600;
+			// font-weight: 500;
+			line-height: 1.15;
+			margin-bottom: rem(10);
+			font-size: rem(20);
+			@media (min-width: $mob-min-width){
+				font-size: rem(21);
+			}
+			@media (min-width: $tab-min-width){
+				font-size: rem(22);
+			}
+		}
+
+		.role,
+		.period {
+			font-family: $sourcesans;
+			margin: 0;
+			margin-bottom: rem(5);
+		}
+
+		.role {
+			color: $black400;
+			text-transform: uppercase;
+			font-size: rem(15);
+			letter-spacing: 0.2px;
+			line-height: 1.35;
+		}
+
+		.period {
+			color: $base-color;
+			font-size: rem(14);
+			margin-bottom: rem(10);
+			font-style: italic;
+		}
+
+		.desc {
+			padding-left: rem(20);
+
+			* {
+				line-height: 1.5;
+			}
+
+			li,
+			span {
+				margin-bottom: rem(5);
+			}
+		}
+	}
+}

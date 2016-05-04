@@ -1,0 +1,56 @@
+.hero {
+	@include hero-colors;
+	padding-top: 0;
+	padding-bottom: 0;
+
+	.hero-wrapper {
+		display: block;
+		position: relative;
+		max-width: rem(1280);
+		margin: 0 auto;
+	}
+
+	.row {
+		height: rem(300);
+		@media (min-width: $mob-min-width){
+			height: rem(350);
+		}
+		@media (min-width: $tab-min-width){
+			height: rem(400);
+		}
+		@media (min-width: $lap-min-width){
+			height: rem(450);
+		}
+		@media (min-width: $hires-min-width){
+			height: rem(500);
+		}
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+
+	.content {
+		margin: rem(50) 0;
+	}
+
+	.title {
+		@include title-styling;
+		font-size: rem(42);
+		@media (min-width: $mob-min-width){
+		font-size: rem(48);
+		}
+		@media (min-width: $tab-min-width){
+		font-size: rem(55);
+		}
+	}
+
+	.subtitle {
+		@include subtitle-styling;
+
+		a {
+			color: $white100;
+			color: $black300;
+			font-weight: 400;
+		}
+	}
+}

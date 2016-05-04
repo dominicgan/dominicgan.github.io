@@ -1,0 +1,277 @@
+body {
+	background: $white150;
+	font-size: rem(14);
+	// font-weight: 300;
+
+	@media (min-width: $mob-min-width){
+		font-size: rem(15);
+	}
+	@media (min-width: $tab-min-width){
+		font-size: rem(16);
+	}
+}
+
+@include selection {
+	background-color: tint($black200, 15%);
+	color: $white100;
+}
+
+a {
+	@include selection {
+		background-color: shade($accent-color, 5%);
+		color: $white100;
+	}
+	color: shade($accent-color, 10%);
+
+	&:hover,
+	&:active {
+		color: shade($accent-color, 15%);
+	}
+
+	&:visited {
+	color: shade($accent-color, 10%);
+		// color: shade($accent-color, 45%);
+	}
+}
+
+p,
+li,
+span {
+	color: $black400;
+	line-height: 1.8;
+}
+
+h1,
+h2 {
+	font-family: $cardo;
+}
+
+nav {
+	&.site-nav {
+		&:not(:hover):not(:active):not(:focus) {
+			background: transparent;
+		}
+
+		.menu-icon {
+			height: 36px;
+		}
+
+		.page-link {
+			// color: $white200;
+			color: $black200;
+			// font-weight: 300;
+
+			@media ($mob-min-width){
+				font-size: rem(15);
+			}
+
+		&:hover,
+		&:active {
+			// color: $black200;
+			color: $black300;
+			@media (min-width: $mob-min-width){
+				color: $white100;
+				color: $black300;
+			}
+		}
+		}
+
+	}
+}
+
+.site-header {
+	@include sect-side-padding;
+	background: transparent;
+	border-bottom-width: 0;
+	margin-bottom: rem(-56);
+	z-index: 10;
+	// border-top-color: shade($accent-color, 30%);
+	border-top-width: 0;
+}
+
+.fullwidth {
+	max-width: 100%;
+	// padding: 0;
+}
+
+.wrapper.fullwidth {
+	padding: 0;
+
+	> section {
+		&:not(.hero){
+			@include sect-padding;
+			@include clip-path-both;
+		}
+
+		&.hero {
+			@include sect-side-padding;
+			@include clip-path-down;
+			padding-bottom: rem(30); // clip-path version
+
+			@media (min-width: $mob-min-width){
+				padding-bottom: rem(50); // clip-path version
+			}
+		}
+	}
+
+	article {
+		@include sect-padding;
+		background: $white100;
+	}
+}
+
+.site-footer {
+	@include clip-path-up;
+	position: relative;
+	background: $white200;
+
+	.wrapper.fullwidth .row{
+		@include sect-side-padding;
+		padding-top: rem(80); // clip-path version
+
+		@media (min-width: $mob-min-width){
+			padding-top: rem(100); // clip-path version
+		}
+
+		@media (min-width: $desk-min-width){
+			padding: 0;
+			padding-top: rem(100); // clip-path version
+		}
+
+		.footer-col {
+			padding-left: 0;
+			padding-right: 15px;
+		}
+		// @include sect-padding;
+	}
+
+	.footer-col-wrapper {
+		margin-left: 0;
+
+		// @media (min-width: $mob-min-width){
+		// 	margin-left: rem(-15);
+		// }
+		// @media (min-width: $tab-min-width){
+		// 	margin-left: rem(0);
+		// }
+		@media (min-width: $desk-min-width){
+			padding-left: rem(30);
+		}
+		@media (min-width: $hires-min-width){
+			padding-left: 0;
+		}
+	}
+}
+
+.page-heading,
+section header h2 {
+	font-size: rem(26);
+	font-weight: 300;
+	color: $base-color300;
+	@media (min-width: $mob-min-width){
+		font-size: rem(28);
+	}
+	@media (min-width: $tab-min-width){
+		font-size: rem(30);
+	}
+}
+
+.row {
+	@include row();
+	max-width: rem(1280);
+	margin: 0 auto;
+}
+
+.right { float: right;}
+
+.clearfix { clear: both;}
+
+.text-center {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.inline-lists {
+	@include inline-lists;
+}
+
+.page-content {
+	position: relative;
+	padding: 0;
+	z-index: 9;
+}
+
+hr,
+span {
+	&.short {
+		margin: rem(30) 0;
+		width: rem(100);
+		border-width: rem(3) 0 0 0;
+		border-style: solid;
+	}
+
+	&.red {
+		border-color: $accent-color;
+	}
+
+	&.center {
+		margin: 0 auto;
+		margin-top: rem(30);
+		margin-bottom: rem(30);
+	}
+
+	&.header {
+		margin-top: rem(30/2);
+	}
+}
+
+a.read-more {
+	color: $black200;
+
+	&:visited {
+		color: $black400;
+	}
+}
+
+
+header.page-inner {
+	@include hero-colors;
+	@include sect-side-padding;
+	@include clip-path-down;
+	padding-bottom: rem(30);
+
+	@media (min-width: $mob-min-width){
+		padding-bottom: rem(50); // clip-path version
+	}
+	// margin-bottom: rem(30);
+
+	.header-wrapper {
+		display: block;
+		position: relative;
+		max-width: rem(1280);
+		margin: 0 auto;
+	}
+
+	.row {
+		height: rem(300);
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+
+		.content {
+			margin: rem(50) 0;
+		}
+
+		.page-heading {
+			font-size: rem(44);
+			@include title-styling;
+		}
+
+		.description {
+			@include subtitle-styling;
+		}
+	}
+}

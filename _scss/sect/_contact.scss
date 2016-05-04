@@ -1,0 +1,34 @@
+.contact-me {
+	background-color: $white150;
+	.links-out {
+		@include inline-lists;
+
+		li:not(:last-child){
+			a {
+				&:after {
+					// content: '/';
+				}
+			}
+		}
+
+		li a {
+			font-family: $cardo;
+			font-size: rem(24);
+			color: $black300;
+			margin: rem(5);
+			padding: 0 rem(10);
+			display: block;
+			line-height: 1;
+
+			&:first-child {
+				margin-left: 0;
+				padding-left: 0;
+			}
+		}
+
+		// li:not(:last-child) a:after{
+		// 	content: '-';
+		// 	padding-left: rem(5);
+		// }
+	}
+}

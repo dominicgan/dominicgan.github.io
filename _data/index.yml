@@ -6,16 +6,16 @@
 
 # section.about
 about-title: About Me
-about-subtitle: who dat
+about-subtitle: 
 about-description: >
   <p>I am a web designer and front-end developer currently employed at Balanced Consultancy/Novitee Pte Ltd. I graduated from the National University of Singapore in 2014 with a Bachelor’s Degree (Honours) in Computing, majoring in E-Commerce.</p>
 
   <p>I am passionate about designing user interfaces, in particular for websites and mobile apps. I aim to design clear and usable interfaces, and I base my designs upon this principle.</p>
 
 # section.recent-work
-recent-title: Recent Works
+recent-title: Recent Work
 recent-description: >
-  Here's some stuff I've worked on recently
+  Here's some stuff I've worked on recently:
 
 # section.contact-me
 contact-title: Get in Touch

@@ -2,8 +2,9 @@
 layout: post
 title:  "Swimfast/The Swim Lab"
 date:   2015-04-01 10:00:00 +0800
-categories: web-design proj-mgmt
+categories: web-design proj-mgmt case-study wordpress
 cover-image: https://unsplash.it/600/400/
+cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications

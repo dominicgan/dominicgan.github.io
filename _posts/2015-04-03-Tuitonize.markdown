@@ -2,8 +2,9 @@
 layout: post
 title:  "Tuitionize"
 date:   2015-04-03 10:00:00 +0800
-categories: web-design proj-mgmt featured
-cover-image: https://unsplash.it/600/400/
+categories: ui-design mobile prototype 
+cover-image: https://unsplash.it/600/900/
+cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications

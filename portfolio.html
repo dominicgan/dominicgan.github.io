@@ -1,7 +1,7 @@
 ---
 layout: inner
 title: Portfolio
-subtitle: Heres some stuff I've worked on recently
+<!-- subtitle: Heres some stuff I've worked on recently -->
 permalink: /portfolio/
 ---
 
@@ -36,7 +36,7 @@ permalink: /portfolio/
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h3>
           <span class="post-meta date"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %Y" }}</time></span>
-          <ul class="post-categories">{% for category in post.categories %}<li>{{ category }}</li>{% endfor %}</ul>
+          <!-- <ul class="post-categories">{% for category in post.categories %}<li>{{ category }}</li>{% endfor %}</ul> -->
         </div>
       </li>
       {% endfor %}

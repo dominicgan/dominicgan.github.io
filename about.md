@@ -1,7 +1,7 @@
 ---
 layout: inner_markdown
 title: About
-subtitle: whodat
+subtitle: 
 permalink: /about/
 
 header: Something Random!

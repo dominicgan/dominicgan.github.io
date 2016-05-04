@@ -2,8 +2,9 @@
 layout: post
 title:  "Web Interface Design"
 date:   2013-06-01 10:00:00 +0800
-categories: web-design
+categories: ui-design 
 cover-image: https://unsplash.it/600/400/
+cover-image-index: https://unsplash.it/600/400/
 attribution: CIU190 Interaction Design of Social Media
 
 image1: test.jpg
