@@ -5,21 +5,14 @@ subtitle:
 permalink: /resume/
 ---
 
-<section class="pdf">
-	<div class="row text-center">
-		<header><h2>PDF Download</h2></header>
-		<p class="description">Check out my <a href="">linkedIn profile</a> for more, or <br>Get a PDF copy of my resume <a href="">here</a></p>
-		<hr class="short red center">
-	</div>
-</section>
 <section class="resume">
 	<div class="row">
 		<div class="work-experience">
-			<header><h2>Work &amp; Experience</h2></header>
-			<hr class="short red header">
+			<header class="wow fadeInDown"><h2>Work &amp; Experience</h2></header>
+			<hr class="short red header wow fadeIn">
 			<div class="content">
 				{% for work in site.data.works %}
-				<div class="item">
+				<div class="item wow fadeInUp" data-wow-delay="{{ forloop.index | times: 0.2 }}s">
 					<h3 class="title">{{ work.company }}</h3>
 					<h4 class="role">{{ work.role }}</h4>
 					<span class="period">{{ work.period }}</span>
@@ -31,11 +24,11 @@ permalink: /resume/
 			</div>
 		</div>
 		<div class="education">
-			<header><h2>Education</h2></header>
-			<hr class="short red header">
+			<header class="wow fadeInDown"><h2>Education</h2></header>
+			<hr class="short red header wow fadeIn">
 			<div class="content">
 				{% for education in site.data.educations %}
-				<div class="item">
+				<div class="item wow fadeInUp" data-wow-delay="{{ forloop.index | times: 0.05 }}s">
 					<h3 class="title">{{ education.school }}</h3>
 					<h4 class="role">{{ education.course }}</h4>
 					<span class="period">{{ education.period }}</span>
@@ -49,42 +42,37 @@ permalink: /resume/
 	</div>
 	<div class="row">
 		<div class="skills-competency">
-			<header><h2>Skills &amp; Competencies</h2></header>
-			<hr class="short red header">
-			<div class="pretty-good">
-					<div class="item content desc">
-						<!--<div class="desc">-->
-						<p>Fluent and highly competent in these areas:</p>
-							<ul>
-								{% for skill in site.data.skill-good %}
-								<li>{{ skill.name }}</li>
-								{% endfor %}
-							</ul>
-						<!--</div>-->
-					</div>
+			<header class="wow fadeInDown"><h2>Skills &amp; Competencies</h2></header>
+			<hr class="short red header wow fadeIn">
+			<div class="pretty-good wow fadeInUp" data-wow-delay="0.2s">
+				<div class="item content desc">
+					<!--<div class="desc">-->
+					<p>Fluent and highly competent in these areas:</p>
+					<ul>
+						{% for skill in site.data.skill-good %}
+						<li>{{ skill.name }}</li>
+						{% endfor %}
+					</ul>
+					<!--</div>-->
+				</div>
 			</div>
-			<div class="kinda-okay">
-					<div class="item content desc">
-						<!--<div class="desc">-->
-						<p>Working experience in:</p>
-							<ul>
-								{% for skill in site.data.skill-okay %}
-								<li>{{ skill.name }}</li>
-								{% endfor %}
-							</ul>
-						<!--</div>-->
-					</div>
+			<div class="kinda-okay wow fadeInUp" data-wow-delay="0.2s">
+				<div class="item content desc">
+					<!--<div class="desc">-->
+					<p>Working experience in:</p>
+					<ul>
+						{% for skill in site.data.skill-okay %}
+						<li>{{ skill.name }}</li>
+						{% endfor %}
+					</ul>
+					<!--</div>-->
+				</div>
 			</div>
 		</section>
-
-<!-- <section class="experience">
-<div class="row">
-  <h1 class="sub-heading">Experience</h1>
-</div>
-</section>
-
-<section class="education">
-<div class="row">
-  <h1 class="sub-heading">Education</h1>
-</div>
-</section> -->
+		<section class="pdf">
+			<div class="row text-center">
+			<header class="wow fadeInDown"><h2>Need a PDF?</h2></header>
+				<p class="description wow fadeInUp">Grab a PDF copy of my resume <a href="">here</a>,<br> or check out my <a href="#">linkedIn profile</a><br>for more!</p>
+				<hr class="short red center wow fadeIn">
+			</div>
+		</section>

@@ -47,11 +47,14 @@
 		@include content-bg;
 
 		.post-link {
+			@include transform(scaleY(1.1));
 			// @include transform(translateY(-60px));
 			// background: rgba($white100, 0.7);
 			position: relative;
-			font-family: $cardo;
-			font-weight: 700;
+			font-family: $header-family;
+			font-weight: 400;
+			font-style: italic;
+			text-transform: uppercase;
 			line-height: 1;
 			margin: 0;
 
@@ -61,12 +64,13 @@
 			padding-left: 0;
 
 			a {
-				font-size: rem(20);
+				font-size: rem(18);
 				color: $black300;
 			}
 		}
 
 		.post-meta {
+			font-family: $suppl-family;
 			text-transform: uppercase;
 		}
 
@@ -107,30 +111,25 @@
 	h4 {
 		margin: 0;
 		margin-bottom: rem(5);
-		font-family: $cardo;
-		font-weight: 700;
+		font-family: $suppl-family;
+		font-weight: 400;
+		font-style: italic;
+		// text-transform: uppercase;
 	}
 	ul {
 		@extend .inline-lists;
 
-		li {
-			&.checked,
-			&:hover,
-			&:active {
-				cursor: pointer;
-			}
-		}
-
 		li button {
 			@include block-tags;
 			background-color: transparent;
-			font-family: $sourcesans;
+			font-family: $suppl-family;
 			font-size: rem(14);
 			@include transition(all 0.25s ease-in-out);
 
 			&.checked,
 			&:hover,
 			&:active {
+				cursor: pointer;
 				border-color: shade($accent-color, 10%);
 				color: shade($accent-color, 10%);
 			}
@@ -163,9 +162,9 @@
 	// @media (min-width: $hires-min-width){ width: percentage(0.230);}
 	// @media (min-width: $desk-min-width){ width: percentage(0.185);}
 
-	// &.featured {
-	// @media (min-width: $lap-min-width){ width: percentage(0.230 * 2 + 0.019);}
-	// }
+	&.featured {
+		@media (min-width: $lap-min-width){ width: percentage(0.230 * 2 + 0.019);}
+	}
 
 	* {
 		@include transition(0.4s all ease-in-out);

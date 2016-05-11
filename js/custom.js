@@ -41,7 +41,6 @@ $(document).ready(function(){
       filter: '.ui-design, .mobile, .case-study, .web-design, .front-end',
       getSortData: {
         name: '.name',
-        // date: '.date',
         date: function( itemElem ) {
           var date = $( itemElem ).find('time').attr('datetime');
           return date;
@@ -55,11 +54,12 @@ $(document).ready(function(){
         percentPosition: true,
         columnWidth: '.post-sizer-desandro',
         gutter: '.post-gutter-desandro'
-      }
+      },
+      stagger: 400,
+      transitionDuration: '0.6s'
     });
 
-    $grid.imagesLoaded( function(){
-      console.log('images done!');
+    $grid.imagesLoaded().progress( function(){
       $grid.isotope('layout');
     });
 

@@ -11,6 +11,7 @@
 # - name: PHP
 # - name: Ruby/Rails
 - name: Jekyll
+- name: Liquid
 # - name: Jquery
 - name: Bootstrap
 - name: Foundation

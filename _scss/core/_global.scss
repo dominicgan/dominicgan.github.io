@@ -6,6 +6,7 @@ body {
 	@media (min-width: $mob-min-width){
 		font-size: rem(15);
 	}
+
 	@media (min-width: $tab-min-width){
 		font-size: rem(16);
 	}
@@ -17,11 +18,12 @@ body {
 }
 
 a {
+	color: shade($accent-color, 10%);
+
 	@include selection {
 		background-color: shade($accent-color, 5%);
 		color: $white100;
 	}
-	color: shade($accent-color, 10%);
 
 	&:hover,
 	&:active {
@@ -29,7 +31,7 @@ a {
 	}
 
 	&:visited {
-	color: shade($accent-color, 10%);
+		color: shade($accent-color, 10%);
 		// color: shade($accent-color, 45%);
 	}
 }
@@ -37,13 +39,14 @@ a {
 p,
 li,
 span {
-	color: $black400;
+	font-family: $body-family;
 	line-height: 1.8;
+	color: $black400;
 }
 
 h1,
 h2 {
-	font-family: $cardo;
+	font-family: $header-family;
 }
 
 nav {
@@ -58,6 +61,9 @@ nav {
 
 		.page-link {
 			// color: $white200;
+			font-family: $suppl-family;
+			// text-transform: uppercase;
+			font-weight: 400;
 			color: $black200;
 			// font-weight: 300;
 
@@ -65,18 +71,17 @@ nav {
 				font-size: rem(15);
 			}
 
-		&:hover,
-		&:active {
-			// color: $black200;
-			color: $black300;
-			@media (min-width: $mob-min-width){
-				color: $white100;
+			&:hover,
+			&:active {
 				color: $black300;
+				@media (min-width: $mob-min-width){
+					color: $white100;
+					color: $black300;
+				}
 			}
-		}
-		}
-
 	}
+
+}
 }
 
 .site-header {
@@ -116,6 +121,7 @@ nav {
 
 	article {
 		@include sect-padding;
+		@include clip-path-both;
 		background: $white100;
 	}
 }
@@ -124,6 +130,11 @@ nav {
 	@include clip-path-up;
 	position: relative;
 	background: $white200;
+
+	* {
+		font-family: $suppl-family;
+		letter-spacing: 0.3px;
+	}
 
 	.wrapper.fullwidth .row{
 		@include sect-side-padding;
@@ -165,12 +176,18 @@ nav {
 
 .page-heading,
 section header h2 {
+	@include transform(scaleY(1.1));
+	font-family: $header-family;
 	font-size: rem(26);
-	font-weight: 300;
+	font-style: italic;
+	text-transform: uppercase;
+	font-weight: 700;
 	color: $base-color300;
+
 	@media (min-width: $mob-min-width){
 		font-size: rem(28);
 	}
+
 	@media (min-width: $tab-min-width){
 		font-size: rem(30);
 	}
@@ -178,7 +195,7 @@ section header h2 {
 
 .row {
 	@include row();
-	max-width: rem(1280);
+	max-width: $content-width;
 	margin: 0 auto;
 }
 
@@ -251,7 +268,7 @@ header.page-inner {
 	.header-wrapper {
 		display: block;
 		position: relative;
-		max-width: rem(1280);
+		max-width: $content-width;
 		margin: 0 auto;
 	}
 

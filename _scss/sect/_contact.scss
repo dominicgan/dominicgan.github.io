@@ -12,9 +12,6 @@
 		}
 
 		li a {
-			font-family: $cardo;
-			font-size: rem(24);
-			color: $black300;
 			margin: rem(5);
 			padding: 0 rem(10);
 			display: block;
@@ -23,6 +20,15 @@
 			&:first-child {
 				margin-left: 0;
 				padding-left: 0;
+			}
+
+			span {
+				font-family: $suppl-family;
+				font-size: rem(24);
+				font-style: italic;
+				color: $black300;
+				font-weight: 300;
+				// text-transform: uppercase;
 			}
 		}
 

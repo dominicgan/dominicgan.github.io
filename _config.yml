@@ -15,8 +15,10 @@ description: > # this means to ignore newlines until "baseurl:"
   Hey, I'm Dominic, and I am a web designer and front-end developer based in Singapore. I make web things!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dominicgan.github.io" # the base hostname & protocol for your site
-build-info: Site built with Jekyll, Gulp, Sass.
-twitter_username: jekyllrb
+build-info: This site was built using Jekyll, Gulp, Sass, and a whole bunch of mechanical keyboards and trackballs.
+copyright: >
+  &copy; 2016 Dominic Gan. All Rights Reserved.
+# twitter_username: jekyllrb
 github_username:  dominicgan
 
 # Build settings

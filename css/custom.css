@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cardo:400,400italic,700);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700italic,700,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400italic,300italic,700,400,300);
 html {
   box-sizing: border-box; }
 
@@ -40,12 +41,13 @@ a {
 p,
 li,
 span {
-  color: #686868;
-  line-height: 1.8; }
+  font-family: "Cardo", Georgia, Times, serif;
+  line-height: 1.8;
+  color: #686868; }
 
 h1,
 h2 {
-  font-family: "Cardo", Georgia, Times, serif; }
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif; }
 
 nav.site-nav:not(:hover):not(:active):not(:focus) {
   background: transparent; }
@@ -54,6 +56,8 @@ nav.site-nav .menu-icon {
   height: 36px; }
 
 nav.site-nav .page-link {
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
   color: #2d2d2d; }
   @media (640px) {
     nav.site-nav .page-link {
@@ -84,32 +88,32 @@ nav.site-nav .page-link {
   .wrapper.fullwidth > section:not(.hero) {
     padding: 4.375rem 0.9375rem;
     padding: 7.5rem 0.9375rem;
-    -webkit-clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0% 100%);
-    clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0% 100%);
     margin-top: -20px;
-    margin-bottom: -20px; }
+    margin-bottom: -20px;
+    -webkit-clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0% 100%);
+    clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0% 100%); }
     @media (min-width: 640px) {
       .wrapper.fullwidth > section:not(.hero) {
         padding: 6.25rem 1.875rem;
         padding: 9.375rem 1.875rem; } }
     @media (min-width: 768px) {
       .wrapper.fullwidth > section:not(.hero) {
-        -webkit-clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0% 100%);
-        clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0% 100%);
         margin-top: -30px;
-        margin-bottom: -30px; } }
+        margin-bottom: -30px;
+        -webkit-clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0% 100%);
+        clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0% 100%); } }
     @media (min-width: 1200px) {
       .wrapper.fullwidth > section:not(.hero) {
-        -webkit-clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0% 100%);
-        clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0% 100%);
         margin-top: -40px;
-        margin-bottom: -40px; } }
+        margin-bottom: -40px;
+        -webkit-clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0% 100%);
+        clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0% 100%); } }
     @media (min-width: 1440px) {
       .wrapper.fullwidth > section:not(.hero) {
-        -webkit-clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0% 100%);
-        clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0% 100%);
         margin-top: -60px;
-        margin-bottom: -60px; } }
+        margin-bottom: -60px;
+        -webkit-clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0% 100%);
+        clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0% 100%); } }
   .wrapper.fullwidth > section.hero {
     padding: 0 0.9375rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0% 100%);
@@ -140,11 +144,33 @@ nav.site-nav .page-link {
   .wrapper.fullwidth article {
     padding: 4.375rem 0.9375rem;
     padding: 7.5rem 0.9375rem;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    -webkit-clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0% 100%);
+    clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0% 100%);
     background: white; }
     @media (min-width: 640px) {
       .wrapper.fullwidth article {
         padding: 6.25rem 1.875rem;
         padding: 9.375rem 1.875rem; } }
+    @media (min-width: 768px) {
+      .wrapper.fullwidth article {
+        margin-top: -30px;
+        margin-bottom: -30px;
+        -webkit-clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0% 100%);
+        clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0% 100%); } }
+    @media (min-width: 1200px) {
+      .wrapper.fullwidth article {
+        margin-top: -40px;
+        margin-bottom: -40px;
+        -webkit-clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0% 100%);
+        clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0% 100%); } }
+    @media (min-width: 1440px) {
+      .wrapper.fullwidth article {
+        margin-top: -60px;
+        margin-bottom: -60px;
+        -webkit-clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0% 100%);
+        clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0% 100%); } }
 
 .site-footer {
   -webkit-clip-path: polygon(0 20px, 100% 0, 100% 100%, 0% 100%);
@@ -165,6 +191,9 @@ nav.site-nav .page-link {
     .site-footer {
       -webkit-clip-path: polygon(0 60px, 100% 0, 100% 100%, 0% 100%);
       clip-path: polygon(0 60px, 100% 0, 100% 100%, 0% 100%); } }
+  .site-footer * {
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 0.3px; }
   .site-footer .wrapper.fullwidth .row {
     padding: 0 0.9375rem;
     padding-top: 5rem; }
@@ -192,8 +221,13 @@ nav.site-nav .page-link {
 
 .page-heading,
 section header h2 {
+  -webkit-transform: scaleY(1.1);
+  transform: scaleY(1.1);
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.625rem;
-  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #383838; }
   @media (min-width: 640px) {
     .page-heading,
@@ -206,7 +240,7 @@ section header h2 {
 
 .row {
   display: block;
-  max-width: 80rem;
+  max-width: 60rem;
   margin: 0 auto; }
   .row::after {
     clear: both;
@@ -299,7 +333,7 @@ header.page-inner {
   header.page-inner .header-wrapper {
     display: block;
     position: relative;
-    max-width: 80rem;
+    max-width: 60rem;
     margin: 0 auto; }
   header.page-inner .row {
     height: 18.75rem;
@@ -316,13 +350,18 @@ header.page-inner {
       margin: 3.125rem 0; }
     header.page-inner .row .page-heading {
       font-size: 2.75rem;
+      -webkit-transform: scaleY(1.1);
+      transform: scaleY(1.1);
+      font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
       line-height: 1;
-      font-weight: 300;
+      font-weight: 700;
+      font-style: italic;
+      text-transform: uppercase;
       color: #4d4d4d;
       margin: 0; }
     header.page-inner .row .description {
-      font-size: 1.125rem;
-      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.1875rem;
+      font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
       font-weight: 300;
       color: #2d2d2d;
       letter-spacing: 0.3px; }
@@ -344,7 +383,7 @@ header.page-inner {
   .hero .hero-wrapper {
     display: block;
     position: relative;
-    max-width: 80rem;
+    max-width: 60rem;
     margin: 0 auto; }
   .hero .row {
     height: 18.75rem;
@@ -372,8 +411,13 @@ header.page-inner {
   .hero .content {
     margin: 3.125rem 0; }
   .hero .title {
+    -webkit-transform: scaleY(1.1);
+    transform: scaleY(1.1);
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
     line-height: 1;
-    font-weight: 300;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
     color: #4d4d4d;
     margin: 0;
     font-size: 2.625rem; }
@@ -384,8 +428,8 @@ header.page-inner {
       .hero .title {
         font-size: 3.4375rem; } }
   .hero .subtitle {
-    font-size: 1.125rem;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1875rem;
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 300;
     color: #2d2d2d;
     letter-spacing: 0.3px; }
@@ -437,7 +481,7 @@ header.page-inner {
 .about .skills li span {
   margin: 0.1875rem 0.375rem 0.1875rem 0;
   padding: 0.5rem 0.75rem;
-  border: solid 1px black;
+  border: solid 1px #080808;
   display: block; }
 
 .About {
@@ -519,19 +563,24 @@ header.page-inner {
   padding-left: 0; }
   .recent-work .post-desc .post-link,
   .portfolio .list .post-desc .post-link {
+    -webkit-transform: scaleY(1.1);
+    transform: scaleY(1.1);
     position: relative;
-    font-family: "Cardo", Georgia, Times, serif;
-    font-weight: 700;
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
     line-height: 1;
     margin: 0;
     padding: 0.3125rem 0.625rem;
     padding-left: 0; }
     .recent-work .post-desc .post-link a,
     .portfolio .list .post-desc .post-link a {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       color: #4d4d4d; }
   .recent-work .post-desc .post-meta,
   .portfolio .list .post-desc .post-meta {
+    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
     text-transform: uppercase; }
   .recent-work .post-desc .post-categories,
   .portfolio .list .post-desc .post-categories {
@@ -580,22 +629,21 @@ header.page-inner {
 .portfolio .navigation h4 {
   margin: 0;
   margin-bottom: 0.3125rem;
-  font-family: "Cardo", Georgia, Times, serif;
-  font-weight: 700; }
-
-.portfolio .navigation ul li.checked, .portfolio .navigation ul li:hover, .portfolio .navigation ul li:active {
-  cursor: pointer; }
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: italic; }
 
 .portfolio .navigation ul li button {
   margin: 0.1875rem 0.375rem 0.1875rem 0;
   padding: 0.5rem 0.75rem;
-  border: solid 1px black;
+  border: solid 1px #080808;
   display: block;
   background-color: transparent;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 0.875rem;
   transition: all 0.25s ease-in-out; }
   .portfolio .navigation ul li button.checked, .portfolio .navigation ul li button:hover, .portfolio .navigation ul li button:active {
+    cursor: pointer;
     border-color: #5c75aa;
     color: #5c75aa; }
 
@@ -621,6 +669,10 @@ header.page-inner {
     .post-sizer-desandro,
     .portfolio .post-item-desandro {
       width: 31.28%; } }
+  @media (min-width: 1024px) {
+    .post-sizer-desandro.featured,
+    .portfolio .post-item-desandro.featured {
+      width: 47.9%; } }
   .post-sizer-desandro *,
   .portfolio .post-item-desandro * {
     transition: 0.4s all ease-in-out; }
@@ -691,7 +743,7 @@ header.page-inner {
     .resume .kinda-okay {
       margin-right: 0; } }
   .resume .content {
-    max-width: 31.25rem; }
+    max-width: 25rem; }
   .resume .item {
     display: inline-block;
     position: relative;
@@ -701,9 +753,10 @@ header.page-inner {
       display: block;
       position: relative; }
     .resume .item .title {
-      font-family: "Cardo", Georgia, Times, serif;
+      font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
       font-size: 1.125rem;
-      font-weight: 600;
+      font-style: italic;
+      font-weight: 400;
       line-height: 1.15;
       margin-bottom: 0.625rem;
       font-size: 1.25rem; }
@@ -715,14 +768,14 @@ header.page-inner {
           font-size: 1.375rem; } }
     .resume .item .role,
     .resume .item .period {
-      font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
       margin: 0;
       margin-bottom: 0.3125rem; }
     .resume .item .role {
-      color: #686868;
+      color: #6582be;
       text-transform: uppercase;
       font-size: 0.9375rem;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.5px;
       line-height: 1.35; }
     .resume .item .period {
       color: #2d2d2d;
@@ -732,7 +785,7 @@ header.page-inner {
     .resume .item .desc {
       padding-left: 1.25rem; }
       .resume .item .desc * {
-        line-height: 1.5; }
+        line-height: 1.7; }
       .resume .item .desc li,
       .resume .item .desc span {
         margin-bottom: 0.3125rem; }
@@ -747,9 +800,6 @@ header.page-inner {
       display: inline-block;
       float: left; }
     .contact-me .links-out li a {
-      font-family: "Cardo", Georgia, Times, serif;
-      font-size: 1.5rem;
-      color: #4d4d4d;
       margin: 0.3125rem;
       padding: 0 0.625rem;
       display: block;
@@ -757,6 +807,12 @@ header.page-inner {
       .contact-me .links-out li a:first-child {
         margin-left: 0;
         padding-left: 0; }
+      .contact-me .links-out li a span {
+        font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 1.5rem;
+        font-style: italic;
+        color: #4d4d4d;
+        font-weight: 300; }
 
 article header,
 article .post-content-wrapper {
@@ -832,19 +888,19 @@ article blockquote {
       line-height: 1.15; } }
 
 header.notice {
-  background-color: #6682bd;
+  display: block;
+  position: relative;
   margin: 0;
   border: 0;
-  padding: 0.9375rem;
-  display: block;
-  position: relative; }
+  background-color: #6682bd;
+  padding: 0.9375rem; }
   header.notice span {
-    color: white;
-    font-weight: 400;
     letter-spacing: 0.2px;
-    font-size: 1rem; }
+    color: white;
+    font-size: 1rem;
+    font-weight: 400; }
     header.notice span a {
-      color: #d8d8d8;
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #d8d8d8; }
 
 /*# sourceMappingURL=custom.css.map */
