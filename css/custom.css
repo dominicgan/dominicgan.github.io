@@ -7,6 +7,48 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+@font-face {
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: normal;
+  src: url("../fonts/oswald/hinted-Oswald-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/hinted-Oswald-RegularItalic.woff2") format("woff2"), url("../fonts/oswald/hinted-Oswald-RegularItalic.woff") format("woff"), url("../fonts/oswald/hinted-Oswald-RegularItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/oswald/hinted-Oswald-Extra-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/hinted-Oswald-Extra-LightItalic.woff2") format("woff2"), url("../fonts/oswald/hinted-Oswald-Extra-LightItalic.woff") format("woff"), url("../fonts/oswald/hinted-Oswald-Extra-LightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/oswald/hinted-Oswald-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/hinted-Oswald-LightItalic.woff2") format("woff2"), url("../fonts/oswald/hinted-Oswald-LightItalic.woff") format("woff"), url("../fonts/oswald/hinted-Oswald-LightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/oswald/hinted-Oswald-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/hinted-Oswald-MediumItalic.woff2") format("woff2"), url("../fonts/oswald/hinted-Oswald-MediumItalic.woff") format("woff"), url("../fonts/oswald/hinted-Oswald-MediumItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/oswald/hinted-Oswald-Demi-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/hinted-Oswald-Demi-BoldItalic.woff2") format("woff2"), url("../fonts/oswald/hinted-Oswald-Demi-BoldItalic.woff") format("woff"), url("../fonts/oswald/hinted-Oswald-Demi-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/oswald/hinted-Oswald-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/hinted-Oswald-BoldItalic.woff2") format("woff2"), url("../fonts/oswald/hinted-Oswald-BoldItalic.woff") format("woff"), url("../fonts/oswald/hinted-Oswald-BoldItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/oswald/hinted-Oswald-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/hinted-Oswald-HeavyItalic.woff2") format("woff2"), url("../fonts/oswald/hinted-Oswald-HeavyItalic.woff") format("woff"), url("../fonts/oswald/hinted-Oswald-HeavyItalic.ttf") format("truetype"); }
+
 body {
   background: whitesmoke;
   font-size: 0.875rem; }
@@ -47,7 +89,7 @@ span {
 
 h1,
 h2 {
-  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif; }
+  font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif; }
 
 nav.site-nav:not(:hover):not(:active):not(:focus) {
   background: transparent; }
@@ -221,13 +263,11 @@ nav.site-nav .page-link {
 
 .page-heading,
 section header h2 {
-  -webkit-transform: scaleY(1.1);
-  transform: scaleY(1.1);
-  font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
   font-size: 1.625rem;
   font-style: italic;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: #383838; }
   @media (min-width: 640px) {
     .page-heading,
@@ -350,18 +390,16 @@ header.page-inner {
       margin: 3.125rem 0; }
     header.page-inner .row .page-heading {
       font-size: 2.75rem;
-      -webkit-transform: scaleY(1.1);
-      transform: scaleY(1.1);
-      font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+      font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
       line-height: 1;
-      font-weight: 700;
+      font-weight: 600;
       font-style: italic;
       text-transform: uppercase;
       color: #4d4d4d;
       margin: 0; }
     header.page-inner .row .description {
       font-size: 1.1875rem;
-      font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+      font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
       font-weight: 300;
       color: #2d2d2d;
       letter-spacing: 0.3px; }
@@ -411,11 +449,9 @@ header.page-inner {
   .hero .content {
     margin: 3.125rem 0; }
   .hero .title {
-    -webkit-transform: scaleY(1.1);
-    transform: scaleY(1.1);
-    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 600;
     font-style: italic;
     text-transform: uppercase;
     color: #4d4d4d;
@@ -429,7 +465,7 @@ header.page-inner {
         font-size: 3.4375rem; } }
   .hero .subtitle {
     font-size: 1.1875rem;
-    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
     font-weight: 300;
     color: #2d2d2d;
     letter-spacing: 0.3px; }
@@ -443,6 +479,14 @@ header.page-inner {
       color: white;
       color: #4d4d4d;
       font-weight: 400; }
+  .hero .title-logo {
+    width: 100%; }
+
+#my-name-logo {
+  width: 100%; }
+  #my-name-logo .name {
+    fill: #4d4d4d;
+    color: #4d4d4d; }
 
 .about .content {
   float: left;
@@ -566,7 +610,7 @@ header.page-inner {
     -webkit-transform: scaleY(1.1);
     transform: scaleY(1.1);
     position: relative;
-    font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
     font-weight: 400;
     font-style: italic;
     text-transform: uppercase;
@@ -753,7 +797,7 @@ header.page-inner {
       display: block;
       position: relative; }
     .resume .item .title {
-      font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
+      font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
       font-size: 1.125rem;
       font-style: italic;
       font-weight: 400;

@@ -176,12 +176,12 @@ nav {
 
 .page-heading,
 section header h2 {
-	@include transform(scaleY(1.1));
+	// @include transform(scaleY(1.1));
 	font-family: $header-family;
 	font-size: rem(26);
 	font-style: italic;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 600;
 	color: $base-color300;
 
 	@media (min-width: $mob-min-width){

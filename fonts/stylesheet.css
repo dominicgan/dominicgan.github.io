@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'Oswald';
+	src: url('hinted-Oswald-RegularItalic.eot');
+	src: url('hinted-Oswald-RegularItalic.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Oswald-RegularItalic.woff2') format('woff2'),
+		url('hinted-Oswald-RegularItalic.woff') format('woff'),
+		url('hinted-Oswald-RegularItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('hinted-Oswald-LightItalic.eot');
+	src: url('hinted-Oswald-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Oswald-LightItalic.woff2') format('woff2'),
+		url('hinted-Oswald-LightItalic.woff') format('woff'),
+		url('hinted-Oswald-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('hinted-Oswald-HeavyItalic.eot');
+	src: url('hinted-Oswald-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Oswald-HeavyItalic.woff2') format('woff2'),
+		url('hinted-Oswald-HeavyItalic.woff') format('woff'),
+		url('hinted-Oswald-HeavyItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('hinted-Oswald-Demi-BoldItalic.eot');
+	src: url('hinted-Oswald-Demi-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Oswald-Demi-BoldItalic.woff2') format('woff2'),
+		url('hinted-Oswald-Demi-BoldItalic.woff') format('woff'),
+		url('hinted-Oswald-Demi-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('hinted-Oswald-BoldItalic.eot');
+	src: url('hinted-Oswald-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Oswald-BoldItalic.woff2') format('woff2'),
+		url('hinted-Oswald-BoldItalic.woff') format('woff'),
+		url('hinted-Oswald-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('hinted-Oswald-Extra-LightItalic.eot');
+	src: url('hinted-Oswald-Extra-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Oswald-Extra-LightItalic.woff2') format('woff2'),
+		url('hinted-Oswald-Extra-LightItalic.woff') format('woff'),
+		url('hinted-Oswald-Extra-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('hinted-Oswald-MediumItalic.eot');
+	src: url('hinted-Oswald-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('hinted-Oswald-MediumItalic.woff2') format('woff2'),
+		url('hinted-Oswald-MediumItalic.woff') format('woff'),
+		url('hinted-Oswald-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}

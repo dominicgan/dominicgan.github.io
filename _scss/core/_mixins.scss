@@ -33,10 +33,10 @@
 }
 
 @mixin title-styling {
-	@include transform(scaleY(1.1));
+	// @include transform(scaleY(1.1));
 	font-family: $header-family;
 	line-height: 1;
-	font-weight: 700;
+	font-weight: 600;
 	font-style: italic;
 	text-transform: uppercase;
 	color: $black300;

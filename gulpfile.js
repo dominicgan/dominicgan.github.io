@@ -14,7 +14,7 @@ var clip = require('gulp-clip-empty-files');
 // var postcss = require('gulp-postcss');
 // var autoprefixer = require('autoprefixer');
 var filesize = require('gulp-filesize');
-var imageResize = require('gulp-image-resize');
+// var imageResize = require('gulp-image-resize');
 var changed = require("gulp-changed");
 var parallel = require('concurrent-transform');
 var os = require("os");
@@ -23,70 +23,70 @@ var messages = {
 	jekyllBuild: '<span style="color: grey"> Running: </span>  $ jekyll build'
 };
 
-// mobile 1x
-gulp.task('image-resize-1x', function () {
-	gulp.src('images/*.{jpg,png}')
-	.pipe(changed("images/resp"))
-	.pipe(parallel(
-		imageResize({
-			width : 480,
-			crop : false,
-			upscale : false
-		}),
-		os.cpus().length
-		))
-	.pipe(filesize())
-	.pipe(gulp.dest('images/resp-1x'))
-});
+// // mobile 1x
+// gulp.task('image-resize-1x', function () {
+// 	gulp.src('images/*.{jpg,png}')
+// 	.pipe(changed("images/resp"))
+// 	.pipe(parallel(
+// 		imageResize({
+// 			width : 480,
+// 			crop : false,
+// 			upscale : false
+// 		}),
+// 		os.cpus().length
+// 		))
+// 	.pipe(filesize())
+// 	.pipe(gulp.dest('images/resp-1x'))
+// });
 
-// tablet protrait 2x
-gulp.task('image-resize-2x', function () {
-	gulp.src('images/*.{jpg,png}')
-	.pipe(changed("images/resp"))
-	.pipe(parallel(
-		imageResize({
-			width : 768,
-			crop : false,
-			upscale : false
-		}),
-		os.cpus().length
-		))
-	.pipe(filesize())
-	.pipe(gulp.dest('images/resp-2x'))
-});
+// // tablet protrait 2x
+// gulp.task('image-resize-2x', function () {
+// 	gulp.src('images/*.{jpg,png}')
+// 	.pipe(changed("images/resp"))
+// 	.pipe(parallel(
+// 		imageResize({
+// 			width : 768,
+// 			crop : false,
+// 			upscale : false
+// 		}),
+// 		os.cpus().length
+// 		))
+// 	.pipe(filesize())
+// 	.pipe(gulp.dest('images/resp-2x'))
+// });
 
 
-// small-desk 3x
-gulp.task('image-resize-3x', function () {
-	gulp.src('images/*.{jpg,png}')
-	.pipe(changed("images/resp"))
-	.pipe(parallel(
-		imageResize({
-			width : 900,
-			crop : false,
-			upscale : false
-		}),
-		os.cpus().length
-		))
-	.pipe(filesize())
-	.pipe(gulp.dest('images/resp-3x'))
-});
+// // small-desk 3x
+// gulp.task('image-resize-3x', function () {
+// 	gulp.src('images/*.{jpg,png}')
+// 	.pipe(changed("images/resp"))
+// 	.pipe(parallel(
+// 		imageResize({
+// 			width : 900,
+// 			crop : false,
+// 			upscale : false
+// 		}),
+// 		os.cpus().length
+// 		))
+// 	.pipe(filesize())
+// 	.pipe(gulp.dest('images/resp-3x'))
+// });
 
-// largest 4x
-gulp.task('image-resize-4x', function () {
-	gulp.src('images/*.{jpg,png}')
-	.pipe(changed("images/resp"))
-	.pipe(parallel(
-		imageResize({
-			width : 1200,
-			crop : false,
-			upscale : false
-		}),
-		os.cpus().length
-		))
-	.pipe(filesize())
-	.pipe(gulp.dest('images/resp-4x'))
-});
+// // largest 4x
+// gulp.task('image-resize-4x', function () {
+// 	gulp.src('images/*.{jpg,png}')
+// 	.pipe(changed("images/resp"))
+// 	.pipe(parallel(
+// 		imageResize({
+// 			width : 1200,
+// 			crop : false,
+// 			upscale : false
+// 		}),
+// 		os.cpus().length
+// 		))
+// 	.pipe(filesize())
+// 	.pipe(gulp.dest('images/resp-4x'))
+// });
 
 /**
  * Build the Jekyll Site
@@ -107,7 +107,7 @@ gulp.task('image-resize-4x', function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
- gulp.task('browser-sync', ['sass', 'image-resize-1x', 'image-resize-2x', 'image-resize-3x', 'image-resize-4x'], function() {
+ gulp.task('browser-sync', ['sass'], function() {
  	browserSync(['_layouts/*.html', '_posts/*', '_includes/*.html', '_site/js/**/*.js', '_site/css/**/*.css'],{
  		server: {
  			baseDir: '_site'
@@ -210,8 +210,8 @@ gulp.task('image-resize-4x', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
- gulp.task('default', ['browser-sync', 'sass', 'image-resize-1x', 'image-resize-2x', 'image-resize-3x', 'image-resize-4x'], function(){
+ gulp.task('default', ['browser-sync', 'sass'], function(){
  	gulp.watch('_scss/**/*.scss', ['sass']);
- 	gulp.watch('images/*.{jpg,png}', ['image-resize-1x', 'image-resize-2x', 'image-resize-3x', 'image-resize-4x']);
+ //	gulp.watch('images/*.{jpg,png}', ['image-resize-1x', 'image-resize-2x', 'image-resize-3x', 'image-resize-4x']);
  	gulp.watch(['about.md', '_data/**/*.*', 'feed.xml', '_config.yml', 'index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', 'js/**/*.js', 'css/custom.css', '*.md', '*.html'], ['jekyll-rebuild']);
  });
