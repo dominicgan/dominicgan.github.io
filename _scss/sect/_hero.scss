@@ -30,6 +30,7 @@
 	}
 
 	.content {
+		width: 100%;
 		margin: rem(50) 0;
 	}
 
@@ -60,10 +61,20 @@
 
 }
 
-#my-name-logo {
-	width: 100%;
-	.name {
-		fill: $black300;
-		color: $black300;
-	}
+
+#hero-name {
+  path {
+    @include animation(name-dash 3s ease-in-out forwards);
+    fill: transparent;
+    stroke: $black300;
+    stroke-width: 1px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+  }
+}
+
+@include keyframes(name-dash) {
+  to {
+    stroke-dashoffset: 0;
+  }
 }

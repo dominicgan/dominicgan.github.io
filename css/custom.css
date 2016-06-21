@@ -447,6 +447,7 @@ header.page-inner {
       .hero .row {
         height: 31.25rem; } }
   .hero .content {
+    width: 100%;
     margin: 3.125rem 0; }
   .hero .title {
     font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
@@ -482,11 +483,22 @@ header.page-inner {
   .hero .title-logo {
     width: 100%; }
 
-#my-name-logo {
-  width: 100%; }
-  #my-name-logo .name {
-    fill: #4d4d4d;
-    color: #4d4d4d; }
+#hero-name path {
+  -webkit-animation: name-dash 3s ease-in-out forwards;
+  animation: name-dash 3s ease-in-out forwards;
+  fill: transparent;
+  stroke: #4d4d4d;
+  stroke-width: 1px;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000; }
+
+@-webkit-keyframes name-dash {
+  to {
+    stroke-dashoffset: 0; } }
+
+@keyframes name-dash {
+  to {
+    stroke-dashoffset: 0; } }
 
 .about .content {
   float: left;
