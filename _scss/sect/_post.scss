@@ -1,7 +1,6 @@
-article {
+.post {
 	// @include outer-container();
 
-	header,
 	.post-content-wrapper {
 		@include row();
 	}

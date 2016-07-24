@@ -164,11 +164,11 @@ span.header {
 .hidden {
   display: none; }
 
-.inline-lists, .about .skills, .portfolio .navigation .portfolio-filter-list, article .post-skills .skill-list {
+.inline-lists, .about .skills, .portfolio .navigation .portfolio-filter-list, .post .post-skills .skill-list {
   list-style: none;
   margin: 0;
   float: left; }
-  .inline-lists li, .about .skills li, .portfolio .navigation .portfolio-filter-list li, article .post-skills .skill-list li {
+  .inline-lists li, .about .skills li, .portfolio .navigation .portfolio-filter-list li, .post .post-skills .skill-list li {
     display: inline-block;
     float: left; }
 
@@ -898,50 +898,48 @@ span.header {
         color: #4d4d4d;
         font-weight: 300; }
 
-article header,
-article .post-content-wrapper {
+.post .post-content-wrapper {
   display: block; }
-  article header::after,
-  article .post-content-wrapper::after {
+  .post .post-content-wrapper::after {
     clear: both;
     content: "";
     display: table; }
 
-article .post-cover-image,
-article .post-content {
+.post .post-cover-image,
+.post .post-content {
   display: block;
   margin-bottom: 1.875rem; }
-  article .post-cover-image::after,
-  article .post-content::after {
+  .post .post-cover-image::after,
+  .post .post-content::after {
     clear: both;
     content: "";
     display: table; }
 
-article .post-meta {
+.post .post-meta {
   display: block;
   margin-bottom: 1.875rem; }
-  article .post-meta::after {
+  .post .post-meta::after {
     clear: both;
     content: "";
     display: table; }
-  article .post-meta .post-meta__date-author {
+  .post .post-meta .post-meta__date-author {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%; }
-    article .post-meta .post-meta__date-author:last-child {
+    .post .post-meta .post-meta__date-author:last-child {
       margin-right: 0; }
-  article .post-meta .post-meta__attrib {
+  .post .post-meta .post-meta__attrib {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
     margin-right: 0;
     text-align: right; }
-    article .post-meta .post-meta__attrib:last-child {
+    .post .post-meta .post-meta__attrib:last-child {
       margin-right: 0; }
 
-article .post-skills .skill-list .item {
+.post .post-skills .skill-list .item {
   margin: 0.1875rem 0.375rem 0.1875rem 0;
   padding: 0.5rem 0.75rem;
   border: solid 1px #080808;
@@ -952,12 +950,12 @@ article .post-skills .skill-list .item {
   font-size: 0.875rem;
   line-height: normal;
   color: #080808; }
-  article .post-skills .skill-list .item.checked, article .post-skills .skill-list .item:hover, article .post-skills .skill-list .item:active {
+  .post .post-skills .skill-list .item.checked, .post .post-skills .skill-list .item:hover, .post .post-skills .skill-list .item:active {
     cursor: pointer;
     border-color: #5c75aa;
     color: #5c75aa; }
 
-article blockquote {
+.post blockquote {
   line-height: 1.2;
   border-left-color: #6682bd;
   margin-left: 0;
@@ -967,7 +965,7 @@ article blockquote {
   font-size: 1.5rem;
   border-left-width: 0.3125rem; }
   @media screen and (min-width: 1024px) {
-    article blockquote {
+    .post blockquote {
       font-size: 2.25rem;
       border-left-width: 0.625rem;
       line-height: 1.15; } }
