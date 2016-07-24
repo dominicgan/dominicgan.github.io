@@ -213,5 +213,5 @@ var messages = {
  gulp.task('default', ['browser-sync', 'sass'], function(){
  	gulp.watch('_scss/**/*.scss', ['sass']);
  //	gulp.watch('images/*.{jpg,png}', ['image-resize-1x', 'image-resize-2x', 'image-resize-3x', 'image-resize-4x']);
- 	gulp.watch(['about.md', '_data/**/*.*', 'feed.xml', '_config.yml', 'index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', 'js/**/*.js', 'css/custom.css', '*.md', '*.html'], ['jekyll-rebuild']);
+ 	gulp.watch(['about.md', '_data/**/*.*', 'feed.xml', '_config.yml', 'index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', 'js/**/*.js', 'css/**/*.css', '*.md', '*.html'], ['jekyll-rebuild']);
  });
