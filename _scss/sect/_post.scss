@@ -8,7 +8,7 @@
 	.post-cover-image,
 	.post-content {
 		@include row();
-		margin-bottom: rem(30);
+		margin-bottom: rem(15);
 		// @include span-columns(12);
 		// @include media($tab-min-width){
 			// @include span-columns(8);
