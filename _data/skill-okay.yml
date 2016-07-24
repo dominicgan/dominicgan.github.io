@@ -1,6 +1,3 @@
-- name: Adobe Illustrator (CC)
-- name: jQuery/Javascript development
-- name: PHP development
-- name: MySQL database management
-- name: Git/Mercurial version control
-- name: LAMP stack setup
+- name: PHP (Wordpress, Yii Framework 1.1)
+- name: Ruby/Rails
+- name: MySQL

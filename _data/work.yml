@@ -1,6 +1,14 @@
+- company: ONG&ONG Group Pte Ltd
+  role: Web Application Designer
+  period: September 2015 – Present
+  desc: >
+    <p>Designed and worked on front-end development for the company's internal solutions as well as web presence.</p>
+
+    <p>Instituted a number of practices and Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem deserunt iusto vitae.</p>
+
 - company: Balanced Consultancy Pte Ltd/Novitee Pte Ltd
   role: Web Consultant
-  period: August 2014 – Present
+  period: August 2014 – August 2015
   desc: >
     <p>Responsible for designing and developing web solutions for clients. Experienced in managing projects for a wide range of clients and industries. Gained fluency in handling major web CMS solutions, such as Magento and WordPress.</p>
 
@@ -14,10 +22,10 @@
   
     <p>Gathered user requirements through formal meetings with the different government agencies and collated sets of Software Requirement Specifications (SRS). Involved in the amendment and improvement of business processes within the SRS documentation.</p>
 
-- company: National Service
-  role: Military Police Specialist (NSF 3SG)
-  period: 2008 – 2010
-  desc: 
+# - company: National Service
+#   role: Military Police Specialist (NSF 3SG)
+#   period: 2008 – 2010
+#   desc: 
   
 # - company:
 #   role:

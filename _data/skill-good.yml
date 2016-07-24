@@ -1,11 +1,13 @@
-- name: Web UI Design
-- name: Mobile App UI Design
-- name: Adobe Photoshop (CC)
-- name: HTML/CSS development
-- name: Front-end frameworks (Bootstrap, Foundation)
-- name: Wireframing (Pencil, Swordsoft Layout)
+- name: Web & Mobile App UI Design
+- name: Adobe Photoshop (CC) & Illustrator (CC)
+- name: HTML/CSS/JS
+- name: UI frameworks (Bootstrap, Foundation)
+- name: CSS Pre-processors & frameworks (Sass, Bourbon, Neat, Modular-scale)
+- name: Task Runners (Gulp.js)
+- name: Wireframing (Sketch, Axure, Justinmind Prototyper, Pencil)
 - name: WordPress & Magento development/customisation
-- name: Office solutions (Microsoft office, Libre office, Google Docs suite, etc)
+- name: Version control (Git, Hg)
+# - name: Office solutions (Microsoft office, Libre office, Google Docs suite, etc)
 
 
 # - name: Photography
