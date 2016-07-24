@@ -11,10 +11,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var merge = require('merge-stream');
 var clone = require('gulp-clone');
 var clip = require('gulp-clip-empty-files');
-// var postcss = require('gulp-postcss');
-// var autoprefixer = require('autoprefixer');
 var filesize = require('gulp-filesize');
-// var imageResize = require('gulp-image-resize');
 var changed = require("gulp-changed");
 var parallel = require('concurrent-transform');
 var os = require("os");
@@ -23,70 +20,40 @@ var messages = {
 	jekyllBuild: '<span style="color: grey"> Running: </span>  $ jekyll build'
 };
 
-// // mobile 1x
-// gulp.task('image-resize-1x', function () {
-// 	gulp.src('images/*.{jpg,png}')
-// 	.pipe(changed("images/resp"))
-// 	.pipe(parallel(
-// 		imageResize({
-// 			width : 480,
-// 			crop : false,
-// 			upscale : false
-// 		}),
-// 		os.cpus().length
-// 		))
-// 	.pipe(filesize())
-// 	.pipe(gulp.dest('images/resp-1x'))
-// });
+var imgResponsive = require('gulp-responsive');
 
-// // tablet protrait 2x
-// gulp.task('image-resize-2x', function () {
-// 	gulp.src('images/*.{jpg,png}')
-// 	.pipe(changed("images/resp"))
-// 	.pipe(parallel(
-// 		imageResize({
-// 			width : 768,
-// 			crop : false,
-// 			upscale : false
-// 		}),
-// 		os.cpus().length
-// 		))
-// 	.pipe(filesize())
-// 	.pipe(gulp.dest('images/resp-2x'))
-// });
-
-
-// // small-desk 3x
-// gulp.task('image-resize-3x', function () {
-// 	gulp.src('images/*.{jpg,png}')
-// 	.pipe(changed("images/resp"))
-// 	.pipe(parallel(
-// 		imageResize({
-// 			width : 900,
-// 			crop : false,
-// 			upscale : false
-// 		}),
-// 		os.cpus().length
-// 		))
-// 	.pipe(filesize())
-// 	.pipe(gulp.dest('images/resp-3x'))
-// });
-
-// // largest 4x
-// gulp.task('image-resize-4x', function () {
-// 	gulp.src('images/*.{jpg,png}')
-// 	.pipe(changed("images/resp"))
-// 	.pipe(parallel(
-// 		imageResize({
-// 			width : 1200,
-// 			crop : false,
-// 			upscale : false
-// 		}),
-// 		os.cpus().length
-// 		))
-// 	.pipe(filesize())
-// 	.pipe(gulp.dest('images/resp-4x'))
-// });
+gulp.task('proj-image-resize', function () {
+  return gulp.src('images/project_src/*.{png,jpg}')
+    .pipe(imgResponsive({
+        '*.jpg': [{
+            width: 360,
+            rename: { suffix: '-xs' },
+        }, {
+            width: 540,
+            rename: { suffix: '-sm' },
+        }, {
+            width: 768,
+            rename: { suffix: '-md' },
+        }, {
+            width: 1200,
+            rename: { suffix: '-lg' },
+        }, {
+            rename: { suffix: '-src' },
+        }],
+    },
+    {
+    // Global configuration for all images
+    // The output quality for JPEG, WebP and TIFF output formats
+    quality: 85,
+    // Use progressive (interlace) scan for JPEG and PNG output
+    progressive: true,
+    // Zlib compression level of PNG output format
+    compressionLevel: 6,
+    // Strip all metadata
+    withMetadata: false,
+  }))
+    .pipe(gulp.dest('images/project/'));
+});
 
 /**
  * Build the Jekyll Site
@@ -159,59 +126,14 @@ var messages = {
 
     return merge(pipe1, pipe2);
 
- // 	return gulp.src('_scss/custom.scss')
- //    .pipe(sourcemaps.init())
- // 	.pipe(sass().on('error', sass.logError))
-	// .pipe(sourcemaps.write())
- // 	.pipe(plumber())
- // 	.pipe(rename('custom.temp.css'))
- // 	.pipe(filesize())
- // 	.pipe(gulp.dest('css'))
- // 	.pipe(rename('custom.css'))
- // 	.pipe(filesize())
- // 	.pipe(gulp.dest('css'))
- // 	.pipe(cssnano({
- // 		convertValues: {
- // 			length: false
- // 		},
- // 		discardComments: {
- // 			removeAll: true
- // 		}
- // 	}))
- // 	.pipe(rename('custom.min.css'))
- // 	.pipe(filesize())
- // 	.pipe(gulp.dest('css'))
-
- 	// .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-		// .pipe(browserSync.reload({stream:true}))
 	});
 
- // gulp.task('css-postpro', ['sass'], function(){
- // 	var processors = [autoprefixer({browsers: ['last 1 version']})];
- // 	return gulp.src('css/custom.temp.css')
- // 	.pipe(postcss(processors))
- // 	.pipe(rename('custom.css'))
- // 	.pipe(filesize())
- // 	.pipe(gulp.dest('css'))
- // 	.pipe(cssnano({
- // 		convertValues: {
- // 			length: false
- // 		},
- // 		discardComments: {
- // 			removeAll: true
- // 		}
- // 	}))
- // 	.pipe(rename('custom.min.css'))
- // 	.pipe(filesize())
- // 	.pipe(gulp.dest('css'))
- // 	.on('error', gutil.log)
- // });
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
- gulp.task('default', ['browser-sync', 'sass'], function(){
+ gulp.task('default', ['browser-sync', 'sass', 'proj-image-resize'], function(){
  	gulp.watch('_scss/**/*.scss', ['sass']);
- //	gulp.watch('images/*.{jpg,png}', ['image-resize-1x', 'image-resize-2x', 'image-resize-3x', 'image-resize-4x']);
+ 	gulp.watch('images/project_src/*.{jpg,png}', ['proj-image-resize']);
  	gulp.watch(['about.md', '_data/**/*.*', 'feed.xml', '_config.yml', 'index.html', '_layouts/*.html', '_posts/*',  '_drafts/*', '_includes/*.html', 'js/**/*.js', 'css/**/*.css', '*.md', '*.html'], ['jekyll-rebuild']);
  });
