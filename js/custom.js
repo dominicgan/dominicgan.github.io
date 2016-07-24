@@ -7,12 +7,9 @@
   }
 
   function initFeatherlight(){
-
-
     var featherScript = '<script type="text/javascript" src="/bower_components/featherlight/release/featherlight.min.js"><\/script>';
     var featherCss = '<link rel="stylesheet" href="/bower_components/featherlight/release/featherlight.min.css">';
   
-
     $('body').prepend(featherCss).append(featherScript);
   }
 
@@ -27,8 +24,7 @@
 }
 
 $(document).ready(function(){
-
-  if (!$('.portfolio'),length) {
+  if (!$('.portfolio').length) {
     return false;
   } else {
 
@@ -64,13 +60,15 @@ $(document).ready(function(){
     });
 
     // bind filter button click
-    $('.portfolio-filter li button').on( 'click', function() {
+    pfFiltBtn = $('.portfolio-filter li button');
+    pfFiltBtn.on( 'click', function() {
       var filterValue = $( this ).attr('data-filter');
       // use filterFn if matches value
       $grid.isotope({ filter: filterValue });
     });
     // change checked class on buttons
-    $('.portfolio-filter').each( function( i, buttonGroup ) {
+    pfFiltWrapper = $('.portfolio-filter');
+    pfFiltWrapper.each( function( i, buttonGroup ) {
       var $buttonGroup = $(buttonGroup);
       $buttonGroup.on( 'click', 'button', function() {
         $buttonGroup.find('.checked').removeClass('checked');
@@ -79,13 +77,15 @@ $(document).ready(function(){
     });
 
     // bind sort button click
-    $('.portfolio-sort li button').on( 'click', function() {
+    pfSortBtn = $('.portfolio-sort li button');
+    pfSortBtn.on( 'click', function() {
       var sortValue = $( this ).attr('data-sort');
       // use sortFn if matches value
       $grid.isotope({ sortBy: sortValue });
     });
 
-    $('.portfolio-sort').each( function( i, buttonGroup ) {
+    pfSortWrapper = $('.portfolio-sort');
+    pfSortWrapper.each( function( i, buttonGroup ) {
       var $buttonGroup = $(buttonGroup);
       $buttonGroup.on( 'click', 'button', function() {
         $buttonGroup.find('.checked').removeClass('checked');
