@@ -8,8 +8,8 @@ permalink: /portfolio/
 <section class="portfolio">
 <div class="row navigation hidden">
   <nav class="portfolio-filter">
-  <h4>Filter:</h4>
-    <ul>
+  <h4 class="filter-header">Filter:</h4>
+    <ul class="portfolio-filter-list">
       <li><button data-filter="*" class="checked">Show All</button></li>
         {% for filter in site.data.post-filters %}
       <li><button data-filter=".{{ filter.class}}">{{ filter.name}}</button></li>
@@ -17,8 +17,8 @@ permalink: /portfolio/
     </ul>
   </nav>
   <nav class="portfolio-sort">
-  <h4>Sort:</h4>
-    <ul>
+  <h4 class="filter-header">Sort:</h4>
+    <ul class="portfolio-filter-list">
       <li><button data-sort="date" class="checked">By date</button></li>
       <li><button data-sort="name">By name</button></li>
     </ul>
