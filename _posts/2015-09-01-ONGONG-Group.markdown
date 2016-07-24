@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "ONG&amp;ONG Group UI Revamp"
+title:  "ONG&amp;ONG Group"
 date:   2015-09-01 10:00:00 +0800
-categories: web-design proj-mgmt case-study wordpress
-cover-image: https://unsplash.it/600/600/
-cover-image-index: https://unsplash.it/600/400/
-attribution: Under employ of Balanced Consultancy Pte Ltd.
-link: http://www.npe.com.sg
-client: NPE Print Communications
+categories: front-end
+attribution: Under employ of ONG&ONG Group Pte Ltd.
+link: http://www.group.ong-ong.com
+client: ONG&ONG Group Pte Ltd
+
+cover-image: /images/project/ongonggroup
+cover-image-index: /images/project/ongonggroup
 
 image1: test.jpg
 image2: jpramen.jpg
@@ -16,27 +17,4 @@ image4:
 image5:
 ---
 
-
-This is a header 1
-==================
-
-This is a header 2
-------------------
-
-> This is a blockquote
-
-* This
-  + is
-    - an
-  + unordered
-- list
-
-1. This
-2. is
-3. an
-4. ordered
-5. list
-
-Corporate website for NPE Print Communication. WordPress CMS, design built on the Avada theme framework.
-
-Designed and developed the website in Wordpress using a template engine.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis incidunt quam repellendus inventore. A consequatur, nam porro ducimus doloremque magni accusamus fuga sit adipisci cupiditate deleniti quia expedita fugiat inventore, ipsa tenetur obcaecati ratione quos ad vel, laboriosam aperiam?

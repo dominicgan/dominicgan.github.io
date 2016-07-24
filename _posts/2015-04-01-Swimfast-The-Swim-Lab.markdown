@@ -7,8 +7,8 @@ attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications
 
-cover-image: https://unsplash.it/600/600/
-cover-image-index: https://unsplash.it/600/400/
+cover-image: /images/project/Swimfast
+cover-image-index: /images/project/Swimfast
 
 image1: test.jpg
 image2: jpramen.jpg
@@ -17,7 +17,7 @@ image4:
 image5:
 ---
 
-
+<!-- 
 This is a header 1
 ==================
 
@@ -36,7 +36,7 @@ This is a header 2
 2. is
 3. an
 4. ordered
-5. list
+5. list -->
 
 Corporate websites for Swimfast & The Swim Lab, swimming schools based in Singapore.
 
