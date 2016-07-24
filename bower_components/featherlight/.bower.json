@@ -1,6 +1,6 @@
 {
   "name": "featherlight",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "main": [
     "release/featherlight.min.js",
     "release/featherlight.min.css"
@@ -28,14 +28,13 @@
     "library"
   ],
   "homepage": "https://github.com/noelboss/featherlight",
-  "_release": "1.4.0",
+  "_release": "1.5.0",
   "_resolution": {
     "type": "version",
-    "tag": "1.4.0",
-    "commit": "7de119304ff63a785e64ed13b24a97074c617ee8"
+    "tag": "1.5.0",
+    "commit": "d05109fe15438b9b011bedc1c6c87faf6b7207d1"
   },
   "_source": "https://github.com/noelboss/featherlight.git",
   "_target": "^1.4.0",
-  "_originalSource": "featherlight",
-  "_direct": true
+  "_originalSource": "featherlight"
 }
