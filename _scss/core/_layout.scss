@@ -1,0 +1,79 @@
+.page-content {
+	position: relative;
+	padding: 0;
+	z-index: 9;
+}
+
+.wrapper {
+	max-width: 100%;
+	padding: 0;
+
+	> section {
+		&:not(.hero){
+			@include sect-padding;
+			@include clip-path-both;
+		}
+
+		&.hero {
+			@include sect-side-padding;
+			@include clip-path-down;
+			padding-bottom: rem(30); // clip-path version
+
+			@include media($mob-min-width){
+				padding-bottom: rem(50); // clip-path version
+			}
+		}
+	}
+}
+
+.page-content-header {
+	@include hero-colors;
+	@include sect-side-padding;
+	@include clip-path-down;
+	padding-bottom: rem(30);
+
+	@include media($mob-min-width){
+		padding-bottom: rem(50); // clip-path version
+	}
+
+	.header-wrapper {
+		@include display(flex);
+		@include align-items(center);
+		@include justify-content(center);
+
+		height: rem(300);
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.header-content {
+		max-width: $content-width;
+		width: 100%;
+	}
+
+	.title {
+		font-size: rem(44);
+		@include title-styling;
+	}
+
+	.subtitle {
+		@include subtitle-styling;
+	}
+}
+
+.page-heading {
+	font-family: $header-family;
+	font-size: rem(26);
+	font-style: italic;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: $base-color300;
+
+	@include media($mob-min-width){
+		font-size: rem(28);
+	}
+
+	@include media($tab-min-width){
+		font-size: rem(30);
+	}
+}

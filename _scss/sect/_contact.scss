@@ -3,14 +3,6 @@
 	.links-out {
 		@include inline-lists;
 
-		li:not(:last-child){
-			a {
-				&:after {
-					// content: '/';
-				}
-			}
-		}
-
 		li a {
 			margin: rem(5);
 			padding: 0 rem(10);
@@ -28,13 +20,8 @@
 				font-style: italic;
 				color: $black300;
 				font-weight: 300;
-				// text-transform: uppercase;
 			}
 		}
 
-		// li:not(:last-child) a:after{
-		// 	content: '-';
-		// 	padding-left: rem(5);
-		// }
 	}
 }

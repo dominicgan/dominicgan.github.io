@@ -20,34 +20,6 @@
 	@include inline-lists;
 }
 
-.page-content {
-	position: relative;
-	padding: 0;
-	z-index: 9;
-}
-
-.wrapper {
-	max-width: 100%;
-	padding: 0;
-
-	> section {
-		&:not(.hero){
-			@include sect-padding;
-			@include clip-path-both;
-		}
-
-		&.hero {
-			@include sect-side-padding;
-			@include clip-path-down;
-			padding-bottom: rem(30); // clip-path version
-
-			@include media($mob-min-width){
-				padding-bottom: rem(50); // clip-path version
-			}
-		}
-	}
-}
-
 .read-more {
 	color: $black200;
 

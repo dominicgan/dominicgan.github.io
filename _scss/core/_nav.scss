@@ -1,32 +1,29 @@
 .site-nav {
-		&:not(:hover):not(:active):not(:focus) {
-			background: transparent;
+	&:not(:hover):not(:active):not(:focus) {
+		background: transparent;
+	}
+
+	.menu-icon {
+		height: 36px;
+	}
+
+	.page-link {
+		font-family: $suppl-family;
+		font-weight: 400;
+		color: $black200;
+
+		@media ($mob-min-width){
+			font-size: rem(15);
 		}
 
-		.menu-icon {
-			height: 36px;
-		}
-
-		.page-link {
-			// color: $white200;
-			font-family: $suppl-family;
-			// text-transform: uppercase;
-			font-weight: 400;
-			color: $black200;
-			// font-weight: 300;
-
-			@media ($mob-min-width){
-				font-size: rem(15);
-			}
-
-			&:hover,
-			&:active {
+		&:hover,
+		&:active {
+			color: $black300;
+			@include media($mob-min-width){
+				color: $white100;
 				color: $black300;
-				@include media($mob-min-width){
-					color: $white100;
-					color: $black300;
-				}
 			}
+		}
 	}
 
 }
@@ -51,7 +48,7 @@
 		letter-spacing: 0.3px;
 	}
 
-	.wrapper .row{
+	.wrapper .row {
 		@include sect-side-padding;
 		padding-top: rem(80); // clip-path version
 
@@ -68,18 +65,11 @@
 			padding-left: 0;
 			padding-right: 15px;
 		}
-		// @include sect-padding;
 	}
 
 	.footer-col-wrapper {
 		margin-left: 0;
 
-		// @include media($mob-min-width){
-		// 	margin-left: rem(-15);
-		// }
-		// @include media($tab-min-width){
-		// 	margin-left: rem(0);
-		// }
 		@include media($desk-min-width){
 			padding-left: rem(30);
 		}

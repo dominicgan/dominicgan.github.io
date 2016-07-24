@@ -95,7 +95,8 @@
 }
 
 .portfolio .navigation {
-	nav {
+	.portfolio-filter,
+	.portfolio-sort {
 		@include span-columns(12);
 		margin-bottom: rem(15);
 
@@ -108,7 +109,8 @@
 			}
 		}
 	}
-	h4 {
+
+	.filter-header {
 		margin: 0;
 		margin-bottom: rem(5);
 		font-family: $suppl-family;
@@ -116,7 +118,8 @@
 		font-style: italic;
 		// text-transform: uppercase;
 	}
-	ul {
+
+	.portfolio-filter-list {
 		@extend .inline-lists;
 
 		li button {

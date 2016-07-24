@@ -11,7 +11,11 @@
 	}
 
 	.row {
+		@include display(flex);
+		@include align-items(flex-end);
+		@include justify-content(flex-start);
 		height: rem(300);
+
 		@include media($mob-min-width){
 			height: rem(350);
 		}
@@ -24,9 +28,6 @@
 		@include media($hires-min-width){
 			height: rem(500);
 		}
-		display: flex;
-		align-items: flex-end;
-		justify-content: flex-start;
 	}
 
 	.content {
@@ -38,10 +39,10 @@
 		@include title-styling;
 		font-size: rem(42);
 		@include media($mob-min-width){
-		font-size: rem(48);
+			font-size: rem(48);
 		}
 		@include media($tab-min-width){
-		font-size: rem(55);
+			font-size: rem(55);
 		}
 	}
 
@@ -55,28 +56,28 @@
 		}
 	}
 
-.title-logo {
-	width: 100%;
-}
-
+	.title-logo {
+		max-width: rem(720);
+		width: 100%;
+	}
 }
 
 
 #hero-name {
 	margin-bottom: rem(10);
 
-  path {
-    @include animation(name-dash 1.5s ease-in-out forwards);
-    fill: transparent;
-    stroke: $black300;
-    stroke-width: 1px;
-    stroke-dasharray: 900;
-    stroke-dashoffset: 1900;
-  }
+	path {
+		@include animation(name-dash 1.5s ease-in-out forwards);
+		fill: transparent;
+		stroke: $black300;
+		stroke-width: 1px;
+		stroke-dasharray: 900;
+		stroke-dashoffset: 1900;
+	}
 }
 
 @include keyframes(name-dash) {
-  to {
-    stroke-dashoffset: 0;
-  }
+	to {
+		stroke-dashoffset: 0;
+	}
 }

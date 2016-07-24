@@ -55,6 +55,20 @@ article {
 
 			.item {
 				@include block-tags;
+				@include transition(all 0.25s ease-in-out);
+				background-color: transparent;
+				font-family: $suppl-family;
+				font-size: rem(14);
+				line-height: normal;
+				color: $black100;
+
+				&.checked,
+				&:hover,
+				&:active {
+					cursor: pointer;
+					border-color: shade($accent-color, 10%);
+					color: shade($accent-color, 10%);
+				}
 			}
 		}
 	}

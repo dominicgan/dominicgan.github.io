@@ -1,7 +1,6 @@
 body {
 	background: $white150;
 	font-size: rem(14);
-	// font-weight: 300;
 
 	@include media($mob-min-width){
 		font-size: rem(15);
@@ -32,7 +31,6 @@ a {
 
 	&:visited {
 		color: shade($accent-color, 10%);
-		// color: shade($accent-color, 45%);
 	}
 }
 
@@ -55,22 +53,6 @@ article {
 	background: $white100;
 }
 
-.page-heading {
-	font-family: $header-family;
-	font-size: rem(26);
-	font-style: italic;
-	text-transform: uppercase;
-	font-weight: 600;
-	color: $base-color300;
-
-	@include media($mob-min-width){
-		font-size: rem(28);
-	}
-
-	@include media($tab-min-width){
-		font-size: rem(30);
-	}
-}
 
 hr,
 span {
@@ -96,47 +78,3 @@ span {
 	}
 }
 
-.page-content-header {
-	@include hero-colors;
-	@include sect-side-padding;
-	@include clip-path-down;
-	padding-bottom: rem(30);
-
-	@include media($mob-min-width){
-		padding-bottom: rem(50); // clip-path version
-	}
-	// margin-bottom: rem(30);
-
-	.header-wrapper {
-		// display: block;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: rem(300);
-	width: 100%;
-		// position: relative;
-		// width: 100%;
-		margin: 0 auto;
-	}
-
-	.header-content {
-		max-width: $content-width;
-		width: 100%;
-	}
-
-	// .row {
-
-		// .content {
-		// 	// margin: rem(50) 0;
-		// }
-
-		.title {
-			font-size: rem(44);
-			@include title-styling;
-		}
-
-		.subtitle {
-			@include subtitle-styling;
-		}
-	// }
-}
