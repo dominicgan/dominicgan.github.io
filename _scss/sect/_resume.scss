@@ -14,14 +14,14 @@
 	.kinda-okay {
 		@include span-columns(12);
 
-		@media (min-width: $tab-min-width){
+		@include media($tab-min-width){
 			@include span-columns(6);
 		}
 	}
 
 	.education,
 	.kinda-okay {
-		@media (min-width: $tab-min-width){
+		@include media($tab-min-width){
 			@include omega();
 		}
 	}
@@ -48,10 +48,10 @@
 			line-height: 1.15;
 			margin-bottom: rem(10);
 			font-size: rem(20);
-			@media (min-width: $mob-min-width){
+			@include media($mob-min-width){
 				font-size: rem(21);
 			}
-			@media (min-width: $tab-min-width){
+			@include media($tab-min-width){
 				font-size: rem(22);
 			}
 		}

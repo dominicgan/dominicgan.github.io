@@ -13,7 +13,7 @@
 	padding: rem(70) rem(15);
 	padding: rem(120) rem(15); // clip-path version
 
-	@media (min-width: $mob-min-width){
+	@include media($mob-min-width){
 		padding: rem(100) rem(30);
 		padding: rem(150) rem(30); // clip-path version
 	}
@@ -22,7 +22,7 @@
 @mixin sect-side-padding {
 	padding: 0 rem(15);
 
-	@media (min-width: $mob-min-width){
+	@include media($mob-min-width){
 		padding: 0 rem(30);
 	}
 }
@@ -51,11 +51,11 @@
 	color: $black200;
 	letter-spacing: 0.3px;
 
-	@media (min-width: $mob-min-width){
+	@include media($mob-min-width){
 		font-size: rem(20);
 	}
 
-	@media (min-width: $tab-min-width){
+	@include media($tab-min-width){
 		font-size: rem(22);
 	}
 }
@@ -90,21 +90,21 @@
 	-webkit-clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0% 100%);
 	clip-path: polygon(0 20px, 100% 0, 100% calc(100% - 20px), 0% 100%);
 
-	@media (min-width: $tab-min-width){
+	@include media($tab-min-width){
 		margin-top: -30px;
 		margin-bottom: -30px;
 		-webkit-clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0% 100%);
 		clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0% 100%);
 	}
 
-	@media (min-width: $desk-min-width){
+	@include media($desk-min-width){
 		margin-top: -40px;
 		margin-bottom: -40px;
 		-webkit-clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0% 100%);
 		clip-path: polygon(0 40px, 100% 0, 100% calc(100% - 40px), 0% 100%);
 	}
 
-	@media (min-width: $hires-min-width){
+	@include media($hires-min-width){
 		margin-top: -60px;
 		margin-bottom: -60px;
 		-webkit-clip-path: polygon(0 60px, 100% 0, 100% calc(100% - 60px), 0% 100%);
@@ -117,18 +117,18 @@
 	clip-path: polygon(0 20px, 100% 0, 100% 100%, 0% 100%);
 	margin-top: -20px;
 
-	@media (min-width: $tab-min-width){
+	@include media($tab-min-width){
 		-webkit-clip-path: polygon(0 30px, 100% 0, 100% 100%, 0% 100%);
 		clip-path: polygon(0 30px, 100% 0, 100% 100%, 0% 100%);
 		margin-top: -30px;
 	}
 
-	@media (min-width: $desk-min-width){
+	@include media($desk-min-width){
 		-webkit-clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
 		clip-path: polygon(0 40px, 100% 0, 100% 100%, 0% 100%);
 	}
 
-	@media (min-width: $hires-min-width){
+	@include media($hires-min-width){
 		-webkit-clip-path: polygon(0 60px, 100% 0, 100% 100%, 0% 100%);
 		clip-path: polygon(0 60px, 100% 0, 100% 100%, 0% 100%);
 	}
@@ -139,19 +139,19 @@
 	clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0% 100%);
 	margin-bottom: -20px;
 
-	@media (min-width: $tab-min-width){
+	@include media($tab-min-width){
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0% 100%);
 		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0% 100%);
 		margin-bottom: -30px;
 	}
 
-	@media (min-width: $desk-min-width){
+	@include media($desk-min-width){
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 0% 100%);
 		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), 0% 100%);
 		margin-bottom: -40px;
 	}
 
-	@media (min-width: $hires-min-width){
+	@include media($hires-min-width){
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
 		clip-path: polygon(0 0, 100% 0, 100% calc(100% - 60px), 0% 100%);
 		margin-bottom: -60px;

@@ -3,7 +3,7 @@
 		@include span-columns(12);
 		margin-top: rem(15);
 
-		@media (min-width: $tab-min-width){
+		@include media($tab-min-width){
 			@include span-columns(8);
 			margin-top: rem(0);
 		}
@@ -13,7 +13,7 @@
 	}
 
 	.image-wrapper {
-		@media (min-width: $tab-min-width){
+		@include media($tab-min-width){
 			@include span-columns(4);
 			@include omega();
 			float: right;

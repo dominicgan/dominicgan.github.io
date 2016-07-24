@@ -1,0 +1,27 @@
+{
+  "name": "dominicgan.github.io",
+  "authors": [
+    "Dominic Gan <dominicgangx@gmail.com>"
+  ],
+  "description": "Portfolio site",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "dominicgan.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "featherlight": "^1.4.0",
+    "font-awesome": "fontawesome#^4.6.1",
+    "imagesloaded": "^4.1.0",
+    "isotope": "^2.2.2",
+    "modular-scale": "^2.1.3",
+    "wow": "wowjs#^1.1.2"
+  }
+}

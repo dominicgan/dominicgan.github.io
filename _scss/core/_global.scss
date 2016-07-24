@@ -3,11 +3,11 @@ body {
 	font-size: rem(14);
 	// font-weight: 300;
 
-	@media (min-width: $mob-min-width){
+	@include media($mob-min-width){
 		font-size: rem(15);
 	}
 
-	@media (min-width: $tab-min-width){
+	@include media($tab-min-width){
 		font-size: rem(16);
 	}
 }
@@ -74,7 +74,7 @@ nav {
 			&:hover,
 			&:active {
 				color: $black300;
-				@media (min-width: $mob-min-width){
+				@include media($mob-min-width){
 					color: $white100;
 					color: $black300;
 				}
@@ -113,7 +113,7 @@ nav {
 			@include clip-path-down;
 			padding-bottom: rem(30); // clip-path version
 
-			@media (min-width: $mob-min-width){
+			@include media($mob-min-width){
 				padding-bottom: rem(50); // clip-path version
 			}
 		}
@@ -140,11 +140,11 @@ nav {
 		@include sect-side-padding;
 		padding-top: rem(80); // clip-path version
 
-		@media (min-width: $mob-min-width){
+		@include media($mob-min-width){
 			padding-top: rem(100); // clip-path version
 		}
 
-		@media (min-width: $desk-min-width){
+		@include media($desk-min-width){
 			padding: 0;
 			padding-top: rem(100); // clip-path version
 		}
@@ -159,16 +159,16 @@ nav {
 	.footer-col-wrapper {
 		margin-left: 0;
 
-		// @media (min-width: $mob-min-width){
+		// @include media($mob-min-width){
 		// 	margin-left: rem(-15);
 		// }
-		// @media (min-width: $tab-min-width){
+		// @include media($tab-min-width){
 		// 	margin-left: rem(0);
 		// }
-		@media (min-width: $desk-min-width){
+		@include media($desk-min-width){
 			padding-left: rem(30);
 		}
-		@media (min-width: $hires-min-width){
+		@include media($hires-min-width){
 			padding-left: 0;
 		}
 	}
@@ -184,11 +184,11 @@ section header h2 {
 	font-weight: 600;
 	color: $base-color300;
 
-	@media (min-width: $mob-min-width){
+	@include media($mob-min-width){
 		font-size: rem(28);
 	}
 
-	@media (min-width: $tab-min-width){
+	@include media($tab-min-width){
 		font-size: rem(30);
 	}
 }
@@ -260,7 +260,7 @@ header.page-inner {
 	@include clip-path-down;
 	padding-bottom: rem(30);
 
-	@media (min-width: $mob-min-width){
+	@include media($mob-min-width){
 		padding-bottom: rem(50); // clip-path version
 	}
 	// margin-bottom: rem(30);

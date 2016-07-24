@@ -12,16 +12,16 @@
 
 	.row {
 		height: rem(300);
-		@media (min-width: $mob-min-width){
+		@include media($mob-min-width){
 			height: rem(350);
 		}
-		@media (min-width: $tab-min-width){
+		@include media($tab-min-width){
 			height: rem(400);
 		}
-		@media (min-width: $lap-min-width){
+		@include media($lap-min-width){
 			height: rem(450);
 		}
-		@media (min-width: $hires-min-width){
+		@include media($hires-min-width){
 			height: rem(500);
 		}
 		display: flex;
@@ -37,10 +37,10 @@
 	.title {
 		@include title-styling;
 		font-size: rem(42);
-		@media (min-width: $mob-min-width){
+		@include media($mob-min-width){
 		font-size: rem(48);
 		}
-		@media (min-width: $tab-min-width){
+		@include media($tab-min-width){
 		font-size: rem(55);
 		}
 	}

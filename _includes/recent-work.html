@@ -1,0 +1,25 @@
+<div class="row">
+    <h1 class="page-heading wow fadeInDown">{{ site.data.index.recent-title }}</h1>
+    <p class="description wow fadeIn">{{ site.data.index.recent-description }}</p>
+    <hr class="short red wow fadeIn">
+
+    <ul class="post-list">
+      {% for post in site.posts limit:4 %}
+      <li class="post-item {{ post.featured }} {% for category in post.categories %}{{ category }} {% endfor %} wow fadeInUp" data-wow-delay="0.{{ forloop.index }}s">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="post-img">
+        <img src="{{ post.cover-image-index }}" alt="{{ post.name }}" title="{{ post.name }}">
+      </a>
+        <div class="post-desc">
+          <h3 class="post-link name">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+          <span class="post-meta date"><time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %Y" }}</time></span>
+          <!-- <ul class="post-categories">{% for category in post.categories %}<li>{{ category }}</li>{% endfor %}</ul> -->
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="row">
+    <a class="right read-more wow fadeIn" href="/portfolio/" data-wow-delay="1s">See more</a>
+  </div>

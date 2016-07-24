@@ -16,6 +16,27 @@ image4:
 image5:
 ---
 
+
+This is a header 1
+==================
+
+This is a header 2
+------------------
+
+> This is a blockquote
+
+* This
+  + is
+    - an
+  + unordered
+- list
+
+1. This
+2. is
+3. an
+4. ordered
+5. list
+
 Corporate website for NPE Print Communication. WordPress CMS, design built on the Avada theme framework.
 
 Designed and developed the website in Wordpress using a template engine.
