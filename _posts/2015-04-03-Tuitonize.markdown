@@ -16,6 +16,6 @@ image4:
 image5:
 ---
 
-Corporate website for NPE Print Communication. WordPress CMS, design built on the Avada theme framework.
+Mobile app for Tuition/tutor matching service in Singapore.
 
-Designed and developed the website in Wordpress using a template engine.
+Designed user interface for app. Worked closely with client and marketing agency in formulating the design.

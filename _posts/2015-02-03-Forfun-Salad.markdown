@@ -16,6 +16,6 @@ image4:
 image5:
 ---
 
-Corporate website for NPE Print Communication. WordPress CMS, design built on the Avada theme framework.
+E-Commerce website for Forfun Salad, to enable online ordering for custom salads.
 
-Designed and developed the website in Wordpress using a template engine.
+In charge of conceptualizing the user interface, as well as project management. Interface designed in Photoshop. Website built on Magento CMS.

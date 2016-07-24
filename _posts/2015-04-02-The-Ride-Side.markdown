@@ -7,7 +7,7 @@ cover-image: https://unsplash.it/600/400/
 cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
-client: NPE Print Communications
+client: The Ride Side
 
 image1: test.jpg
 image2: jpramen.jpg
@@ -16,6 +16,6 @@ image4:
 image5:
 ---
 
-Corporate website for NPE Print Communication. WordPress CMS, design built on the Avada theme framework.
+Freelance project. Corporate website for The Ride Side, a snowboarding tour agency operating out of Singapore.
 
-Designed and developed the website in Wordpress using a template engine.
+Website powered by WordPress CMS and Avada Theme framework.

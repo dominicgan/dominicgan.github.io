@@ -3,11 +3,12 @@ layout: post
 title:  "Swimfast/The Swim Lab"
 date:   2015-04-01 10:00:00 +0800
 categories: web-design proj-mgmt case-study wordpress
-cover-image: https://unsplash.it/600/400/
-cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications
+
+cover-image: https://unsplash.it/600/400/
+cover-image-index: https://unsplash.it/600/400/
 
 image1: test.jpg
 image2: jpramen.jpg
@@ -37,6 +38,6 @@ This is a header 2
 4. ordered
 5. list
 
-Corporate website for NPE Print Communication. WordPress CMS, design built on the Avada theme framework.
+Corporate websites for Swimfast & The Swim Lab, swimming schools based in Singapore.
 
-Designed and developed the website in Wordpress using a template engine.
+Designed in Photoshop, implemented with Wordpress & Avada template framework.
