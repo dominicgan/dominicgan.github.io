@@ -2,7 +2,7 @@
 layout: post
 title:  "Immortal UI Revamp"
 date:   2016-07-01 10:00:00 +0800
-categories: web-design proj-mgmt case-study wordpress
+categories: front-end
 cover-image: https://unsplash.it/440/400/
 cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.
