@@ -29,21 +29,13 @@ article {
 		// @include omega();
 
 		.post-meta__date-author {
-			@include span-columns(12);
-
-			@include media($tab-min-width) {
-				@include span-columns(6);
-			}
+			@include span-columns(4);
 		}
 
 		.post-meta__attrib {
-			@include span-columns(12);
+			@include span-columns(8);
+			@include omega();
 			text-align: right;
-
-			@include media($tab-min-width) {
-				@include span-columns(6);
-				@include omega();
-			}
 		}
 
 		// @include media($tab-min-width){

@@ -49,134 +49,13 @@ h2 {
 	font-family: $header-family;
 }
 
-nav {
-	&.site-nav {
-		&:not(:hover):not(:active):not(:focus) {
-			background: transparent;
-		}
-
-		.menu-icon {
-			height: 36px;
-		}
-
-		.page-link {
-			// color: $white200;
-			font-family: $suppl-family;
-			// text-transform: uppercase;
-			font-weight: 400;
-			color: $black200;
-			// font-weight: 300;
-
-			@media ($mob-min-width){
-				font-size: rem(15);
-			}
-
-			&:hover,
-			&:active {
-				color: $black300;
-				@include media($mob-min-width){
-					color: $white100;
-					color: $black300;
-				}
-			}
-	}
-
-}
+article {
+	@include sect-padding;
+	@include clip-path-both;
+	background: $white100;
 }
 
-.site-header {
-	@include sect-side-padding;
-	background: transparent;
-	border-bottom-width: 0;
-	margin-bottom: rem(-56);
-	z-index: 10;
-	// border-top-color: shade($accent-color, 30%);
-	border-top-width: 0;
-}
-
-.fullwidth {
-	max-width: 100%;
-	// padding: 0;
-}
-
-.wrapper.fullwidth {
-	padding: 0;
-
-	> section {
-		&:not(.hero){
-			@include sect-padding;
-			@include clip-path-both;
-		}
-
-		&.hero {
-			@include sect-side-padding;
-			@include clip-path-down;
-			padding-bottom: rem(30); // clip-path version
-
-			@include media($mob-min-width){
-				padding-bottom: rem(50); // clip-path version
-			}
-		}
-	}
-
-	article {
-		@include sect-padding;
-		@include clip-path-both;
-		background: $white100;
-	}
-}
-
-.site-footer {
-	@include clip-path-up;
-	position: relative;
-	background: $white200;
-
-	* {
-		font-family: $suppl-family;
-		letter-spacing: 0.3px;
-	}
-
-	.wrapper.fullwidth .row{
-		@include sect-side-padding;
-		padding-top: rem(80); // clip-path version
-
-		@include media($mob-min-width){
-			padding-top: rem(100); // clip-path version
-		}
-
-		@include media($desk-min-width){
-			padding: 0;
-			padding-top: rem(100); // clip-path version
-		}
-
-		.footer-col {
-			padding-left: 0;
-			padding-right: 15px;
-		}
-		// @include sect-padding;
-	}
-
-	.footer-col-wrapper {
-		margin-left: 0;
-
-		// @include media($mob-min-width){
-		// 	margin-left: rem(-15);
-		// }
-		// @include media($tab-min-width){
-		// 	margin-left: rem(0);
-		// }
-		@include media($desk-min-width){
-			padding-left: rem(30);
-		}
-		@include media($hires-min-width){
-			padding-left: 0;
-		}
-	}
-}
-
-.page-heading,
-section header h2 {
-	// @include transform(scaleY(1.1));
+.page-heading {
 	font-family: $header-family;
 	font-size: rem(26);
 	font-style: italic;
@@ -191,34 +70,6 @@ section header h2 {
 	@include media($tab-min-width){
 		font-size: rem(30);
 	}
-}
-
-.row {
-	@include row();
-	max-width: $content-width;
-	margin: 0 auto;
-}
-
-.right { float: right;}
-
-.clearfix { clear: both;}
-
-.text-center {
-	text-align: center;
-}
-
-.hidden {
-	display: none;
-}
-
-.inline-lists {
-	@include inline-lists;
-}
-
-.page-content {
-	position: relative;
-	padding: 0;
-	z-index: 9;
 }
 
 hr,
@@ -245,16 +96,7 @@ span {
 	}
 }
 
-a.read-more {
-	color: $black200;
-
-	&:visited {
-		color: $black400;
-	}
-}
-
-
-header.page-inner {
+.page-content-header {
 	@include hero-colors;
 	@include sect-side-padding;
 	@include clip-path-down;
@@ -266,29 +108,35 @@ header.page-inner {
 	// margin-bottom: rem(30);
 
 	.header-wrapper {
-		display: block;
-		position: relative;
+		// display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: rem(300);
+	width: 100%;
+		// position: relative;
 		max-width: $content-width;
+		// width: 100%;
 		margin: 0 auto;
 	}
 
-	.row {
-		height: rem(300);
-		display: flex;
-		align-items: flex-end;
-		justify-content: flex-start;
+	.header-content {
+		width: 100%;
+	}
 
-		.content {
-			margin: rem(50) 0;
-		}
+	// .row {
 
-		.page-heading {
+		// .content {
+		// 	// margin: rem(50) 0;
+		// }
+
+		.title {
 			font-size: rem(44);
 			@include title-styling;
 		}
 
-		.description {
+		.subtitle {
 			@include subtitle-styling;
 		}
-	}
+	// }
 }

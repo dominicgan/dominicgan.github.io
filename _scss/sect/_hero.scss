@@ -63,13 +63,15 @@
 
 
 #hero-name {
+	margin-bottom: rem(10);
+
   path {
-    @include animation(name-dash 3s ease-in-out forwards);
+    @include animation(name-dash 1.5s ease-in-out forwards);
     fill: transparent;
     stroke: $black300;
     stroke-width: 1px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
+    stroke-dasharray: 900;
+    stroke-dashoffset: 1900;
   }
 }
 
