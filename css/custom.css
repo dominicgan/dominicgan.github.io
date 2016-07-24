@@ -908,7 +908,7 @@ span.header {
 .post .post-cover-image,
 .post .post-content {
   display: block;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 0.9375rem; }
   .post .post-cover-image::after,
   .post .post-content::after {
     clear: both;
