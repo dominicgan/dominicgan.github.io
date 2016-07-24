@@ -115,12 +115,12 @@ span {
 	height: rem(300);
 	width: 100%;
 		// position: relative;
-		max-width: $content-width;
 		// width: 100%;
 		margin: 0 auto;
 	}
 
 	.header-content {
+		max-width: $content-width;
 		width: 100%;
 	}
 
