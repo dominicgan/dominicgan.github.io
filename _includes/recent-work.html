@@ -7,7 +7,7 @@
       {% for post in site.posts limit:4 %}
       <li class="post-item {{ post.featured }} {% for category in post.categories %}{{ category }} {% endfor %} wow fadeInUp" data-wow-delay="0.{{ forloop.index }}s">
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-img">
-        <img src="{{ post.cover-image-index }}" alt="{{ post.name }}" title="{{ post.name }}">
+      <img src="{{ post.cover-image-index }}-xs.jpg" srcset="{{ post.cover-image-index }}-sm.jpg 480w, {{ post.cover-image-index }}-md.jpg 768w" alt="{{ post.name }}" title="{{ post.name }}">
       </a>
         <div class="post-desc">
           <h3 class="post-link name">

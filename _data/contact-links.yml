@@ -1,18 +1,18 @@
-- name: Linkedin
-  link: http://www.google.com/
+- name: LinkedIn
+  link: https://sg.linkedin.com/in/dominic-gan-7079386b
   icon: fa-linkedin
 
 - name: Github
-  link: http://www.google.com/
+  link: https://github.com/dominicgan
   icon: fa-github
 
 - name: Codepen
-  link: http://www.google.com/
+  link: http://codepen.io/dominicgan/
   icon: fa-codepen
 
-- name: Flickr
-  link: http://www.google.com/
-  icon: fa-flickr
+# - name: Flickr
+#   link: http://www.google.com/
+#   icon: fa-flickr
 
 # - name: Behance
 #   link: http://www.google.com/
