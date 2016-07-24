@@ -8,6 +8,7 @@ cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications
+published: false
 
 image1: test.jpg
 image2: jpramen.jpg

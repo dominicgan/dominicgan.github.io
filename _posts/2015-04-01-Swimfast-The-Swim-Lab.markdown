@@ -7,7 +7,7 @@ attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications
 
-cover-image: https://unsplash.it/600/400/
+cover-image: https://unsplash.it/600/600/
 cover-image-index: https://unsplash.it/600/400/
 
 image1: test.jpg

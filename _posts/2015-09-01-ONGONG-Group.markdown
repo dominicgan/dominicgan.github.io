@@ -3,7 +3,7 @@ layout: post
 title:  "ONG&amp;ONG Group UI Revamp"
 date:   2015-09-01 10:00:00 +0800
 categories: web-design proj-mgmt case-study wordpress
-cover-image: https://unsplash.it/480/360/
+cover-image: https://unsplash.it/600/600/
 cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
