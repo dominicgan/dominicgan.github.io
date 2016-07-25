@@ -4,17 +4,17 @@ title:  "EasySpa"
 date:   2014-12-02 10:00:00 +0800
 categories: ui-design mobile
 attribution: Under employ of Balanced Consultancy Pte Ltd.
-link: http://www.npe.com.sg
-client: NPE Print Communications
+link: http://easyspa.org/
+client: EasySpa
 
 cover-image: /images/project/Easy-Spa
 cover-image-index: /images/project/Easy-Spa
 
-image1: test.jpg
-image2: jpramen.jpg
-image3:
-image4:
-image5:
+image1: /images/project/easyspa-inner-1
+image2: /images/project/easyspa-inner-3
+image3: /images/project/easyspa-inner-5
+image4: /images/project/easyspa-inner-2
+image5: /images/project/easyspa-inner-4
 ---
 
 Mobile app for matching spa services.

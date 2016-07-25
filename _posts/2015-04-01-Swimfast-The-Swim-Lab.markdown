@@ -4,15 +4,15 @@ title:  "Swimfast/The Swim Lab"
 date:   2015-04-01 10:00:00 +0800
 categories: web-design proj-mgmt case-study wordpress
 attribution: Under employ of Balanced Consultancy Pte Ltd.
-link: http://www.npe.com.sg
-client: NPE Print Communications
+link: http://www.swimfast.com.sg
+client: Swimfast Aquatic Group Pte Ltd
 
 cover-image: /images/project/Swimfast
 cover-image-index: /images/project/Swimfast
 
-image1: test.jpg
-image2: jpramen.jpg
-image3:
+image1: /images/project/swimfast-inner-1
+image2: /images/project/swimfast-inner-2
+image3: /images/project/swimfast-inner-3
 image4:
 image5:
 ---

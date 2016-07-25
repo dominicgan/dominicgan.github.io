@@ -10,11 +10,11 @@ client: Snood Creative, for Motorola.
 cover-image: /images/project/mototrbo
 cover-image-index: /images/project/mototrbo
 
-image1: test.jpg
-image2: jpramen.jpg
-image3:
-image4:
-image5:
+image1: /images/project/mototrbo-inner-1
+image2: /images/project/mototrbo-inner-2
+image3: /images/project/mototrbo-inner-3
+image4: /images/project/mototrbo-inner-4
+<!-- image5: /images/project/mototrbo-inner-1 -->
 ---
 
 Microsite to showcase/launch MOTOTRBO, Motorola’s range of radio systems.
