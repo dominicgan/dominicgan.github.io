@@ -6,7 +6,7 @@ layout: inner
 		<div class="post-meta">
 			<div class="post-meta__date-author">
 				<div class="date">
-					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %Y" }}</time>
 				</div>
 				{% if page.author %}
 				<div class="author">
