@@ -37,6 +37,13 @@
 			text-align: right;
 		}
 
+		.post-meta__site-link {
+			display: block;
+			font-size: rem(14);
+			font-weight: 600;
+			color: $black100;
+		}
+
 		// @include media($tab-min-width){
 		// 	@include span-columns(4);
 		// }
@@ -46,6 +53,15 @@
 		// @include media($desk-min-width){
 		// 	@include span-columns(2);
 		// }
+	}
+
+	.post-inner-images {
+		img {
+			display: block;
+			width: 100%;
+			position: relative;
+			margin-bottom: rem(15);
+		}
 	}
 
 	.post-skills {
