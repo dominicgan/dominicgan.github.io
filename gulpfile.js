@@ -14,6 +14,7 @@ var clip = require('gulp-clip-empty-files');
 var filesize = require('gulp-filesize');
 var changed = require("gulp-changed");
 var parallel = require('concurrent-transform');
+var del = require('del');
 var os = require("os");
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -24,22 +25,27 @@ var imgResponsive = require('gulp-responsive');
 
 gulp.task('proj-image-resize', function () {
   return gulp.src('images/project_src/*.{png,jpg}')
-    .pipe(imgResponsive({
-        '*.jpg': [{
-            width: 360,
-            rename: { suffix: '-xs' },
-        }, {
-            width: 540,
-            rename: { suffix: '-sm' },
-        }, {
-            width: 768,
-            rename: { suffix: '-md' },
-        }, {
-            width: 1200,
-            rename: { suffix: '-lg' },
-        }, {
-            rename: { suffix: '-src' },
-        }],
+  .pipe(plumber(function(error) {
+            gutil.log(gutil.colors.red(error.message));
+            this.emit('end');
+    }))
+  .pipe(gulp.dest('images/project/converted'))
+  .pipe(imgResponsive({
+    '*.jpg': [{
+        width: 360,
+        rename: { suffix: '-xs' },
+    }, {
+        width: 540,
+        rename: { suffix: '-sm' },
+    }, {
+        width: 768,
+        rename: { suffix: '-md' },
+    }, {
+        width: 1200,
+        rename: { suffix: '-lg' },
+    }, {
+        rename: { suffix: '-src' },
+    }],
     },
     {
     // Global configuration for all images
@@ -134,6 +140,6 @@ gulp.task('proj-image-resize', function () {
  */
  gulp.task('default', ['browser-sync', 'sass', 'proj-image-resize'], function(){
  	gulp.watch('_scss/**/*.scss', ['sass']);
- 	gulp.watch('images/project_src/*.{jpg,png}', ['proj-image-resize']);
+ 	gulp.watch('images/project_src/*.*', ['proj-image-resize']);
  	gulp.watch(['about.md', '_data/**/*.*', 'feed.xml', '_config.yml', 'index.html', '_layouts/*.html', '_posts/*',  '_drafts/*', '_includes/*.html', 'js/**/*.js', 'css/**/*.css', '*.md', '*.html'], ['jekyll-rebuild']);
  });
