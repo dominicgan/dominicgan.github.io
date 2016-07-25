@@ -10,10 +10,10 @@ client: Passage New York – Global Wellness Holdings
 cover-image: /images/project/PassageNY
 cover-image-index: /images/project/PassageNY
 
-image1: test.jpg
-image2: jpramen.jpg
-image3:
-image4:
+image1: /images/project/passageny-inner-2
+image2: /images/project/passageny-inner-3
+image3: /images/project/passageny-inner-4
+image4: /images/project/passageny-inner-1
 image5:
 ---
 
