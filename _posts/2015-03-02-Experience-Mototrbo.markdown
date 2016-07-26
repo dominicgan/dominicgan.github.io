@@ -2,7 +2,7 @@
 layout: post
 title:  "Experience Mototrbo"
 date:   2015-03-02 10:00:00 +0800
-categories: front-end proj-mgmt wordpress
+categories: project front-end proj-mgmt wordpress
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.experiencemototrbo.com
 client: Snood Creative, for Motorola.

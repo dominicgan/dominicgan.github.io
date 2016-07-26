@@ -26,7 +26,8 @@ permalink: /portfolio/
 </div>
   <div class="row list">
     <ul class="post-list">
-      {% for post in site.posts %}
+      {% for post in site.categories.project %}
+
       <li class="post-item {{ post.featured }} {% for category in post.categories %}{{ category }} {% endfor %}">
       <a href="{{ post.url | prepend: site.baseurl }}" class="post-img">
         <img src="{{ post.cover-image-index }}-xs.jpg" srcset="{{ post.cover-image-index }}-sm.jpg 540w, {{ post.cover-image-index }}-md.jpg 768w" sizes="(min-width: 48em) 50vw, (min-width: 64em) 33.3vw, 100vw" alt="{{ post.name }}" title="{{ post.name }}">

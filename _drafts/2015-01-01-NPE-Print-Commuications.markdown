@@ -2,7 +2,7 @@
 layout: post
 title:  "NPE Print Communications"
 date:   2015-01-01 10:00:00 +0800
-categories: web-design wordpress proj-mgmt
+categories: project web-design wordpress proj-mgmt
 cover-image: https://unsplash.it/600/400/
 cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.

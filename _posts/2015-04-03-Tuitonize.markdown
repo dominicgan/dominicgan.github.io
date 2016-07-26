@@ -2,7 +2,7 @@
 layout: post
 title:  "Tuitionize"
 date:   2015-04-03 10:00:00 +0800
-categories: ui-design mobile prototype 
+categories: project ui-design mobile prototype 
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications

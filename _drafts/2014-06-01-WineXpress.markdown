@@ -2,7 +2,7 @@
 layout: post
 title:  "WineXpress"
 date:   2014-06-01 10:00:00 +0800
-categories: front-end
+categories: project front-end
 cover-image: https://unsplash.it/600/600/
 cover-image-index: https://unsplash.it/600/400/
 attribution: IS4227 Enterprise Service-Oriented Architecture

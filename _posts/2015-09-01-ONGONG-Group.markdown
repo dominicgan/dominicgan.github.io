@@ -2,7 +2,7 @@
 layout: post
 title:  "ONG&amp;ONG Group"
 date:   2015-09-01 10:00:00 +0800
-categories: web-design front-end rails
+categories: project web-design front-end rails
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.group.ong-ong.com
 client: ONG&ONG Group Pte Ltd

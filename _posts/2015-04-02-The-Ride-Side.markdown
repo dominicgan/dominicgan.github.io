@@ -2,7 +2,7 @@
 layout: post
 title:  "The Ride Side"
 date:   2015-04-02 10:00:00 +0800
-categories: web-design proj-mgmt wordpress
+categories: project web-design proj-mgmt wordpress
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: The Ride Side

@@ -2,7 +2,7 @@
 layout: post
 title:  "Amethyism"
 date:   2015-03-01 10:00:00 +0800
-categories: web-design proj-mgmt wordpress
+categories: project web-design proj-mgmt wordpress
 cover-image: https://unsplash.it/600/400/
 cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.

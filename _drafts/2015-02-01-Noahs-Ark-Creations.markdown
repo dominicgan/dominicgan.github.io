@@ -2,7 +2,7 @@
 layout: post
 title:  "Noah's Ark Creations"
 date:   2015-02-01 10:00:00 +0800
-categories: front-end proj-mgmt magento
+categories: project front-end proj-mgmt magento
 cover-image: https://unsplash.it/600/400/
 cover-image-index: https://unsplash.it/600/400/
 attribution: Under employ of Balanced Consultancy Pte Ltd.

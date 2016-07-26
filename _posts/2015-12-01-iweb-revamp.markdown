@@ -2,7 +2,7 @@
 layout: post
 title:  "iweb"
 date:   2016-01-01 10:00:00 +0800
-categories: web-design front-end ui-design prototype
+categories: project web-design front-end ui-design prototype
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications

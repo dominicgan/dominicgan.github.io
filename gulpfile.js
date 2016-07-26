@@ -141,5 +141,5 @@ gulp.task('proj-image-resize', function () {
  gulp.task('default', ['browser-sync', 'sass', 'proj-image-resize'], function(){
  	gulp.watch('_scss/**/*.scss', ['sass']);
  	gulp.watch('images/project_src/*.*', ['proj-image-resize']);
- 	gulp.watch(['about.md', '_data/**/*.*', 'feed.xml', '_config.yml', 'index.html', '_layouts/*.html', '_posts/*',  '_drafts/*', '_includes/*.html', 'js/**/*.js', 'css/**/*.css', '*.md', '*.html'], ['jekyll-rebuild']);
+ 	gulp.watch(['about.md', '_data/**/*.*', 'feed.xml', '_config.yml', 'index.html', '_layouts/*.html', '_posts/**/*.*',  '_drafts/*', '_includes/*.html', 'js/**/*.js', 'css/**/*.css', '*.md', '*.html'], ['jekyll-rebuild']);
  });

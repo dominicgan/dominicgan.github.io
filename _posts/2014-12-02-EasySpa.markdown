@@ -2,7 +2,7 @@
 layout: post
 title:  "EasySpa"
 date:   2014-12-02 10:00:00 +0800
-categories: ui-design mobile
+categories: project ui-design mobile
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://easyspa.org/
 client: EasySpa

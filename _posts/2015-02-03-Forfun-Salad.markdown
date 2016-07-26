@@ -2,7 +2,7 @@
 layout: post
 title:  "Forfun Salad"
 date:   2015-02-03 10:00:00 +0800
-categories: web-design proj-mgmt magento
+categories: project web-design proj-mgmt magento
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: 
 client: ForfunSalad
