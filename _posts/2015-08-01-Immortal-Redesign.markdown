@@ -2,7 +2,7 @@
 layout: post
 title:  "Immortal The Design Station"
 date:   2015-08-01 10:00:00 +0800
-categories: web-design front-end
+categories: front-end rails
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.immortal.com.sg
 client: ONG&ONG Group Pte Ltd
