@@ -7,14 +7,14 @@ attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.group.ong-ong.com
 client: ONG&ONG Group Pte Ltd
 
-cover-image: /images/project/ongonggroup
-cover-image-index: /images/project/ongonggroup
+cover-image: /images/project/oo-cover
+cover-image-index: /images/project/oo-cover
 
-image1: test.jpg
-image2: jpramen.jpg
-image3:
-image4:
-image5:
+image1:	/images/project/oo-inner-1
+image2:	
+image3:	/images/project/oo-inner-3
+image4:	/images/project/oo-inner-4
+image5:	
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis incidunt quam repellendus inventore. A consequatur, nam porro ducimus doloremque magni accusamus fuga sit adipisci cupiditate deleniti quia expedita fugiat inventore, ipsa tenetur obcaecati ratione quos ad vel, laboriosam aperiam?

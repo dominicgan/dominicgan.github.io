@@ -7,13 +7,13 @@ attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.immortal.com.sg
 client: ONG&ONG Group Pte Ltd
 
-cover-image: /images/project/immortal
-cover-image-index: /images/project/immortal
+cover-image: /images/project/imm-cover
+cover-image-index: /images/project/imm-cover
 
-image1: test.jpg
-image2: jpramen.jpg
-image3:
-image4:
+image1: /images/project/imm-inner-1
+image2: /images/project/imm-inner-2
+image3: /images/project/imm-inner-3
+image4: /images/project/imm-inner-4
 image5:
 ---
 
