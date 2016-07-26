@@ -7,8 +7,8 @@ attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.experiencemototrbo.com
 client: Snood Creative, for Motorola.
 
-cover-image: /images/project/mototrbo
-cover-image-index: /images/project/mototrbo
+cover-image: /images/project/mototrbo-cover
+cover-image-index: /images/project/mototrbo-cover
 
 image1: /images/project/mototrbo-inner-1
 image2: /images/project/mototrbo-inner-2
