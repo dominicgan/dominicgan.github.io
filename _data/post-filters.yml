@@ -4,13 +4,13 @@
 - name: Mobile App Design
   class: mobile
 
-- name: Case Study
-  class: case-study
+# - name: Case Study
+#   class: case-study
 
 - name: Web Design
   class: web-design
 
-- name: Front-end Development
+- name: Front-end Dev
   class: front-end
 
 - name: Prototyping
@@ -21,3 +21,6 @@
 
 - name: Magento
   class: magento
+
+- name: Rails CMS
+  class: rails
