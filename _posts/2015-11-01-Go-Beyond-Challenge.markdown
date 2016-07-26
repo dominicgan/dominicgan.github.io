@@ -10,8 +10,8 @@ client: ONG Foundation
 cover-image: /images/project/gobeyond
 cover-image-index: /images/project/gobeyond
 
-image1: test.jpg
-image2: jpramen.jpg
+image1: /images/project/gb-inner-1
+image2: 
 image3:
 image4:
 image5:
