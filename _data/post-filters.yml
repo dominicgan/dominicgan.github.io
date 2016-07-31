@@ -22,5 +22,5 @@
 - name: Magento
   class: magento
 
-- name: Rails CMS
+- name: Rails
   class: rails

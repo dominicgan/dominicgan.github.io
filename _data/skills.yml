@@ -1,27 +1,33 @@
-- name: Responsive Web Design
-- name: Wireframing/Prototyping
-- name: Client-side Development
-- name: HTML5
-- name: CSS3
+- name: Website/User Interface Design
+- name: Wireframing
+- name: Rapid Prototyping
+- name: HTML5/CSS3
 - name: Javascript
-- name: HAML
 - name: Sass
-- name: Markdown
-- name: Git
-# - name: PHP
-# - name: Ruby/Rails
+- name: Gulp
 - name: Jekyll
-- name: Liquid
-# - name: Jquery
-- name: Bootstrap
-- name: Foundation
-# - name: Bourbon
-- name: Photoshop
-- name: Illustrator
-- name: Balsamiq
-- name: Justinmind
+- name: PHP
+- name: Ruby/Rails
+- name: Bower
+- name: Adobe Creative Suite
 - name: Wordpress
-- name: More..
+- name: Yii
+- name: more..
+# - name: Client-side Development
+# - name: CSS3
+# - name: Markdown
+# - name: Git
+# - name: Ruby/Rails
+# - name: Liquid
+# - name: Jquery
+# - name: Bootstrap
+# - name: Foundation
+# - name: Bourbon
+# - name: Photoshop
+# - name: Illustrator
+# - name: Balsamiq
+# - name: Sketch
+# - name: Justinmind
 # - name: Magento
 
 

@@ -5,27 +5,20 @@
 # Splitting 'em up from the template file, see!
 
 # section.about
-about-title: About Me
+about-title: Hey there!
 about-subtitle: 
 about-description: >
-  <p>I am a web designer and front-end developer currently employed at Balanced Consultancy/Novitee Pte Ltd. I graduated from the National University of Singapore in 2014 with a Bachelor’s Degree (Honours) in Computing, majoring in E-Commerce.</p>
+  <p>My name's Dominic, and I'm a web designer/front-end developer currently working at ONG&ONG Group Pte Ltd.</p>
 
-  <p>I am passionate about designing user interfaces, in particular for websites and mobile apps. I aim to design clear and usable interfaces, and I base my designs upon this principle.</p>
+  <p>I believe in creating clear and intuitive experiences through well designed interfaces. I take pride in writing clean and scalable markup with a focus on performance.</p>
+
 
 # section.recent-work
 recent-title: Recent Work
 recent-description: >
-  Here's some stuff I've worked on recently:
+  So here are some of the projects I've been working on recently:
 
 # section.contact-me
 contact-title: Get in Touch
 contact-description: >
-  Hit me up! (unless its for spam. then please don’t.)
-
-# I am a web designer and front-end developer currently employed at Balanced Consultancy/Novitee Pte Ltd. I graduated from the National University of Singapore in 2014 with a Bachelor’s Degree (Honours) in Computing, majoring in E-Commerce.
-
-# I am passionate about designing user interfaces, in particular for websites and mobile apps. I aim to design clear and usable interfaces, and I always base my designs upon this principle. I work primarily in Photoshop, as well as in Illustrator occasionally.
-
-# In addition to designing user interfaces, I am also highly competent in client side development, specialising in HTML, CSS, JS & PHP. I have a deep understanding of major CMS systems such as WordPress & Magento, having used them extensively in my work.
-
-# I enjoy swimming, photography, watching football, movies and a great deal of american dramas, and collecting mechanical keyboards.
+  Hit me up!
