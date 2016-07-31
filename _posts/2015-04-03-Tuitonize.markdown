@@ -10,8 +10,8 @@ client: NPE Print Communications
 cover-image: /images/project/TuitioNize
 cover-image-index: /images/project/TuitioNize
 
-image1: test.jpg
-image2: jpramen.jpg
+image1: /images/project/tui-inner-1
+image2: /images/project/tui-inner-2
 image3:
 image4:
 image5:
