@@ -37,7 +37,9 @@
 
 	.title {
 		@include title-styling;
+		color: $white300;
 		font-size: rem(42);
+
 		@include media($mob-min-width){
 			font-size: rem(48);
 		}
@@ -48,10 +50,12 @@
 
 	.subtitle {
 		@include subtitle-styling;
+		color: $white300;
 
 		a {
+			// color: $white100;
+			// color: $black300;
 			color: $white100;
-			color: $black300;
 			font-weight: 400;
 		}
 	}
@@ -64,12 +68,15 @@
 
 
 #hero-name {
+	// $hero-stroke-color: $base-color300;
+	$hero-stroke-color: $white100;
+
 	margin-bottom: rem(10);
 
 	path {
 		@include animation(name-dash 1.5s ease-in-out forwards);
 		fill: transparent;
-		stroke: $black300;
+		stroke: $hero-stroke-color;
 		stroke-width: 1px;
 		stroke-dasharray: 900;
 		stroke-dashoffset: 1900;

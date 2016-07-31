@@ -49,6 +49,14 @@ html {
   font-weight: 900;
   src: url("../fonts/oswald/hinted-Oswald-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald/hinted-Oswald-HeavyItalic.woff2") format("woff2"), url("../fonts/oswald/hinted-Oswald-HeavyItalic.woff") format("woff"), url("../fonts/oswald/hinted-Oswald-HeavyItalic.ttf") format("truetype"); }
 
+::-moz-selection {
+  background-color: #4d4d4d;
+  color: white; }
+
+::selection {
+  background-color: #4d4d4d;
+  color: white; }
+
 body {
   background: whitesmoke;
   font-size: 0.875rem; }
@@ -58,14 +66,6 @@ body {
   @media screen and (min-width: 768px) {
     body {
       font-size: 1rem; } }
-
-::-moz-selection {
-  background-color: #4d4d4d;
-  color: white; }
-
-::selection {
-  background-color: #4d4d4d;
-  color: white; }
 
 a {
   color: #5c75aa; }
@@ -89,7 +89,8 @@ span {
 
 h1,
 h2 {
-  font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif; }
+  font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
+  color: #214183; }
 
 article {
   padding: 4.375rem 0.9375rem;
@@ -243,17 +244,15 @@ span.header {
         padding-bottom: 3.125rem; } }
 
 .page-content-header {
-  background-color: #2d2d2d;
-  background-color: #f7f7f7;
-  background-color: #ebebeb;
-  background-image: linear-gradient(105deg, #ebebeb 0%, #d8d8d8 100%);
+  background-color: #dfe0e8;
+  background-image: linear-gradient(180deg, #214183 0%, #37548f 100%);
   padding: 0 0.9375rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0% 100%);
   margin-bottom: -20px;
   padding-bottom: 1.875rem; }
   .page-content-header * {
-    color: #2d2d2d; }
+    color: white; }
   @media screen and (min-width: 640px) {
     .page-content-header {
       padding: 0 1.875rem; } }
@@ -304,20 +303,22 @@ span.header {
     max-width: 60rem;
     width: 100%; }
   .page-content-header .title {
-    font-size: 2.75rem;
     font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
     line-height: 1;
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase;
-    color: #4d4d4d;
-    margin: 0; }
+    color: #214183;
+    margin: 0;
+    font-size: 2.75rem;
+    color: #d8d8d8; }
   .page-content-header .subtitle {
     font-size: 1.1875rem;
     font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
     font-weight: 300;
-    color: #2d2d2d;
-    letter-spacing: 0.3px; }
+    color: #214183;
+    letter-spacing: 0.3px;
+    color: #d8d8d8; }
     @media screen and (min-width: 640px) {
       .page-content-header .subtitle {
         font-size: 1.25rem; } }
@@ -331,7 +332,7 @@ span.header {
   font-style: italic;
   text-transform: uppercase;
   font-weight: 600;
-  color: #383838; }
+  color: #37548f; }
   @media screen and (min-width: 640px) {
     .page-heading {
       font-size: 1.75rem; } }
@@ -344,20 +345,30 @@ span.header {
 
 .site-nav .menu-icon {
   height: 36px; }
+  .site-nav .menu-icon > svg path {
+    fill: #ebebeb; }
+
+.site-nav:hover .menu-icon > svg path, .site-nav:active .menu-icon > svg path {
+  fill: #2c56af; }
 
 .site-nav .page-link {
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #2d2d2d; }
-  @media (640px) {
+  font-weight: 400; }
+  @media screen and (min-width: 640px) {
     .site-nav .page-link {
       font-size: 0.9375rem; } }
-  .site-nav .page-link:hover, .site-nav .page-link:active {
-    color: #4d4d4d; }
-    @media screen and (min-width: 640px) {
+  @media screen and (max-width: 600px) {
+    .site-nav .page-link {
+      color: #2c56af;
+      padding: 0.625rem 0.9375rem; } }
+  @media screen and (min-width: 601px) {
+    .site-nav .page-link {
+      color: #ebebeb; }
       .site-nav .page-link:hover, .site-nav .page-link:active {
-        color: white;
-        color: #4d4d4d; } }
+        color: #d8d8d8; } }
+    @media screen and (min-width: 601px) and (min-width: 640px) {
+      .site-nav .page-link:hover, .site-nav .page-link:active {
+        color: #d8d8d8; } }
 
 .site-header {
   padding: 0 0.9375rem;
@@ -375,7 +386,7 @@ span.header {
   clip-path: polygon(0 20px, 100% 0, 100% 100%, 0% 100%);
   margin-top: -20px;
   position: relative;
-  background: #ebebeb; }
+  background: #dfe0e8; }
   @media screen and (min-width: 768px) {
     .site-footer {
       -webkit-clip-path: polygon(0 30px, 100% 0, 100% 100%, 0% 100%);
@@ -391,7 +402,13 @@ span.header {
       clip-path: polygon(0 60px, 100% 0, 100% 100%, 0% 100%); } }
   .site-footer * {
     font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
-    letter-spacing: 0.3px; }
+    letter-spacing: 0.3px;
+    color: #214183; }
+  .site-footer a,
+  .site-footer a * {
+    color: #1a3469; }
+  .site-footer .icon > svg path {
+    fill: #1a3469; }
   .site-footer .wrapper .row {
     padding: 0 0.9375rem;
     padding-top: 5rem; }
@@ -418,14 +435,12 @@ span.header {
         padding-left: 0; } }
 
 .hero {
-  background-color: #2d2d2d;
-  background-color: #f7f7f7;
-  background-color: #ebebeb;
-  background-image: linear-gradient(105deg, #ebebeb 0%, #d8d8d8 100%);
+  background-color: #dfe0e8;
+  background-image: linear-gradient(180deg, #214183 0%, #37548f 100%);
   padding-top: 0;
   padding-bottom: 0; }
   .hero * {
-    color: #2d2d2d; }
+    color: white; }
   .hero .hero-wrapper {
     display: block;
     position: relative;
@@ -475,8 +490,9 @@ span.header {
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase;
-    color: #4d4d4d;
+    color: #214183;
     margin: 0;
+    color: #d8d8d8;
     font-size: 2.625rem; }
     @media screen and (min-width: 640px) {
       .hero .title {
@@ -488,8 +504,9 @@ span.header {
     font-size: 1.1875rem;
     font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
     font-weight: 300;
-    color: #2d2d2d;
-    letter-spacing: 0.3px; }
+    color: #214183;
+    letter-spacing: 0.3px;
+    color: #d8d8d8; }
     @media screen and (min-width: 640px) {
       .hero .subtitle {
         font-size: 1.25rem; } }
@@ -498,7 +515,6 @@ span.header {
         font-size: 1.375rem; } }
     .hero .subtitle a {
       color: white;
-      color: #4d4d4d;
       font-weight: 400; }
   .hero .title-logo {
     max-width: 45rem;
@@ -510,7 +526,7 @@ span.header {
     -webkit-animation: name-dash 1.5s ease-in-out forwards;
     animation: name-dash 1.5s ease-in-out forwards;
     fill: transparent;
-    stroke: #4d4d4d;
+    stroke: white;
     stroke-width: 1px;
     stroke-dasharray: 900;
     stroke-dashoffset: 1900; }
@@ -523,45 +539,45 @@ span.header {
   to {
     stroke-dashoffset: 0; } }
 
-.about .content {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin-top: 0.9375rem; }
-  .about .content:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 768px) {
-    .about .content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-top: 0rem; }
-      .about .content:last-child {
-        margin-right: 0; } }
-  .about .content .description {
-    max-width: 43.75rem; }
-
-@media screen and (min-width: 768px) {
-  .about .image-wrapper {
+.about {
+  background: #f3f4f9; }
+  .about .content {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-right: 0;
-    float: right; }
-    .about .image-wrapper:last-child {
-      margin-right: 0; } }
-
-.about .image-wrapper .avater {
-  display: block; }
-
-.about .skills li span {
-  margin: 0.1875rem 0.375rem 0.1875rem 0;
-  padding: 0.5rem 0.75rem;
-  border: solid 1px #080808;
-  display: block; }
+    width: 100%;
+    margin-top: 0.9375rem; }
+    .about .content:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 768px) {
+      .about .content {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%;
+        margin-top: 0rem; }
+        .about .content:last-child {
+          margin-right: 0; } }
+    .about .content .description {
+      max-width: 43.75rem; }
+  @media screen and (min-width: 768px) {
+    .about .image-wrapper {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-right: 0;
+      float: right; }
+      .about .image-wrapper:last-child {
+        margin-right: 0; } }
+  .about .image-wrapper .avater {
+    display: block; }
+  .about .skills li span {
+    margin: 0.1875rem 0.375rem 0.1875rem 0;
+    padding: 0.5rem 0.75rem;
+    border: solid 1px #2c56af;
+    color: #2c56af;
+    display: block; }
 
 .About {
   background-color: whitesmoke; }
@@ -656,7 +672,7 @@ span.header {
     .recent-work .post-desc .post-link a,
     .portfolio .list .post-desc .post-link a {
       font-size: 1.125rem;
-      color: #4d4d4d; }
+      color: #214183; }
   .recent-work .post-desc .post-meta,
   .portfolio .list .post-desc .post-meta {
     font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
@@ -722,7 +738,8 @@ span.header {
 .portfolio .navigation .portfolio-filter-list li button {
   margin: 0.1875rem 0.375rem 0.1875rem 0;
   padding: 0.5rem 0.75rem;
-  border: solid 1px #080808;
+  border: solid 1px #214183;
+  color: #214183;
   display: block;
   background-color: transparent;
   font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
@@ -730,8 +747,8 @@ span.header {
   transition: all 0.25s ease-in-out; }
   .portfolio .navigation .portfolio-filter-list li button.checked, .portfolio .navigation .portfolio-filter-list li button:hover, .portfolio .navigation .portfolio-filter-list li button:active {
     cursor: pointer;
-    border-color: #5c75aa;
-    color: #5c75aa; }
+    border-color: #546da0;
+    color: #546da0; }
 
 .portfolio .post-list.desandroed {
   display: inline-block;
@@ -864,7 +881,7 @@ span.header {
       letter-spacing: 0.5px;
       line-height: 1.35; }
     .resume .item .period {
-      color: #2d2d2d;
+      color: #2c56af;
       font-size: 0.875rem;
       margin-bottom: 0.625rem;
       font-style: italic; }
@@ -876,8 +893,11 @@ span.header {
       .resume .item .desc span {
         margin-bottom: 0.3125rem; }
 
+.pdf {
+  background: #f3f4f9; }
+
 .contact-me {
-  background-color: whitesmoke; }
+  background-color: #ebecf4; }
   .contact-me .links-out {
     list-style: none;
     margin: 0;
@@ -955,7 +975,8 @@ span.header {
 .post .post-skills .skill-list .item {
   margin: 0.1875rem 0.375rem 0.1875rem 0;
   padding: 0.5rem 0.75rem;
-  border: solid 1px #080808;
+  border: solid 1px #2c56af;
+  color: #2c56af;
   display: block;
   transition: all 0.25s ease-in-out;
   background-color: transparent;

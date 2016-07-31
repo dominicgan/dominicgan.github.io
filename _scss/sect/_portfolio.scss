@@ -44,6 +44,9 @@
 	}
 
 	.post-desc {
+		// $post-link-color: $black300;
+		$post-link-color: $base-color200;
+
 		@include content-bg;
 
 		.post-link {
@@ -65,7 +68,7 @@
 
 			a {
 				font-size: rem(18);
-				color: $black300;
+				color: $post-link-color;
 			}
 		}
 
@@ -95,6 +98,9 @@
 }
 
 .portfolio .navigation {
+	// $pf-link-color: shade($accent-color, 10%);
+	$pf-link-color: $base-color200;
+
 	.portfolio-filter,
 	.portfolio-sort {
 		@include span-columns(12);
@@ -123,7 +129,7 @@
 		@extend .inline-lists;
 
 		li button {
-			@include block-tags;
+			@include block-tags($pf-link-color);
 			background-color: transparent;
 			font-family: $suppl-family;
 			font-size: rem(14);
@@ -133,8 +139,8 @@
 			&:hover,
 			&:active {
 				cursor: pointer;
-				border-color: shade($accent-color, 10%);
-				color: shade($accent-color, 10%);
+				border-color: tint($pf-link-color, 23%);
+				color: tint($pf-link-color, 23%);
 			}
 		}
 	}

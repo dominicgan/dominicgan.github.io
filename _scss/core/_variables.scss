@@ -21,7 +21,15 @@ $white200: shade($white100, 8%);
 $white300: shade($white200, 8%);
 $white400: shade($white300, 8%);
 
-$base-color: $black200;
+$new-cool-blue: #E5E7F1;
+$new-blue: #2c56af;
+
+$background-color100: tint($new-cool-blue, 22%);
+$background-color200: tint($background-color100, 42%);
+$background-color300: shade($background-color100, 5%);
+
+// $base-color: $black200;
+$base-color: $new-blue;
 $base-color200: shade($base-color, 25%);
 $base-color300: tint($base-color200, 10%);
 

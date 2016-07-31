@@ -1,5 +1,12 @@
+@include selection {
+	background-color: tint($black200, 15%);
+	color: $white100;
+}
+
 body {
-	background: $white150;
+	$body-background: $white150;
+
+	background: $body-background;
 	font-size: rem(14);
 
 	@include media($mob-min-width){
@@ -9,11 +16,6 @@ body {
 	@include media($tab-min-width){
 		font-size: rem(16);
 	}
-}
-
-@include selection {
-	background-color: tint($black200, 15%);
-	color: $white100;
 }
 
 a {
@@ -45,6 +47,7 @@ span {
 h1,
 h2 {
 	font-family: $header-family;
+	color: $base-color200;
 }
 
 article {

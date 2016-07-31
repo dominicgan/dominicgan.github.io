@@ -1,4 +1,6 @@
 .about {
+	background: $background-color200;
+
 	.content {
 		@include span-columns(12);
 		margin-top: rem(15);

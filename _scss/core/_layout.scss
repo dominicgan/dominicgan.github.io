@@ -52,22 +52,27 @@
 	}
 
 	.title {
-		font-size: rem(44);
 		@include title-styling;
+		font-size: rem(44);
+		color: $white300;
 	}
 
 	.subtitle {
 		@include subtitle-styling;
+		color: $white300;
 	}
 }
 
 .page-heading {
-	font-family: $header-family;
+	$page-heading-font-family: $header-family;
+	$page-heading-color: $base-color300;
+
+	font-family: $page-heading-font-family;
 	font-size: rem(26);
 	font-style: italic;
 	text-transform: uppercase;
 	font-weight: 600;
-	color: $base-color300;
+	color: $page-heading-color;
 
 	@include media($mob-min-width){
 		font-size: rem(28);

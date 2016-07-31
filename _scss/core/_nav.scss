@@ -1,27 +1,54 @@
 .site-nav {
+	$nav-background: $white200;
+	$nav-font-family: $suppl-family;
+	$nav-font-color: $white200;
+	$nav-font-color-hov: $white300;
+	// $nav-background: shade(#E5E7F1, 5%);
+	// $nav-font-color-hov: $white100;
+	
 	&:not(:hover):not(:active):not(:focus) {
 		background: transparent;
 	}
 
 	.menu-icon {
 		height: 36px;
+
+		> svg path {
+			fill: $nav-font-color;
+		}
+	}
+
+	&:hover,
+	&:active {
+		.menu-icon > svg path {
+			fill: $base-color;
+		}
 	}
 
 	.page-link {
-		font-family: $suppl-family;
+		font-family: $nav-font-family;
 		font-weight: 400;
-		color: $black200;
 
-		@media ($mob-min-width){
+		@include media($mob-min-width){
 			font-size: rem(15);
 		}
 
-		&:hover,
-		&:active {
-			color: $black300;
-			@include media($mob-min-width){
-				color: $white100;
-				color: $black300;
+		
+		@include media(max-width 600px) {
+			color: $base-color;
+			padding: rem(10) rem(15);
+		}
+
+		@include media(601px) {
+			color: $nav-font-color;
+
+			&:hover,
+			&:active {
+				color: $nav-font-color-hov;
+
+				@include media($mob-min-width){
+					color: $nav-font-color-hov;
+				}
 			}
 		}
 	}
@@ -39,13 +66,29 @@
 }
 
 .site-footer {
+	$footer-background: $white200;
+	$footer-background:	$background-color300;
+	$footer-font-family: $suppl-family;
+	$footer-color: $base-color200;
+
 	@include clip-path-up;
 	position: relative;
-	background: $white200;
+
+	background: $footer-background;
 
 	* {
-		font-family: $suppl-family;
+		font-family: $footer-font-family;
 		letter-spacing: 0.3px;
+		color: $footer-color;
+	}
+
+	a, 
+	a * {
+		color: shade($footer-color, 20%);
+	}
+
+	.icon > svg path {
+		fill: shade($footer-color, 20%);
 	}
 
 	.wrapper .row {
