@@ -5,7 +5,6 @@ $robotocond: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
 $oswald: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
 
 
-// $header-family: $robotocond;
 $header-family: $oswald;
 $body-family: $cardo;
 $suppl-family: $robotocond;
@@ -22,17 +21,11 @@ $white200: shade($white100, 8%);
 $white300: shade($white200, 8%);
 $white400: shade($white300, 8%);
 
-// $base-color: #344245;
-// $base-color: #002F91;
 $base-color: $black200;
 $base-color200: shade($base-color, 25%);
-// $base-color300: saturate(tint($base-color, 10%), 15%);
 $base-color300: tint($base-color200, 10%);
 
-// $accent-color: saturate(tint(#6F5653, 25%), 40%);
-// $accent-color: $black400;
 $accent-color: tint(#002F91, 40%);
-// $accent-color: #eca70c;
 
 $mob-min-width: 640px;
 $tab-min-width: 768px;

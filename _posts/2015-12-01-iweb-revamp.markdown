@@ -10,9 +10,9 @@ client: NPE Print Communications
 cover-image: /images/project/iwebrevamp
 cover-image-index: /images/project/iwebrevamp
 
-image1: test.jpg
-image2: jpramen.jpg
-image3:
+image1: /images/project/iweb-inner-7
+image2: /images/project/iweb-inner-4
+image3: /images/project/iweb-inner-6
 image4:
 image5:
 ---

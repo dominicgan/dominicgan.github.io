@@ -10,11 +10,13 @@ client: ONG Foundation
 cover-image: /images/project/runwithyourheart
 cover-image-index: /images/project/runwithyourheart
 
-image1: test.jpg
-image2: jpramen.jpg
+image1: /images/project/rwyh-inner-1
+image2: 
 image3:
 image4:
 image5:
 ---
+
+One-pager website for the Run with your heart charity event, held by Ong Foundation. 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis incidunt quam repellendus inventore. A consequatur, nam porro ducimus doloremque magni accusamus fuga sit adipisci cupiditate deleniti quia expedita fugiat inventore, ipsa tenetur obcaecati ratione quos ad vel, laboriosam aperiam?
