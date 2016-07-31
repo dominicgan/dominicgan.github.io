@@ -3,6 +3,17 @@
 	padding-top: 0;
 	padding-bottom: 0;
 
+	background-position: center 22%;
+
+	@include media($tab-min-width) {
+		background-position: center 20%;
+
+	}
+
+	@include media($desk-min-width) {
+		background-position: center 19%;
+	}
+
 	.hero-wrapper {
 		display: block;
 		position: relative;
@@ -14,19 +25,20 @@
 		@include display(flex);
 		@include align-items(flex-end);
 		@include justify-content(flex-start);
-		height: rem(300);
+		height: rem(320);
 
 		@include media($mob-min-width){
-			height: rem(350);
+			height: rem(330);
 		}
 		@include media($tab-min-width){
-			height: rem(400);
+			height: rem(360);
 		}
 		@include media($lap-min-width){
-			height: rem(450);
+			height: rem(390);
 		}
 		@include media($hires-min-width){
-			height: rem(500);
+			// height: rem(500);
+			height: rem(450);
 		}
 	}
 

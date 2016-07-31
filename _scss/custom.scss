@@ -36,12 +36,22 @@ header.notice {
 		color: $white100;
 		font-size: rem(16);
 		font-weight: 400;
-		// color: $black200;
 
 		a {
 			text-decoration: underline;
 			color: $white300;
-			// color: $black300;
 		}
+	}
+}
+
+// init wow
+.wow {
+	visibility: hidden;
+}
+
+// noscript stuff
+.no-js {
+	.wow {
+		visibility: visible;
 	}
 }

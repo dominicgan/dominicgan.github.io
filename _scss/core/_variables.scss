@@ -31,7 +31,7 @@ $background-color300: shade($background-color100, 5%);
 // $base-color: $black200;
 $base-color: $new-blue;
 $base-color200: shade($base-color, 25%);
-$base-color300: tint($base-color200, 10%);
+$base-color300: tint($base-color200, 15%);
 
 $accent-color: tint(#002F91, 40%);
 

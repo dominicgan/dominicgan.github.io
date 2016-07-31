@@ -1,5 +1,5 @@
 @include selection {
-	background-color: tint($black200, 15%);
+	background-color: tint($base-color, 15%);
 	color: $white100;
 }
 
@@ -7,7 +7,7 @@ body {
 	$body-background: $white150;
 
 	background: $body-background;
-	font-size: rem(14);
+	font-size: rem(15);
 
 	@include media($mob-min-width){
 		font-size: rem(15);
@@ -19,7 +19,7 @@ body {
 }
 
 a {
-	color: shade($accent-color, 10%);
+	color: tint($accent-color, 15%);
 
 	@include selection {
 		background-color: shade($accent-color, 5%);
@@ -28,6 +28,7 @@ a {
 
 	&:hover,
 	&:active {
+		cursor: pointer;
 		color: shade($accent-color, 15%);
 	}
 
@@ -41,7 +42,8 @@ li,
 span {
 	font-family: $body-family;
 	line-height: 1.8;
-	color: $black400;
+	// color: $black400;
+	color: $base-color300;
 }
 
 h1,

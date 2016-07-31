@@ -21,9 +21,12 @@
 }
 
 .read-more {
-	color: $black200;
+	color: $base-color200;
 
-	&:visited {
-		color: $black400;
+	&:hover {
+		cursor: pointer;
 	}
+	// &:visited {
+	// 	color: $black400;
+	// }
 }

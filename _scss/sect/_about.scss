@@ -29,7 +29,8 @@
 	.skills {
 		@extend .inline-lists;
 
-		li span {
+		li span,
+		li a {
 			@include block-tags;
 		}
 	}

@@ -30,6 +30,7 @@
 	@include hero-colors;
 	@include sect-side-padding;
 	@include clip-path-down;
+	background-position: center center;
 	padding-bottom: rem(30);
 
 	@include media($mob-min-width){
@@ -41,9 +42,13 @@
 		@include align-items(center);
 		@include justify-content(center);
 
-		height: rem(300);
+		height: rem(200);
 		width: 100%;
 		margin: 0 auto;
+
+		@include media($mob-min-width) {
+			height: rem(120);
+		}
 	}
 
 	.header-content {
@@ -53,8 +58,12 @@
 
 	.title {
 		@include title-styling;
-		font-size: rem(44);
 		color: $white300;
+		font-size: rem(40);
+
+		@include media($tab-min-width){
+			font-size: rem(44);
+		}
 	}
 
 	.subtitle {

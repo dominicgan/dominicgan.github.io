@@ -121,8 +121,7 @@
 		margin-bottom: rem(5);
 		font-family: $suppl-family;
 		font-weight: 400;
-		font-style: italic;
-		// text-transform: uppercase;
+		color: $base-color200;
 	}
 
 	.portfolio-filter-list {
@@ -139,8 +138,12 @@
 			&:hover,
 			&:active {
 				cursor: pointer;
-				border-color: tint($pf-link-color, 23%);
-				color: tint($pf-link-color, 23%);
+				border-color: tint($pf-link-color, 30%);
+				color: tint($pf-link-color, 30%);
+			}
+
+			&:focus {
+				outline: none;
 			}
 		}
 	}

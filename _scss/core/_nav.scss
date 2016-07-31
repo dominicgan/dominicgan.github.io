@@ -3,8 +3,8 @@
 	$nav-font-family: $suppl-family;
 	$nav-font-color: $white200;
 	$nav-font-color-hov: $white300;
-	// $nav-background: shade(#E5E7F1, 5%);
-	// $nav-font-color-hov: $white100;
+
+	border-radius: 0;
 	
 	&:not(:hover):not(:active):not(:focus) {
 		background: transparent;
@@ -44,6 +44,7 @@
 
 			&:hover,
 			&:active {
+				cursor: pointer;
 				color: $nav-font-color-hov;
 
 				@include media($mob-min-width){

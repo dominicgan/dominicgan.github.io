@@ -1,3 +1,8 @@
+// used in post list as well. blegh
+.post-meta {
+	color: tint($base-color300, 20%);
+}
+
 .post {
 	// @include outer-container();
 
@@ -28,20 +33,21 @@
 		// @include omega();
 
 		.post-meta__date-author {
-			@include span-columns(4);
+			@include span-columns(6);
 		}
 
 		.post-meta__attrib {
-			@include span-columns(8);
+			@include span-columns(6);
 			@include omega();
 			text-align: right;
 		}
 
 		.post-meta__site-link {
 			display: block;
-			font-size: rem(14);
+			font-size: rem(16);
 			font-weight: 600;
-			color: $black100;
+			text-transform: uppercase;
+			color: $base-color300;
 		}
 
 		// @include media($tab-min-width){
@@ -65,6 +71,9 @@
 	}
 
 	.post-skills {
+		// $post-skill-color: $black100;
+		$post-skill-color: $base-color;
+
 		.skill-list {
 			@extend .inline-lists;
 
@@ -75,7 +84,7 @@
 				font-family: $suppl-family;
 				font-size: rem(14);
 				line-height: normal;
-				color: $black100;
+				color: $post-skill-color;
 
 				&.checked,
 				&:hover,

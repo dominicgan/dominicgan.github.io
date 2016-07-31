@@ -26,9 +26,9 @@ var imgResponsive = require('gulp-responsive');
 gulp.task('proj-image-resize', function () {
   return gulp.src('images/project_src/*.{png,jpg}')
   .pipe(plumber(function(error) {
-            gutil.log(gutil.colors.red(error.message));
-            this.emit('end');
-    }))
+    gutil.log(gutil.colors.red(error.message));
+    this.emit('end');
+}))
   .pipe(gulp.dest('images/project/converted'))
   .pipe(imgResponsive({
     '*.jpg': [{
@@ -46,8 +46,8 @@ gulp.task('proj-image-resize', function () {
     }, {
         rename: { suffix: '-src' },
     }],
-    },
-    {
+},
+{
     // Global configuration for all images
     // The output quality for JPEG, WebP and TIFF output formats
     quality: 85,
@@ -57,8 +57,8 @@ gulp.task('proj-image-resize', function () {
     compressionLevel: 6,
     // Strip all metadata
     withMetadata: false,
-  }))
-    .pipe(gulp.dest('images/project/'));
+}))
+  .pipe(gulp.dest('images/project/'));
 });
 
 /**
@@ -92,47 +92,55 @@ gulp.task('proj-image-resize', function () {
  			weinre: {
  				port: 30057
  			}
- 		}
- 	});
+ 		},
+        notify: {
+            styles: {
+                top: 'auto',
+                bottom: '0',
+                borderRadius: '5px 0 0 0',
+                background: 'rgba(27,32,50,0.7)',
+            }
+        }
+    });
  });
 
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
  gulp.task('sass', function () {
- 	 var source = gulp.src('_scss/custom.scss')
-        .pipe(plumber(function(error) {
-            gutil.log(gutil.colors.red(error.message));
-            this.emit('end');
-    }))
+   var source = gulp.src('_scss/custom.scss')
+   .pipe(plumber(function(error) {
+    gutil.log(gutil.colors.red(error.message));
+    this.emit('end');
+}))
         .pipe(sourcemaps.init()) // Start Sourcemaps
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
-    }));
+        }));
 
-    var pipe1 = source.pipe(clone())
-    .pipe(sourcemaps.write('.'))
+        var pipe1 = source.pipe(clone())
+        .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('css')); // Create sourcemap
 
     var pipe2 = source.pipe(clone())
     .pipe(rename({suffix: '.min'}))
     .pipe(cssnano({
- 		convertValues: {
- 			length: false
- 		},
- 		discardComments: {
- 			removeAll: true
- 		}
- 	}))
+       convertValues: {
+        length: false
+    },
+    discardComments: {
+        removeAll: true
+    }
+}))
     .pipe(sourcemaps.write('.')) // Create minified sourcemap
     .pipe(clip())
     .pipe(gulp.dest('css'));
 
     return merge(pipe1, pipe2);
 
-	});
+});
 
 /**
  * Default task, running just `gulp` will compile the sass,

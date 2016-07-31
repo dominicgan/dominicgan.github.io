@@ -1,17 +1,16 @@
 @mixin hero-colors {
-	// background-color: $base-color;
-	// background-color: tint($white200, 60%);
-	// background-color: $white200;
+	$hero-grad-opacity: 0.88;
+	$hero-color-1: rgba(shade($base-color300, 40%), $hero-grad-opacity);
+	$hero-color-2: rgba(shade($base-color300, 25%), $hero-grad-opacity);
+	$hero-img-src: "/images/hero-bg-2.jpg";
+	$hero-angle: 0deg;
 
-	background-color: $background-color300;
-	// background: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/concrete_seamless.png");
-	// border-bottom: solid 1px $white400;
-	// @include background-image(linear-gradient(180deg, $background-color200 0%, $background-color300 100%));
-	@include background-image(linear-gradient(180deg, $base-color200 0%, $base-color300 100%));
+	background: $background-color300; // fallback for image
+	@include background-image(linear-gradient($hero-angle, $hero-color-1 0%, $hero-color-2 100%), url(#{$hero-img-src}));
+	background-size: cover;
+	background-position: center top;
 
-	// * {color: $white200};
-	// * {color: $base-color};
-	* {color: $white100;};
+	* {color: $white100};
 }
 
 @mixin sect-padding {
@@ -38,13 +37,11 @@
 }
 
 @mixin title-styling {
-	// @include transform(scaleY(1.1));
 	font-family: $header-family;
 	line-height: 1;
 	font-weight: 600;
 	font-style: italic;
 	text-transform: uppercase;
-	// color: $black300;
 	color: $base-color200;
 	margin: 0;
 }
@@ -53,8 +50,6 @@
 	font-size: rem(19);
 	font-family: $header-family;
 	font-weight: 300;
-	// color: shade($white400, 15%);
-	// color: $black200;
 	color: $base-color200;
 	letter-spacing: 0.3px;
 
