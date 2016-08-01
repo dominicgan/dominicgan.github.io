@@ -7,6 +7,7 @@ cover-image: https://unsplash.it/600/400/
 cover-image-index: https://unsplash.it/600/400/
 attribution: CIU190 Interaction Design of Social Media
 published: false
+noindex: true
 
 image1: test.jpg
 image2: jpramen.jpg

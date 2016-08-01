@@ -7,6 +7,7 @@ cover-image: https://unsplash.it/600/600/
 cover-image-index: https://unsplash.it/600/400/
 attribution: IS4227 Enterprise Service-Oriented Architecture
 published: false
+noindex: true
 
 image1: test.jpg
 image2: jpramen.jpg
