@@ -51,6 +51,10 @@ header.notice {
 
 // noscript stuff
 .no-js {
+	body {
+		opacity: 1;
+	}
+
 	.wow {
 		visibility: visible;
 	}

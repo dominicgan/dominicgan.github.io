@@ -395,7 +395,7 @@ span.header {
   clip-path: polygon(0 20px, 100% 0, 100% 100%, 0% 100%);
   margin-top: -20px;
   position: relative;
-  background: #dfe0e8; }
+  background: linear-gradient(0deg, rgba(33, 65, 131, 0.25) 0%, rgba(33, 65, 131, 0.28) 100%), url("../images/ptrn_ignasi.png"); }
   @media screen and (min-width: 768px) {
     .site-footer {
       -webkit-clip-path: polygon(0 30px, 100% 0, 100% 100%, 0% 100%);
@@ -902,7 +902,7 @@ span.header {
       letter-spacing: 0.5px;
       line-height: 1.35; }
     .resume .item .period {
-      color: #2c56af;
+      color: #214183;
       font-size: 0.875rem;
       margin-bottom: 0.625rem;
       font-style: italic; }
@@ -918,7 +918,7 @@ span.header {
   background: #f3f4f9; }
 
 .contact-me {
-  background-color: #ebecf4; }
+  background-color: #f3f4f9; }
   .contact-me .links-out {
     list-style: none;
     margin: 0;
@@ -1047,6 +1047,9 @@ header.notice {
 
 .wow {
   visibility: hidden; }
+
+.no-js body {
+  opacity: 1; }
 
 .no-js .wow {
   visibility: visible; }

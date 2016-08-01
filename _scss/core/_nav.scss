@@ -67,8 +67,9 @@
 }
 
 .site-footer {
-	$footer-background: $white200;
+	// $footer-background: $white200;
 	$footer-background:	$background-color300;
+	$footer-background: linear-gradient(0deg, rgba($base-color200, 0.25) 0%, rgba($base-color200, 0.28) 100%), url("../images/ptrn_ignasi.png");
 	$footer-font-family: $suppl-family;
 	$footer-color: $base-color200;
 
