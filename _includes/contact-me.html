@@ -6,7 +6,7 @@
     <ul class="links-out">
       {% for contact-link in site.data.contact-links %}
       <li class="wow fadeInUp" data-wow-delay="{{ forloop.index | times:0.2 }}s">
-        <a href="{{ contact-link.link }}">
+        <a href="{{ contact-link.link }}" target="_blank" title="{{ contact-link.name }}">
           <!-- <span class="icon">{{ contact-link.icon }}</span> -->
           <span class="title">{{ contact-link.name }}</span>
         </a>

@@ -1,0 +1,131 @@
+{
+  "basics": {
+    "name": "Dominic Gan",
+    "label": "Web Designer/Front-end Developer",
+    "picture": "http://www.dominicgan.com/dp-1x1.jpg",
+    "email": "dominicgangx@gmail.com",
+    "phone": "(+65)9177 4121",
+    "website": "http://dominicgan.github.io",
+    "summary": "A summary of John Doe...",
+    "location": {
+      "address": "Blk 211 Pasir Ris St 21 #12-248",
+      "postalCode": "510211",
+      "city": "Singapore",
+      "countryCode": "SG",
+      "region": "Singapore"
+    },
+    "profiles": [{
+      "network": "LinkedIn",
+      "username": "john",
+      "url": "http://twitter.com/john"
+    },{
+      "network": "Github",
+      "username": "john",
+      "url": "http://twitter.com/john"
+    },{
+      "network": "Codepen",
+      "username": "john",
+      "url": "http://twitter.com/john"
+    }]
+  },
+  "work": [{
+    "company": "Company",
+    "position": "President",
+    "website": "http://company.com",
+    "startDate": "2013-01-01",
+    "endDate": "2014-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Started the company"
+    ]
+  },{
+    "company": "Company",
+    "position": "President",
+    "website": "http://company.com",
+    "startDate": "2013-01-01",
+    "endDate": "2014-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Started the company"
+    ]
+  },{
+    "company": "Company",
+    "position": "President",
+    "website": "http://company.com",
+    "startDate": "2013-01-01",
+    "endDate": "2014-01-01",
+    "summary": "Description...",
+    "highlights": [
+      "Started the company"
+    ]
+  }],
+  "volunteer": [{}],
+  "education": [{
+    "institution": "University",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "gpa": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  },{
+    "institution": "University",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "gpa": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  },{
+    "institution": "University",
+    "area": "Software Development",
+    "studyType": "Bachelor",
+    "startDate": "2011-01-01",
+    "endDate": "2013-01-01",
+    "gpa": "4.0",
+    "courses": [
+      "DB1101 - Basic SQL"
+    ]
+  }],
+  "awards": [{
+    "title": "Award",
+    "date": "2014-11-01",
+    "awarder": "Company",
+    "summary": "There is no spoon."
+  }],
+  "publications": [{}],
+  "skills": [{
+    "name": "Web Development",
+    "level": "Master",
+    "keywords": [
+      "HTML",
+      "CSS",
+      "Javascript"
+    ]
+  }],
+  "languages": [{
+    "name": "English",
+    "level": "Native speaker"
+  },{
+    "name": "English",
+    "level": "Native speaker"
+  }],
+  "interests": [{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  },{
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+  }],
+  "references": [{}]
+}
