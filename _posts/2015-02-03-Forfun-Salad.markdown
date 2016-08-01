@@ -18,8 +18,8 @@ image3: /images/project/ffs-inner-4
 <!-- image5: /images/project/ffs-inner-3 -->
 ---
 
-E-Commerce website for Forfun Salad, to enable online ordering for custom salads.
+Designed an E-Commerce website for Forfun Salad, a salad store to allow customers to purchase salads online, with the ability to pick and customize their own salads.
 
-In charge of conceptualizing the user interface, as well as project management. Interface designed in Photoshop. Website built on Magento CMS.
+<!-- I was in charge of designing and conceptualizing the user interface for the site and ordering experience, as well as project management. Website built on the Magento E-commerce platform. -->
 
-[Company Defunct]
+<!-- [Company Defunct] -->

@@ -19,5 +19,3 @@ image5:
 ---
 
 Microsite to showcase/launch MOTOTRBO, Motorola’s range of radio systems.
-
-Worked closely with design agency to create this website. Website is powered by WordPress CMS. Custom website theme was developed in-house.

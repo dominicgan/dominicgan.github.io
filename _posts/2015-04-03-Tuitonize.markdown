@@ -4,8 +4,8 @@ title:  "Tuitionize"
 date:   2015-04-03 10:00:00 +0800
 categories: project ui-design mobile prototype 
 attribution: Under employ of Balanced Consultancy Pte Ltd.
-link: http://www.npe.com.sg
-client: NPE Print Communications
+link: 
+client: Tuitionize
 noindex: true
 
 cover-image: /images/project/TuitioNize
@@ -20,4 +20,4 @@ image5:
 
 Mobile app for Tuition/tutor matching service in Singapore.
 
-Designed user interface for app. Worked closely with client and marketing agency in formulating the design.
+<!-- Designed user interface for app. Worked closely with client and marketing agency in formulating the design. -->

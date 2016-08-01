@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ONG Foundation"
-date:   2016-02-02 10:00:00 +0800
+date:   2015-12-31 10:00:00 +0800
 categories: project web-design front-end
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://ongfoundation.org
@@ -18,4 +18,4 @@ image4:
 image5:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis incidunt quam repellendus inventore. A consequatur, nam porro ducimus doloremque magni accusamus fuga sit adipisci cupiditate deleniti quia expedita fugiat inventore, ipsa tenetur obcaecati ratione quos ad vel, laboriosam aperiam?
+One pager site for ONG Foundation. Temporary site to display events held by the organization. Created with **Sass**, **Bourbon** & **Foundation**.

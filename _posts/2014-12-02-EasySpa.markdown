@@ -18,6 +18,8 @@ image4: /images/project/easyspa-inner-2
 image5: /images/project/easyspa-inner-4
 ---
 
-Mobile app for matching spa services.
+EasySpa is a mobile app for booking spa and salon services. 
 
-In charge of conceptualizing the app design and interface flow. Designed in Photoshop.
+<!-- Designed the user interface for the app and worked closely with the client to develop and fine-tune the user flow. -->
+
+<!-- The app is currently available for download on both the iOS App Store & Google Play Store. -->

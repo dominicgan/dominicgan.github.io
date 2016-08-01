@@ -2,9 +2,9 @@
 layout: post
 title:  "The Ride Side"
 date:   2015-04-02 10:00:00 +0800
-categories: project web-design proj-mgmt wordpress
-attribution: Under employ of Balanced Consultancy Pte Ltd.
-link: http://www.npe.com.sg
+categories: project web-design wordpress
+attribution: Freelance project.
+link: http://www.therideside.com
 client: The Ride Side
 noindex: true
 
@@ -18,6 +18,6 @@ image4: /images/project/trs-inner-4
 image5: /images/project/trs-inner-5
 ---
 
-Freelance project. Corporate website for The Ride Side, a snowboarding tour agency operating out of Singapore.
+Travel website for The Ride Side, a snowboarding tour agency operating out of Singapore.
 
-Website powered by WordPress CMS and Avada Theme framework.
+<!-- Website powered by WordPress CMS and Avada Theme framework. -->

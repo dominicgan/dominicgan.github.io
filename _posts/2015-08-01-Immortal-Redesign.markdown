@@ -18,4 +18,4 @@ image4: /images/project/imm-inner-4
 image5:
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error perspiciatis incidunt quam repellendus inventore. A consequatur, nam porro ducimus doloremque magni accusamus fuga sit adipisci cupiditate deleniti quia expedita fugiat inventore, ipsa tenetur obcaecati ratione quos ad vel, laboriosam aperiam?
+Corporate site for Immortal The Design Station. Converted existing website design to a responsive, mobile friendly layout. 
