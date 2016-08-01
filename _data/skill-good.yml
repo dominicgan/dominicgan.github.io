@@ -25,6 +25,9 @@
 - name: Version control tools
   example: Git
 
+- name: Package managers
+  example: Bower, NPM, RubyGems, Brew
+
 - name: Windows/ OS X/ Ubuntu
 
 # - name: Office solutions (Microsoft office, Libre office, Google Docs suite, etc)
