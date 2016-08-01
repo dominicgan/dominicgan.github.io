@@ -25,6 +25,10 @@
 			display: block;
 		}
 	}
+	
+	.about-cta {
+		margin-top: rem(30);
+	}
 
 	.skills {
 		@extend .inline-lists;

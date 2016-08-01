@@ -17,6 +17,12 @@
 			@include span-columns(6);
 		}
 	}
+	
+	.examples li {
+		color: tint($base-color300, 30%);
+		padding: rem(5) 0;
+		font-size: rem(14);
+	} 
 
 	.education,
 	.kinda-okay {

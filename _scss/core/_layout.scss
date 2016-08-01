@@ -26,15 +26,30 @@
 	}
 }
 
+
 .page-content-header {
+	$hero-grad-opacity: 0.88;
+	$hero-color-1: rgba(shade($base-color300, 40%), $hero-grad-opacity);
+	$hero-color-2: rgba(shade($base-color300, 25%), $hero-grad-opacity);
+	$hero-img-src: "/images/hero-bg-3.jpg";
+	$hero-angle: 0deg;
+	
 	@include hero-colors;
+	@include background-image(linear-gradient($hero-angle, $hero-color-1 0%, $hero-color-2 100%), url(#{$hero-img-src}));
 	@include sect-side-padding;
 	@include clip-path-down;
-	background-position: center center;
+	background-position: center 40%;
 	padding-bottom: rem(30);
 
 	@include media($mob-min-width){
 		padding-bottom: rem(50); // clip-path version
+	}
+
+	.layout_post & {
+		$hero-img-src: "/images/hero-bg-4.jpg";
+
+		@include background-image(linear-gradient($hero-angle, $hero-color-1 0%, $hero-color-2 100%), url(#{$hero-img-src}));
+		background-position: center 60%;
 	}
 
 	.header-wrapper {

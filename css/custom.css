@@ -248,11 +248,12 @@ span.header {
   background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-2.jpg);
   background-size: cover;
   background-position: center top;
+  background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-3.jpg);
   padding: 0 0.9375rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0% 100%);
   margin-bottom: -20px;
-  background-position: center center;
+  background-position: center 40%;
   padding-bottom: 1.875rem; }
   .page-content-header * {
     color: white; }
@@ -277,6 +278,9 @@ span.header {
   @media screen and (min-width: 640px) {
     .page-content-header {
       padding-bottom: 3.125rem; } }
+  .layout_post .page-content-header {
+    background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-4.jpg);
+    background-position: center 60%; }
   .page-content-header .header-wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -590,6 +594,8 @@ span.header {
         margin-right: 0; } }
   .about .image-wrapper .avater {
     display: block; }
+  .about .about-cta {
+    margin-top: 1.875rem; }
   .about .skills li span,
   .about .skills li a {
     margin: 0.1875rem 0.375rem 0.1875rem 0;
@@ -862,6 +868,10 @@ span.header {
         .resume .pretty-good:last-child,
         .resume .kinda-okay:last-child {
           margin-right: 0; } }
+  .resume .examples li {
+    color: #7b8eb6;
+    padding: 0.3125rem 0;
+    font-size: 0.875rem; }
   @media screen and (min-width: 768px) {
     .resume .education,
     .resume .kinda-okay {
