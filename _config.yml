@@ -10,10 +10,10 @@ subtitle: >
   currently at <a href="http://www.group.ong-ong.com" target="_blank" title="ONG&ONG Group Pte Ltd">ONG&amp;ONG Group Pte Ltd</a>.
 email: dominicgangx@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hey, I'm Dominic, and I am a web designer and front-end developer based in Singapore.
+  Hey, I'm Dominic, a web designer and front-end developer based in Singapore!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dominicgan.github.io" # the base hostname & protocol for your site
-build-info: Built with Jekyll, Gulp & Sass. Written with a worrying amount of mechanical keyboards.
+build-info: Built with Jekyll, Gulp & Sass.
 copyright: >
   &copy; 2016 Dominic Gan. All Rights Reserved.
 # twitter_username: jekyllrb

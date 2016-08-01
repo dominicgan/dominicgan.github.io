@@ -50,7 +50,15 @@ permalink: /resume/
 					<p>Fluent and highly competent in these areas:</p>
 					<ul>
 						{% for skill in site.data.skill-good %}
-						<li>{{ skill.name }}</li>
+						<li><span>{{ skill.name }}</span>
+							{% if skill.example %}
+							<ul class="examples">
+								<li>
+									{{ skill.example }}
+								</li>
+							</ul>
+							{% endif %}
+						</li>
 						{% endfor %}
 					</ul>
 					<!--</div>-->
@@ -66,6 +74,14 @@ permalink: /resume/
 						{% endfor %}
 					</ul>
 					<!--</div>-->
+				</div>
+				<div class="item content desc">
+					<p>Currently learning:</p>
+					<ul>
+						{% for skill in site.data.skill-learning %}
+						<li>{{ skill.name }}</li>
+						{% endfor %}
+					</ul>
 				</div>
 			</div>
 		</div>

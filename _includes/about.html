@@ -9,7 +9,7 @@
 
     <ul class="skills">
       {% for skill in site.data.skills %}
-      <li class="wow fadeIn" data-wow-delay="{{ forloop.index | times:0.05 }}s">
+      <li class="wow fadeIn" data-wow-delay="{{ forloop.index | times:0.035 }}s">
       {% if skill.name == "more.."%}
         <a href="/resume">{{ skill.name}}</a>
         {% else %}
@@ -19,5 +19,7 @@
       {% endfor %}
     </ul>
     <div class="clearfix"></div>
+
+    <p class="about-cta wow fadeIn" data-wow-delay="0.5s">Check out my resume <a href="/resume">here</a>.</p>
   </div>
 </div>

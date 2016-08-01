@@ -5,12 +5,12 @@
 # Splitting 'em up from the template file, see!
 
 # section.about
-about-title: Hey there!
+about-title: Hello!
 about-subtitle: 
 about-description: >
   <p>My name's Dominic, and I'm a web designer/front-end developer currently working at ONG&ONG Group Pte Ltd.</p>
 
-  <p>I believe in creating clear and intuitive experiences through well designed interfaces. I take pride in writing clean and scalable markup with a focus on performance.</p>
+  <p>I believe in creating clear and intuitive experiences through well designed interfaces. I am able to convert and visualize my designs into code; and I take pride in writing clean and scalable markup.</p>
 
 
 # section.recent-work
