@@ -6,6 +6,7 @@ categories: project web-design proj-mgmt magento
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: 
 client: ForfunSalad
+noindex: true
 
 cover-image: /images/project/ForfunSalad
 cover-image-index: /images/project/ForfunSalad

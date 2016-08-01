@@ -6,6 +6,7 @@ categories: project ui-design mobile
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://easyspa.org/
 client: EasySpa
+noindex: true
 
 cover-image: /images/project/Easy-Spa
 cover-image-index: /images/project/Easy-Spa

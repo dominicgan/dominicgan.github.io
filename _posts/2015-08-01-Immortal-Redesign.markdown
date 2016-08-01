@@ -6,6 +6,7 @@ categories: project front-end rails
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.immortal.com.sg
 client: ONG&ONG Group Pte Ltd
+noindex: true
 
 cover-image: /images/project/imm-cover
 cover-image-index: /images/project/imm-cover

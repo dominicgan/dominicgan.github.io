@@ -6,6 +6,7 @@ categories: project front-end proj-mgmt wordpress
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.experiencemototrbo.com
 client: Snood Creative, for Motorola.
+noindex: true
 
 cover-image: /images/project/mototrbo-cover
 cover-image-index: /images/project/mototrbo-cover

@@ -6,6 +6,7 @@ categories: project web-design proj-mgmt wordpress
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.swimfast.com.sg
 client: Swimfast Aquatic Group Pte Ltd
+noindex: true
 
 cover-image: /images/project/Swimfast
 cover-image-index: /images/project/Swimfast

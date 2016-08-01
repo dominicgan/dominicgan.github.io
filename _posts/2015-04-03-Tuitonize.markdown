@@ -6,6 +6,7 @@ categories: project ui-design mobile prototype
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications
+noindex: true
 
 cover-image: /images/project/TuitioNize
 cover-image-index: /images/project/TuitioNize

@@ -6,6 +6,7 @@ categories: project web-design front-end rails prototype
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.runwithyourheart.ongfoundation.org
 client: ONG Foundation
+noindex: true
 
 cover-image: /images/project/runwithyourheart
 cover-image-index: /images/project/runwithyourheart

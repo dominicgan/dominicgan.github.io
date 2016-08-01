@@ -6,6 +6,7 @@ categories: project web-design front-end rails
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.group.ong-ong.com
 client: ONG&ONG Group Pte Ltd
+noindex: true
 
 cover-image: /images/project/oo-cover
 cover-image-index: /images/project/oo-cover

@@ -6,6 +6,7 @@ categories: project web-design front-end
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://ongfoundation.org
 client: ONG Foundation
+noindex: true
 
 cover-image: /images/project/ongfn-cover
 cover-image-index: /images/project/ongfn-cover

@@ -6,6 +6,7 @@ categories: project web-design front-end proj-mgmt wordpress
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.passagenewyork.com/
 client: Passage New York – Global Wellness Holdings
+noindex: true
 
 cover-image: /images/project/PassageNY
 cover-image-index: /images/project/PassageNY

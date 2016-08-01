@@ -6,6 +6,7 @@ categories: project web-design proj-mgmt wordpress
 attribution: Under employ of Balanced Consultancy Pte Ltd.
 link: http://www.npe.com.sg
 client: The Ride Side
+noindex: true
 
 cover-image: /images/project/The-Ride-Side
 cover-image-index: /images/project/The-Ride-Side

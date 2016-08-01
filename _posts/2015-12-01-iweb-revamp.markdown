@@ -6,6 +6,7 @@ categories: project web-design front-end ui-design prototype
 attribution: Under employ of ONG&ONG Group Pte Ltd.
 link: http://www.npe.com.sg
 client: NPE Print Communications
+noindex: true
 
 cover-image: /images/project/iwebrevamp
 cover-image-index: /images/project/iwebrevamp
