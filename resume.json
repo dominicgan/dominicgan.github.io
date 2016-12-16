@@ -16,115 +16,107 @@
     },
     "profiles": [{
       "network": "LinkedIn",
-      "username": "john",
-      "url": "http://twitter.com/john"
+      "username": "Dominic Gan",
+      "url": "https://sg.linkedin.com/in/dominic-gan-7079386b"
     },{
       "network": "Github",
-      "username": "john",
-      "url": "http://twitter.com/john"
+      "username": "dominicgan",
+      "url": "https://github.com/dominicgan"
     },{
       "network": "Codepen",
-      "username": "john",
-      "url": "http://twitter.com/john"
+      "username": "dominicgan",
+      "url": "http://codepen.io/dominicgan"
     }]
   },
   "work": [{
-    "company": "Company",
-    "position": "President",
-    "website": "http://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description...",
+    "company": "ONG&ONG Group Pte Ltd",
+    "position": "Web Application Designer",
+    "website": "http://www.group.ong-ong.com",
+    "startDate": "2015-09-20",
+    "endDate": "Present",
+    "summary": "In charge of web design and front-end development for the company's internal solutions/web presence. Creating client side applications and website that meet and exceed customer requirements.",
     "highlights": [
-      "Started the company"
+      "Spearheaded the UI revamp company's intranet portal"
     ]
   },{
-    "company": "Company",
-    "position": "President",
-    "website": "http://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description...",
-    "highlights": [
-      "Started the company"
-    ]
+    "company": "Balanced Consultancy Pte Ltd/Novitee Pte Ltd",
+    "position": "Web Consultant",
+    "website": "http://www.balancedconsultancy.com.sg",
+    "startDate": "2014-08-01",
+    "endDate": "2015-08-01",
+    "summary": "Responsible for designing and developing web solutions for clients. Experienced in managing projects for a wide range of clients and industries. Gained fluency in handling major web CMS solutions, such as Magento and WordPress.",
+    "highlights": []
   },{
-    "company": "Company",
-    "position": "President",
-    "website": "http://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description...",
-    "highlights": [
-      "Started the company"
-    ]
+    "company": "CrimsonLogic Pte Ltd",
+    "position": "Business Process Analyst (Intern)",
+    "website": "http://www.crimsonlogic.com",
+    "startDate": "2012-07-01",
+    "endDate": "2012-05-01",
+    "summary": "Business Process Analyst in the Solutions and Services Department of Project FRONTIER – Project aiming to integrate more than 250 business license applications from 18 government agencies onto a common portal. Gathered user requirements through formal meetings with the different government agencies and collated sets of Software Requirement Specifications (SRS). Involved in the amendment and improvement of business processes within the SRS documentation.",
+    "highlights": []
   }],
   "volunteer": [{}],
   "education": [{
-    "institution": "University",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "gpa": "4.0",
+    "institution": "National University of Singapore",
+    "area": "Electronic Commerce",
+    "studyType": "BComp (Information Systems) with Honours",
+    "startDate": "2010-08-01",
+    "endDate": "2014-06-01",
+    "gpa": "3.47",
     "courses": [
-      "DB1101 - Basic SQL"
+      "E-Business Capstone Project",
+      "Enterprise Service-Oriented Architecture"
     ]
   },{
-    "institution": "University",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "gpa": "4.0",
+    "institution": "Chalmers University of Technology",
+    "area": "Information Systems",
+    "studyType": "Student Exchange Program",
+    "startDate": "2013-01-01",
+    "endDate": "2013-06-01",
+    "gpa": ,
     "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  },{
-    "institution": "University",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "gpa": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
+      "Human Computer Interaction",
+      "Interaction Design of Social Media"
     ]
   }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "publications": [{}],
+  "awards": [],
+  "publications": [],
   "skills": [{
-    "name": "Web Development",
-    "level": "Master",
+    "name": "Front-end Development",
+    "level": "Highly Proficient",
     "keywords": [
       "HTML",
       "CSS",
-      "Javascript"
+      "Javascript",
+    ]
+  },{
+    "name": "User Interface Design",
+    "level": "Proficient",
+    "keywords": [
+      "Web Design",
+      "Prototyping",
+      "Wireframing",
+      "Adobe Creative Suite",
     ]
   }],
   "languages": [{
     "name": "English",
     "level": "Native speaker"
   },{
-    "name": "English",
-    "level": "Native speaker"
+    "name": "Chinese",
+    "level": "Basic"
   }],
   "interests": [{
-    "name": "Wildlife",
+    "name": "Photography",
     "keywords": [
-      "Ferrets",
-      "Unicorns"
+      "Cameras",
+      "Photos"
     ]
   },{
-    "name": "Wildlife",
+    "name": "Collecting Mechanical Keyboards",
     "keywords": [
-      "Ferrets",
-      "Unicorns"
+      "Seriously",
+      "Whaat?"
     ]
   }],
   "references": [{}]
