@@ -4,7 +4,7 @@ title:  "Go Beyond Challenge 2016"
 date:   2016-02-01 10:00:00 +0800
 categories: project web-design front-end rails prototype
 attribution: Under employ of ONG&ONG Group Pte Ltd.
-link: http://www.gobeyond.ongfoundation.org
+link: http://gobeyond.ongfoundation.org
 client: ONG Foundation
 noindex: true
 
