@@ -1,9 +1,11 @@
 .sass-cache/
 _site/
 old/
-id_rsa_dominicgan.pub
-id_rsa_dominicgan
+id_rsa*
 source_images/
+node_modules/
+
 *.sublime-project
 *.sublime-workspace
-*.*~
+*~
+*.swp
