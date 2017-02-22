@@ -22,6 +22,8 @@ github_username:  dominicgan
 # Build settings
 markdown: kramdown
 
+# Exclusions
+exclude: ["bower_components", "node_modules"]
 #gems
 # gems:
   # - jekyll-srcset
