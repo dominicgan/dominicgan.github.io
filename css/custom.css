@@ -285,19 +285,16 @@ span.header {
     display: -webkit-box;
     display: -moz-box;
     display: box;
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
     box-align: center;
-    -webkit-align-items: center;
     -moz-align-items: center;
     -ms-align-items: center;
     -o-align-items: center;
     align-items: center;
     -ms-flex-align: center;
     box-pack: center;
-    -webkit-justify-content: center;
     -moz-justify-content: center;
     -ms-justify-content: center;
     -o-justify-content: center;
@@ -472,19 +469,16 @@ span.header {
     display: -webkit-box;
     display: -moz-box;
     display: box;
-    display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
     box-align: end;
-    -webkit-align-items: flex-end;
     -moz-align-items: flex-end;
     -ms-align-items: flex-end;
     -o-align-items: flex-end;
     align-items: flex-end;
     -ms-flex-align: end;
     box-pack: start;
-    -webkit-justify-content: flex-start;
     -moz-justify-content: flex-start;
     -ms-justify-content: flex-start;
     -o-justify-content: flex-start;
@@ -545,17 +539,12 @@ span.header {
 #hero-name {
   margin-bottom: 0.625rem; }
   #hero-name path {
-    -webkit-animation: name-dash 1.5s ease-in-out forwards;
     animation: name-dash 1.5s ease-in-out forwards;
     fill: transparent;
     stroke: white;
     stroke-width: 1px;
     stroke-dasharray: 900;
     stroke-dashoffset: 1900; }
-
-@-webkit-keyframes name-dash {
-  to {
-    stroke-dashoffset: 0; } }
 
 @keyframes name-dash {
   to {
@@ -683,7 +672,6 @@ span.header {
   padding-left: 0; }
   .recent-work .post-desc .post-link,
   .portfolio .list .post-desc .post-link {
-    -webkit-transform: scaleY(1.1);
     transform: scaleY(1.1);
     position: relative;
     font-family: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
@@ -809,17 +797,14 @@ span.header {
   .post-sizer-desandro:hover img, .post-sizer-desandro.no-mouse img,
   .portfolio .post-item-desandro:hover img,
   .portfolio .post-item-desandro.no-mouse img {
-    -webkit-filter: grayscale(10%) brightness(90%);
     filter: grayscale(10%) brightness(90%); }
   .post-sizer-desandro:hover .post-desc, .post-sizer-desandro.no-mouse .post-desc,
   .portfolio .post-item-desandro:hover .post-desc,
   .portfolio .post-item-desandro.no-mouse .post-desc {
-    -webkit-transform: translateY(1px);
     transform: translateY(1px); }
   .post-sizer-desandro .post-desc,
   .portfolio .post-item-desandro .post-desc {
     background-color: rgba(235, 235, 235, 0.9);
-    -webkit-transform: translateY(200px);
     transform: translateY(200px);
     position: absolute;
     bottom: 0;
