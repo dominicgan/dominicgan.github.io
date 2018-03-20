@@ -4,6 +4,7 @@ old/
 id_rsa*
 source_images/
 node_modules/
+bower_components/
 
 *.sublime-project
 *.sublime-workspace
