@@ -1,19 +1,11 @@
-  function seedFeatherlight(callback){
-    $('img').each(function(){
-      $(this).attr('data-featherlight', $(this).attr('src'));
-    });
-
-    callback();
-  }
-
-  function initFeatherlight(){
-    var featherScript = '<script type="text/javascript" src="/bower_components/featherlight/release/featherlight.min.js"><\/script>';
-    var featherCss = '<link rel="stylesheet" href="/bower_components/featherlight/release/featherlight.min.css">';
+function initFeatherlight(){
+    var featherScript = '<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.4.0/featherlight.min.js" defer><\/script>';
+    var featherCss = '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.4.0/featherlight.min.css">';
   
     $('body').prepend(featherCss).append(featherScript);
   }
 
- function isotopeSeed(){
+function isotopeSeed(){
   var helpers = '<li class="post-sizer-desandro"></li><li class="post-gutter-desandro"></li>';
   $('.portfolio .navigation').removeClass('hidden');
   $('.portfolio .post-list').addClass('desandroed').prepend(helpers);
@@ -23,10 +15,10 @@
   });
 }
 
-$(document).ready(function(){
-  if (!$('.portfolio').length) {
-    return false;
-  } else {
+function initPortfolio() {
+	var scope = $('.portfolio');
+
+	if (!scope.length) {return;}
 
     isotopeSeed();
 
@@ -92,15 +84,32 @@ $(document).ready(function(){
         $(this).addClass('checked');
       });
     });
-  }
 
+  // handle touch devices
   if (Modernizr.touch) {
     $('.post-item-desandro').each(function(){
       $(this).addClass('no-mouse');
     })
   }
+}
 
-    if ($('article').length){
-      seedFeatherlight(initFeatherlight);
-    }
+function initArticle() {
+    var scope = $('article');
+
+    if (!scope.length) {return;}
+
+	initFeatherlight();
+}
+
+$(document).ready(function(){
+  // init wowjs
+  var wow = new WOW({
+      offset: 0,          
+      mobile: false,       
+      live: true        
+  })
+  wow.init();
+
+  initPortfolio();
+  initArticle();
 });
