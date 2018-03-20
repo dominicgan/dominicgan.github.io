@@ -4,7 +4,7 @@
   "description": "Portfolio Site",
   "main": "gulpfile.js",
   "scripts": {
-    "start" : "gulp",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,7 +21,7 @@
     "gulp-autoprefixer": "^3.1.1",
     "gulp-changed": "^2.0.0",
     "gulp-clip-empty-files": "^0.1.2",
-    "gulp-clone": "^1.0.0",
+    "gulp-clone": "^1.1.4",
     "gulp-cssnano": "^2.1.2",
     "gulp-filesize": "0.0.6",
     "gulp-plumber": "^1.1.0",
@@ -30,5 +30,8 @@
     "gulp-sourcemaps": "^2.4.1",
     "gulp-util": "^3.0.8",
     "merge-stream": "^1.0.1"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
   }
 }
