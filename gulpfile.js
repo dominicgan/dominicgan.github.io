@@ -17,48 +17,51 @@ var parallel      = require('concurrent-transform');
 var del           = require('del');
 var os            = require("os");
 var imgResponsive = require('gulp-responsive');
+var runSequence   = require('run-sequence');
 var jekyll        = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages      = {
 	jekyllBuild: '<span style="color: grey"> Running: </span>  $ jekyll build'
 };
 
-
+/**
+ * Resize uploaded images
+ */
 gulp.task('proj-image-resize', function () {
-  return gulp.src('images/project_src/*.{png,jpg}')
-  .pipe(plumber(function(error) {
-    gutil.log(gutil.colors.red(error.message));
-    this.emit('end');
-}))
-  .pipe(gulp.dest('images/project/converted'))
-  .pipe(imgResponsive({
-    '*.jpg': [{
-        width: 360,
-        rename: { suffix: '-xs' },
-    }, {
-        width: 540,
-        rename: { suffix: '-sm' },
-    }, {
-        width: 768,
-        rename: { suffix: '-md' },
-    }, {
-        width: 1200,
-        rename: { suffix: '-lg' },
-    }, {
-        rename: { suffix: '-src' },
-    }],
-},
-{
-    // Global configuration for all images
-    // The output quality for JPEG, WebP and TIFF output formats
-    quality: 85,
-    // Use progressive (interlace) scan for JPEG and PNG output
-    progressive: true,
-    // Zlib compression level of PNG output format
-    compressionLevel: 6,
-    // Strip all metadata
-    withMetadata: false,
-}))
-  .pipe(gulp.dest('images/project/'));
+    return gulp.src('images/project_src/*.{png,jpg}')
+    .pipe(plumber(function(error) {
+        gutil.log(gutil.colors.red(error.message));
+        this.emit('end');
+    }))
+    .pipe(gulp.dest('images/project/converted'))
+    .pipe(imgResponsive({
+        '*.jpg': [{
+            width: 360,
+            rename: { suffix: '-xs' },
+        }, {
+            width: 540,
+            rename: { suffix: '-sm' },
+        }, {
+            width: 768,
+            rename: { suffix: '-md' },
+        }, {
+            width: 1200,
+            rename: { suffix: '-lg' },
+        }, {
+            rename: { suffix: '-src' },
+        }],
+    },
+    {
+        // Global configuration for all images
+        // The output quality for JPEG, WebP and TIFF output formats
+        quality: 85,
+        // Use progressive (interlace) scan for JPEG and PNG output
+        progressive: true,
+        // Zlib compression level of PNG output format
+        compressionLevel: 6,
+        // Strip all metadata
+        withMetadata: false,
+    }))
+      .pipe(gulp.dest('images/project/'));
 });
 
 /**
@@ -80,8 +83,8 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass'], function() {
- 	browserSync(['_layouts/*.html', '_posts/*', '_includes/*.html', '_site/js/**/*.js', '_site/css/**/*.css'],{
+gulp.task('browser-sync', [], function() {
+ 	browserSync.init({
  		server: {
  			baseDir: '_site'
  		},
@@ -142,25 +145,39 @@ gulp.task('sass', function () {
 });
 
 /**
+ * All watch tasks to go here
+ */
+gulp.task('watch', function() {
+    gulp.watch('_scss/**/*.scss', ['sass']);
+    gulp.watch('images/project_src/*.*', ['proj-image-resize']);
+    gulp.watch([
+        './*.+(md|html|yml|xml)',
+        // 'about.md', 
+        // 'index.html', 
+        // 'feed.xml', 
+        // '_config.yml', 
+        '_data/**/*.*', 
+        '_drafts/**/*.*', 
+        '_includes/**/*.html', 
+        '_layouts/**/*.html', 
+        '_posts/**/*.*',  
+        'js/**/*.js', 
+        'css/**/*.css' 
+        // '*.md', 
+        // '*.html'
+    ], ['jekyll-rebuild']);
+});
+
+/**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
- gulp.task('default', ['browser-sync', 'sass', 'proj-image-resize'], function(){
-	gulp.watch('_scss/**/*.scss', ['sass']);
-	gulp.watch('images/project_src/*.*', ['proj-image-resize']);
-	gulp.watch([
-		'about.md', 
-		'index.html', 
-		'feed.xml', 
-		'_config.yml', 
-		'_data/**/*.*', 
-		'_drafts/*', 
-		'_includes/*.html', 
-		'_layouts/*.html', 
-		'_posts/**/*.*',  
-		'js/**/*.js', 
-		'css/**/*.css', 
-		'*.md', 
-		'*.html'
-	], ['jekyll-rebuild']);
+ gulp.task('default', [], function(){
+    runSequence(
+        'sass',
+        'proj-image-resize',
+        'jekyll-build',
+        'browser-sync',
+        'watch'
+    );
  });
