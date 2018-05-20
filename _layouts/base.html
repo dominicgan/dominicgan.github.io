@@ -5,12 +5,12 @@
 
 <body class="layout_{{ page.layout }}" data-component="['site']">
 	
-	{% include ascii-welcome.html %}
-	{% include header.html %}
+	{% include _components/ascii-welcome.html %}
+	{% include _components/header.html %}
 
 	{{ content }}
 
-	{% include footer.html %}
+	{% include _components/footer.html %}
 	{% include footlibs.html %}
 </body>
 
