@@ -28,7 +28,7 @@ gulp.task('sass', function () {
 
 	let pipe1 = source.pipe(clone())
 	.pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('css')); // Create sourcemap
+    .pipe(gulp.dest('./css')); // Create sourcemap
 
     let pipe2 = source.pipe(clone())
     .pipe(rename({suffix: '.min'}))
