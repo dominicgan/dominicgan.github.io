@@ -10,7 +10,7 @@ SystemJS.config({
   map: {
     'css': 'npm:systemjs-plugin-css/css.js',
     'jquery': 'cdnjs:jquery/3.3.1/jquery.min.js',
-    'wow': 'cdnjs:wow/1.1.2/wow.min.js',
+    'wow': 'cdnjs:graingert-wow/1.2.2/wow.min.js',
     'imagesloaded': 'cdnjs:jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js',
     'modernizr': 'cdnjs:modernizr/2.8.3/modernizr.min.js',
     'isotope': 'cdnjs:jquery.isotope/3.0.2/isotope.pkgd.min.js',
