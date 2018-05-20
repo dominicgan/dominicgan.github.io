@@ -7,7 +7,9 @@ const runSequence = require('run-sequence');
  */
 gulp.task('default', [], function(){
     runSequence(
-        'sass',
+    	'copy',
+        ['sass', 'babel'],
+        'bundle',
         'proj-image-resize',
         'jekyll-build',
         'browser-sync',

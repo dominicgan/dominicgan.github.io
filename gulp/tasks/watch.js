@@ -19,6 +19,12 @@ gulp.task('watch', function() {
         return runSequence('proj-image-resize');
     });
 
+    gulp.watch(['./js/**/*.js']).on('change', function(evt) {
+        changeEvent(evt);
+        return runSequence('babel', 'bundle');
+    });
+
+
     gulp.watch([
         './*.+(md|html|yml|xml)',
         './_data/**/*.*', 
