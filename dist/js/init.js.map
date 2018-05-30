@@ -1,0 +1,1 @@
+{"version":3,"sources":["init.js"],"names":["SystemJS","import","then","m","App","loadPlugins"],"mappings":"AAAA,aAEAA,SAASC,OAAO,UAAUC,KAAK,SAAAC,IACpB,IAAIA,EAAEC,KAEZC","file":"init.js","sourcesContent":["'use strict';\n\nSystemJS.import('app.js').then(function(m){\n\tvar app = new m.App();\n\n\tapp.loadPlugins();\n});"]}
