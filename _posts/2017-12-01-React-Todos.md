@@ -5,6 +5,7 @@ categories: project web-design front-end
 attribution: Personal
 link: 'http://domrae.github.io'
 noindex: true
+published: false
 
 cover-image: /images/project/domrae
 cover-image-index: /images/project/domrae
