@@ -86,17 +86,17 @@
 	margin-bottom: rem(10);
 
 	path {
-		@include animation(name-dash 1.5s ease-in-out forwards);
+		// @include animation(name-dash 1.5s ease-in-out forwards);
 		fill: transparent;
 		stroke: $hero-stroke-color;
 		stroke-width: 1px;
-		stroke-dasharray: 900;
-		stroke-dashoffset: 1900;
+		// stroke-dasharray: 900;
+		// stroke-dashoffset: 1900;
 	}
 }
 
-@include keyframes(name-dash) {
-	to {
-		stroke-dashoffset: 0;
-	}
-}
+// @include keyframes(name-dash) {
+// 	to {
+// 		stroke-dashoffset: 0;
+// 	}
+// }
