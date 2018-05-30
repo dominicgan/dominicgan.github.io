@@ -10,7 +10,6 @@ gulp.task('default', [], function(){
     	'copy',
         ['sass', 'babel'],
         'bundle',
-        'proj-image-resize',
         'jekyll-build',
         'browser-sync',
         'watch'
