@@ -2,33 +2,30 @@
 
 - name: Adobe Creative Suite
 
+- name: Sketch
+
 - name: HTML5/CSS3
 
-- name: Javascript
-  example: Vanilla JS, jQuery
+- name: Javascript frameworks
+  example: jQuery, SystemJS, React, Vue
 
 - name: Front-end frameworks
   example: Bootstrap, Foundation
 
+- name: HTML Templating
+  example: Pug/Jade, Nunjucks, Liquid
+
 - name: CSS Pre-processors & frameworks
   example: Sass, Bourbon, Neat, Modular-scale
 
-- name: Node.js testing and development tools
-  example: Gulp.js, BrowserSync, http-server, Harp.js
+- name: Node.js development tools
+  example: Gulp, Grunt, Express 
 
 - name: Wireframing
   example: Sketch, Axure, Justinmind Prototyper, Pencil
 
-- name: Templating engines
-  example: Nunjucks, Liquid
-
-- name: Version control tools
+- name: Version control 
   example: Git
-
-- name: Package managers
-  example: Bower, NPM, RubyGems, Brew
-
-- name: Windows/ OS X/ Ubuntu
 
 # - name: Office solutions (Microsoft office, Libre office, Google Docs suite, etc)
 
