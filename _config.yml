@@ -15,7 +15,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dominicgan.github.io" # the base hostname & protocol for your site
 build-info: Built with Jekyll, Gulp & Sass.
 copyright: >
-  &copy; 2016 Dominic Gan. All Rights Reserved.
+  &copy; 2018 Dominic Gan. All Rights Reserved.
 # twitter_username: jekyllrb
 github_username:  dominicgan
 
