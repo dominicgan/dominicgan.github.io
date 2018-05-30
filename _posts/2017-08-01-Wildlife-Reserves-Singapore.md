@@ -1,9 +1,9 @@
 ---
 layout: post
-date: '2016-04-01 10:00:00 +0800'
+date: '2017-08-01 10:00:00 +0800'
 categories: project web-design front-end
-attribution: Personal
-link: 'http://domrae.github.io'
+attribution: Mirum Agency Singapore 
+link: 'https://www.wrs.com.sg/en/singapore-zoo.html'
 noindex: true
 
 cover-image: /images/project/domrae
