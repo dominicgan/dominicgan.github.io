@@ -6,8 +6,8 @@ attribution: Mirum Agency Singapore
 link: 'https://www.malaysiaairlines.com/my/en.html'
 noindex: true
 
-cover-image: /images/project/domrae
-cover-image-index: /images/project/domrae
+cover-image: /images/project/mab
+cover-image-index: /images/project/mab
 
 image1: /images/project/domrae-inner-1
 image2: /images/project/domrae-inner-2

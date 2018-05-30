@@ -6,8 +6,8 @@ attribution: Personal
 link: 'http://128.199.68.157/mirum/'
 noindex: true
 
-cover-image: /images/project/domrae
-cover-image-index: /images/project/domrae
+cover-image: /images/project/mirumflow
+cover-image-index: /images/project/mirumflow
 
 image1: /images/project/domrae-inner-1
 image2: /images/project/domrae-inner-2

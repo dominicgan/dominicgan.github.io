@@ -6,8 +6,8 @@ attribution: Personal
 link: 'https://yurica.co/'
 noindex: true
 
-cover-image: /images/project/domrae
-cover-image-index: /images/project/domrae
+cover-image: /images/project/yurica
+cover-image-index: /images/project/yurica
 
 image1: /images/project/domrae-inner-1
 image2: /images/project/domrae-inner-2
