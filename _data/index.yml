@@ -1,8 +1,4 @@
 # Index yml file
-#
-# this file contains content for the index page that *probably* won't be 
-# edited often. 
-# Splitting 'em up from the template file, see!
 
 # section.about
 about-title: Hello!
