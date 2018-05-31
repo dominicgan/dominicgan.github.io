@@ -1,18 +1,17 @@
-- name: Website/User Interface Design
-- name: Wireframing
-- name: Rapid Prototyping
 - name: HTML5/CSS3
 - name: Javascript
 - name: Sass
 - name: Gulp
 - name: Jekyll
+- name: Node.js
 - name: PHP
 - name: Ruby/Rails
-- name: Bower
-- name: Adobe Creative Suite
-- name: Wordpress
-- name: Yii
-- name: more..
+# - name: Website/User Interface Design
+# - name: Wireframing
+# - name: Rapid Prototyping
+# - name: Adobe Creative Suite
+# - name: Wordpress
+# - name: Yii
 # - name: Client-side Development
 # - name: CSS3
 # - name: Markdown
