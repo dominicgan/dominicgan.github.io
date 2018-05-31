@@ -8,7 +8,7 @@ permalink: /resume/
 <section class="resume">
 	<div class="row wow fadeInUp">
 		<div class="work-experience">
-			<header><h2>Work Experience</h2></header>
+			<header><h2>Work</h2></header>
 			<hr class="short red header">
 			<div class="content">
 				{% for work in site.data.work %}
@@ -46,7 +46,7 @@ permalink: /resume/
 			<hr class="short red header">
 			<div class="pretty-good">
 				<div class="item content desc">
-					<p>Fluent and highly competent in these areas:</p>
+					<p>Fluent and highly competent in:</p>
 					<ul>
 						{% for skill in site.data.skill-good %}
 						<li><span>{{ skill.name }}</span>
@@ -71,7 +71,7 @@ permalink: /resume/
 						{% endfor %}
 					</ul>
 				</div>
-				<div class="item content desc">
+				<div class="item content desc hidden">
 					<p>Currently learning:</p>
 					<ul>
 						{% for skill in site.data.skill-learning %}

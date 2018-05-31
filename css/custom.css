@@ -165,7 +165,7 @@ span.header {
   text-align: center; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 .inline-lists, .about .skills, .portfolio .navigation .portfolio-filter-list, .post .post-skills .skill-list {
   list-style: none;
@@ -550,21 +550,9 @@ span.header {
 #hero-name {
   margin-bottom: 0.625rem; }
   #hero-name path {
-    -webkit-animation: name-dash 1.5s ease-in-out forwards;
-    animation: name-dash 1.5s ease-in-out forwards;
     fill: transparent;
     stroke: white;
-    stroke-width: 1px;
-    stroke-dasharray: 900;
-    stroke-dashoffset: 1900; }
-
-@-webkit-keyframes name-dash {
-  to {
-    stroke-dashoffset: 0; } }
-
-@keyframes name-dash {
-  to {
-    stroke-dashoffset: 0; } }
+    stroke-width: 1px; }
 
 .about {
   background: #f3f4f9; }

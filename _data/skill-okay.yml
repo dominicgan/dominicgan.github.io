@@ -1,5 +1,3 @@
 - name: PHP (Wordpress, Magento, Yii 1.1)
 - name: Ruby/Rails
-- name: MySQL
-- name: REST
-- name: Unix Terminal 
+- name: Adobe Experience Manager (AEM)

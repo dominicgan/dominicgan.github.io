@@ -1,14 +1,17 @@
 - name: LinkedIn
   link: https://sg.linkedin.com/in/dominic-gan-7079386b
   icon: fa-linkedin
+  username: Dominic Gan
 
 - name: Github
   link: https://github.com/dominicgan
   icon: fa-github
+  username: dominicgan
 
 - name: Codepen
   link: http://codepen.io/dominicgan/
   icon: fa-codepen
+  username: dominicgan
 
 # - name: Flickr
 #   link: http://www.google.com/
