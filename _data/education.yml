@@ -1,5 +1,7 @@
 - school: National University of Singapore
   course: BComp (Information Systems) with Honours – Electronic Commerce
+  startdate: 2010-06-01
+  enddate: 2014-06-30
   period: Graduated May 2014
   desc: >
     <ul>
@@ -10,6 +12,8 @@
 
 - school: Student Exchange Program
   course: Chalmers University of Technology, Göteborg, Sweden
+  startdate: 2013-01-01
+  enddate: 2013-05-30
   period: Spring 2013
   desc: >
     <span>Completed coursework in:</span>
