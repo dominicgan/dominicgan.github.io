@@ -1,123 +1,83 @@
+---
+layout: null
+---
 {
   "basics": {
-    "name": "Dominic Gan",
-    "label": "Web Designer/Front-end Developer",
-    "picture": "http://www.dominicgan.com/dp-1x1.jpg",
-    "email": "dominicgangx@gmail.com",
-    "phone": "(+65)9177 4121",
-    "website": "http://dominicgan.github.io",
-    "summary": "A summary of John Doe...",
+    "name": {{ site.data.bio.name | jsonify }},
+    "label": {{ site.data.bio.role | jsonify }}, 
+    "picture": {{ site.data.bio.avatar | jsonify }}, 
+    "email": {{ site.data.bio.email | jsonify }}, 
+    "phone": {{ site.data.bio.phone | jsonify }}, 
+    "website": {{ site.data.bio.website | jsonify }}, 
+    "summary": {{ site.data.bio.summary | jsonify }}, 
     "location": {
-      "address": "Blk 211 Pasir Ris St 21 #12-248",
-      "postalCode": "510211",
-      "city": "Singapore",
-      "countryCode": "SG",
-      "region": "Singapore"
+      "address": {{ site.data.bio.location.address | jsonify }}, 
+      "postalCode": {{ site.data.bio.location.postalcode | jsonify }}, 
+      "city": {{ site.data.bio.location.city | jsonify }}, 
+      "countryCode": {{ site.data.bio.location.countrycode | jsonify }}, 
+      "region": {{ site.data.bio.location.region | jsonify }} 
     },
-    "profiles": [{
-      "network": "LinkedIn",
-      "username": "Dominic Gan",
-      "url": "https://sg.linkedin.com/in/dominic-gan-7079386b"
-    },{
-      "network": "Github",
-      "username": "dominicgan",
-      "url": "https://github.com/dominicgan"
-    },{
-      "network": "Codepen",
-      "username": "dominicgan",
-      "url": "http://codepen.io/dominicgan"
-    }]
+    "profiles": [
+	  {% for contact in site.data.contact-links %}
+	  {
+      "network": {{ contact.name | jsonify }},
+      "username": {{ contact.username | jsonify }},
+      "url": {{ contact.link | jsonify }}
+	  }{% if forloop.last%}{% else %},{% endif %}{% endfor %}
+    ]
   },
-  "work": [{
-    "company": "ONG&ONG Group Pte Ltd",
-    "position": "Web Application Designer",
-    "website": "http://www.group.ong-ong.com",
-    "startDate": "2015-09-20",
-    "endDate": "Present",
-    "summary": "In charge of web design and front-end development for the company's internal solutions/web presence. Creating client side applications and website that meet and exceed customer requirements.",
-    "highlights": [
-      "Spearheaded the UI revamp company's intranet portal"
-    ]
-  },{
-    "company": "Balanced Consultancy Pte Ltd/Novitee Pte Ltd",
-    "position": "Web Consultant",
-    "website": "http://www.balancedconsultancy.com.sg",
-    "startDate": "2014-08-01",
-    "endDate": "2015-08-01",
-    "summary": "Responsible for designing and developing web solutions for clients. Experienced in managing projects for a wide range of clients and industries. Gained fluency in handling major web CMS solutions, such as Magento and WordPress.",
-    "highlights": []
-  },{
-    "company": "CrimsonLogic Pte Ltd",
-    "position": "Business Process Analyst (Intern)",
-    "website": "http://www.crimsonlogic.com",
-    "startDate": "2012-07-01",
-    "endDate": "2012-05-01",
-    "summary": "Business Process Analyst in the Solutions and Services Department of Project FRONTIER – Project aiming to integrate more than 250 business license applications from 18 government agencies onto a common portal. Gathered user requirements through formal meetings with the different government agencies and collated sets of Software Requirement Specifications (SRS). Involved in the amendment and improvement of business processes within the SRS documentation.",
-    "highlights": []
-  }],
+  "work": [
+	  {% for work in site.data.work %}
+	  {
+		"company": {{ work.company | jsonify }},
+		"position": {{ work.role | jsonify }},
+		"startDate": {{ work.startdate | jsonify }},
+		"endDate": {{ work.enddate | jsonify }},
+		"summary": {{ work.desc | jsonify }},
+		"highlights": []
+	  }{% if forloop.last%}{% else %},{% endif %}{% endfor %}
+  ],
   "volunteer": [{}],
-  "education": [{
-    "institution": "National University of Singapore",
-    "area": "Electronic Commerce",
-    "studyType": "BComp (Information Systems) with Honours",
-    "startDate": "2010-08-01",
-    "endDate": "2014-06-01",
-    "gpa": "3.47",
-    "courses": [
-      "E-Business Capstone Project",
-      "Enterprise Service-Oriented Architecture"
-    ]
-  },{
-    "institution": "Chalmers University of Technology",
-    "area": "Information Systems",
-    "studyType": "Student Exchange Program",
-    "startDate": "2013-01-01",
-    "endDate": "2013-06-01",
-    "gpa": null,
-    "courses": [
-      "Human Computer Interaction",
-      "Interaction Design of Social Media"
-    ]
-  }],
+  "education": [
+	  {% for edu in site.data.education %}
+	  {
+    "institution": {{ edu.school | jsonify }},
+    "area": {{ edu.course | jsonify }},
+	"startDate": {{ edu.startdate | jsonify }},
+	"endDate": {{ edu.enddate | jsonify }},
+	"summary": {{ edu.desc | jsonify }},
+	"highlights": []
+	  }{% if forloop.last%}{% else %},{% endif %}{% endfor %}
+  ],
   "awards": [],
   "publications": [],
-  "skills": [{
-    "name": "Front-end Development",
+  "skills": [
+	  {% for skill in site.data.skill-good %}
+	  {
+    "name": {{ skill.name | jsonify }}, 
     "level": "Highly Proficient",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "Javascript"
-    ]
-  },{
-    "name": "User Interface Design",
+    "keywords": []
+	  },{% endfor %}
+	  {% for skill in site.data.skill-okay %}
+	  {
+    "name": {{ skill.name | jsonify }}, 
     "level": "Proficient",
-    "keywords": [
-      "Web Design",
-      "Prototyping",
-      "Wireframing",
-      "Adobe Creative Suite"
-    ]
-  }],
-  "languages": [{
-    "name": "English",
-    "level": "Native speaker"
-  },{
-    "name": "Chinese",
-    "level": "Basic"
-  }],
-  "interests": [{
-    "name": "Photography",
-    "keywords": [
-      "Cameras",
-      "Photos"
-    ]
-  },{
-    "name": "Collecting Mechanical Keyboards",
-    "keywords": [
-      "Seriously",
-      "Whaat?"
-    ]
-  }],
-  "references": [{}]
+    "keywords": []
+	  },{% endfor %}
+	  {% for skill in site.data.skill-learning %}
+	  {
+    "name": {{ skill.name | jsonify }}, 
+    "level": "Working Experience",
+    "keywords": []
+	  }{% if forloop.last%}{% else %},{% endif %}{% endfor %}
+  ],
+  "languages": [
+	  {% for lang in site.data.languages %}
+	  {
+    "name": {{ lang.name | jsonify }}, 
+    "level": {{ lang.level | jsonify }}
+	  }{% if forloop.last%}{% else %},{% endif %}{% endfor %}
+  ],
+  "interests": [],
+  "references": []
 }
