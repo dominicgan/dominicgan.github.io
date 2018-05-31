@@ -165,7 +165,7 @@ span.header {
   text-align: center; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 .inline-lists, .about .skills, .portfolio .navigation .portfolio-filter-list, .post .post-skills .skill-list {
   list-style: none;
