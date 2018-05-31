@@ -17,7 +17,7 @@ permalink: /resume/
 					<h4 class="role">{{ work.role }}</h4>
 					<span class="period">{{ work.period }}</span>
 					<div class="desc">
-						{{ work.desc }}
+						{{ work.desc | markdownify }}
 					</div>
 				</div>
 				{% endfor %}
@@ -33,7 +33,7 @@ permalink: /resume/
 					<h4 class="role">{{ education.course }}</h4>
 					<span class="period">{{ education.period }}</span>
 					<div class="desc">
-						{{ education.desc }}
+						{{ education.desc | markdownify }}
 					</div>
 				</div>
 				{% endfor %}
@@ -86,7 +86,7 @@ permalink: /resume/
 <section class="pdf">
 	<div class="row text-center">
 		<header class="wow fadeInDown"><h2>Need a PDF?</h2></header>
-		<p class="description wow fadeInUp">Grab a PDF copy of my resume <a href="/files/Dominic-Gan_Resume_Web_2016.pdf" target="_blank" title="PDF Resume">here</a>,<br> or check out my <a href="https://sg.linkedin.com/in/dominic-gan-7079386b" target="_blank">linkedIn profile</a><br>for more!</p>
+		<p class="description wow fadeInUp">Grab a PDF copy of my resume <a href="/files/Dominic-Gan_Resume_Web_2016.pdf" target="_blank" title="PDF Resume">here</a>,<br> or check out my <a href="https://sg.linkedin.com/in/dominic-gan-7079386b" target="_blank">linkedIn profile</a><br>for more.</p>
 		<hr class="short red center wow fadeIn">
 	</div>
 </section>
