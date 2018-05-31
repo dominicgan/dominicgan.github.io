@@ -69,13 +69,13 @@ layout: null
 	  {% for skill in site.data.skill-okay %}
 	  {
     "name": {{ skill.name | jsonify }}, 
-    "level": "Proficient",
+    "level": "Working Experience",
     "keywords": []
 	  },{% endfor %}
 	  {% for skill in site.data.skill-learning %}
 	  {
     "name": {{ skill.name | jsonify }}, 
-    "level": "Working Experience",
+    "level": "In progress",
     "keywords": []
 	  }{% if forloop.last%}{% else %},{% endif %}{% endfor %}
   ],
