@@ -1,21 +1,23 @@
 - name: HTML5/CSS3
 - name: Javascript
-- name: Sass
-- name: Gulp
+- name: React
+- name: Vue
+- name: Sass/Less
+- name: Gulp/Grunt
 - name: Jekyll
 - name: Node.js
 - name: PHP
 - name: Ruby/Rails
+- name: Git
 # - name: Website/User Interface Design
 # - name: Wireframing
 # - name: Rapid Prototyping
-# - name: Adobe Creative Suite
+- name: Adobe Creative Suite
 # - name: Wordpress
 # - name: Yii
 # - name: Client-side Development
 # - name: CSS3
 # - name: Markdown
-# - name: Git
 # - name: Ruby/Rails
 # - name: Liquid
 # - name: Jquery
@@ -25,7 +27,7 @@
 # - name: Photoshop
 # - name: Illustrator
 # - name: Balsamiq
-# - name: Sketch
+- name: Sketch
 # - name: Justinmind
 # - name: Magento
 

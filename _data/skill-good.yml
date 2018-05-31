@@ -1,7 +1,7 @@
 - name: HTML5/CSS3
 
 - name: Javascript frameworks
-  example: jQuery, SystemJS, React, Vue
+  example: ES6, jQuery, SystemJS, React, Vue
 
 - name: Front-end frameworks
   example: Bootstrap, Foundation
