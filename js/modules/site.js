@@ -1,6 +1,6 @@
 import $ from 'jquery';
-import 'animate.css';
-import 'wow';
+// import 'animate.css';
+// import 'wow';
 
 /**
  * @class Site
@@ -15,7 +15,7 @@ export class Site {
 	init() {
 		// console.log('init');
 		if (this.scope.length) {
-			this.initWow();
+			// this.initWow();
 			// console.log('scope exists');
 		}
 	}

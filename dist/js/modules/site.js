@@ -13,13 +13,12 @@ var _jquery = require('jquery');
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-require('animate.css');
-
-require('wow');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// import 'animate.css';
+// import 'wow';
 
 /**
  * @class Site
@@ -38,7 +37,7 @@ var Site = exports.Site = function () {
 		value: function init() {
 			// console.log('init');
 			if (this.scope.length) {
-				this.initWow();
+				// this.initWow();
 				// console.log('scope exists');
 			}
 		}
