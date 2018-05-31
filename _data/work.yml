@@ -3,38 +3,55 @@
   startdate: 2017-03-13
   enddate: present
   period: Mar 2017 – Present
+  summary: Frontend development focusing on AEM-based web applications. Built cross-browser compatible responsive websites for major clientele. Worked closely with a diverse team of backend engineers, designers and UX to rapidly build, iterate, test and deploy code.
   desc: >
     <p>Building cross-browser compatible responsive websites for major clientele.</p>
     <p>Worked closely with backend engineers, designers, UX to rapidly build, iterate, test and deploy code.</p>
     <p>Frontend development focusing on Adobe Experience Manager (AEM) based web applications.</p>
+  highlights:
+      - item: Malaysia Airlines Berhad 
+      - item: Wildlife Reserves of Singapore 
+      - item: HSBC Insurance 
 
 - company: ONG&ONG Group Pte Ltd
   role: Web Application Designer
   startdate: 2015-09-01
   enddate: 2017-02-28
   period: September 2015 – Feb 2017 
+  summary: In charge of web design and front-end development for the company's internal solutions/web presence.
   desc: >
     <p>In charge of web design and front-end development for the company's internal solutions/web presence.</p>
 
     <p>Creating client side applications and website that meet and exceed customer requirements.</p>
+  highlights:
+      - item: iWeb Intranet Application
+      - item: GOBEYOND Competition website
+      - item: ONG Foundation fundraising event websites
 
 - company: Balanced Consultancy Pte Ltd/Novitee Pte Ltd
   role: Web Consultant
   startdate: 2014-08-01
   enddate: 2015-08-30
   period: August 2014 – August 2015
+  summary: Responsible for designing and developing web solutions for clients. Experienced in managing projects for a wide range of clients and industries. Gained fluency in handling major web CMS solutions such as Magento and WordPress.
   desc: >
     <p>Responsible for designing and developing web solutions for clients. Experienced in managing projects for a wide range of clients and industries. Gained fluency in handling major web CMS solutions, such as Magento and WordPress.</p>
 
     <p>Have successfully managed and contributed to over 30 website and mobile app projects within the last year to client satisfaction.</p>
+  highlights:
+      - item: Motorola Solutions MOTOTRBO 
+      - item: Passage New York 
 
 - company: CrimsonLogic Pte Ltd
   role: Business Process Analyst (Intern)
   startdate: 2012-04-01
   enddate: 2012-06-30
   period: Summer 2012
+  summary: Business Process Analyst in the Solutions and Services Department of Project FRONTIER. 
   desc: >
     <p>Business Process Analyst in the Solutions and Services Department of Project FRONTIER – Project aiming to integrate more than 250 business license applications from 18 government agencies onto a common portal.</p>
   
     <p>Gathered user requirements through formal meetings with the different government agencies and collated sets of Software Requirement Specifications (SRS). Involved in the amendment and improvement of business processes within the SRS documentation.</p>
+  highlights:
+      - item: Requirement document migration 
 

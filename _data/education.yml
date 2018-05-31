@@ -1,41 +1,39 @@
 - school: National University of Singapore
-  course: BComp (Information Systems) with Honours – Electronic Commerce
+  course: Information Systems (Electronic Commerce)
   startdate: 2010-06-01
   enddate: 2014-06-30
   period: Graduated May 2014
+  summary: Bachelor of Computing (E-Commerce) 
   desc: >
+    <p>BComp (Information Systems) with Honours – Electronic Commerce</p>
     <ul>
       <li>2nd Place in School of Computing Term Project Showcase – Developed a portal for the consolidation of social enterprises allowing users to post jobs and participate in forum discussions.</li>
       <li>Sheares Hall 31st Junior Common Room Committee – Director of Sports, Inter Hall Games 11/12 Sports Council.</li>
       <li>Sheares Hall Sepak Takraw – Captain (AY 2012-2013)</li>
     </ul>
+  highlights:
+      - item: IS4227 Enterprise Service Oriented Architecture
+      - item: IS4102 E-Business Capstone Project - 2nd Place at Term Project Showcase
+      - item: IS4260 E-Commerce Business Models
+      - item: Sheares Hall 31st Junior Common Room Committee – Director of Sports, Inter Hall Games 11/12 Sports Council
+      - item: Sheares Hall Sepak Takraw – Captain (AY 2012-2013)
 
-- school: Student Exchange Program
-  course: Chalmers University of Technology, Göteborg, Sweden
+- school: Chalmers University of Technology
+  course: Information Technology
   startdate: 2013-01-01
   enddate: 2013-05-30
   period: Spring 2013
+  summary: Student Exchange Program
   desc: >
+    <p>Student Exchange Program</p>
     <span>Completed coursework in:</span>
     <ul>
     <li>Human Computer Interaction</li>
     <li>Interaction Design of Social Media</li>
     <li>Project Management</li>
     </ul>
+  highlights:
+      - item: TDA289 Human Computer Interaction
+      - item: CIU190 Interaction Design of Social Media
+      - item: IBB136 Project Management
 
-# - school: National Service
-#  course: Military Police Specialist (NSF 3SG)
-#  period: 2008 – 2010
-#  desc: 
-  
-# - school:
-#   course:
-#   period:
-#   desc: >
-#     lorem
-
-# - school:
-#   course:
-#   period:
-#   desc: >
-#     lorem

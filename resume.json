@@ -33,8 +33,12 @@ layout: null
 		"position": {{ work.role | jsonify }},
 		"startDate": {{ work.startdate | jsonify }},
 		"endDate": {{ work.enddate | jsonify }},
-		"summary": {{ work.desc | jsonify }},
-		"highlights": []
+		"summary": {{ work.summary | jsonify }},
+		"highlights": [
+			  {% for item in work.highlights %}
+			  "{{ item.item }}"{% if forloop.last%}{% else %},{% endif %}
+			  {% endfor %}
+		]
 	  }{% if forloop.last%}{% else %},{% endif %}{% endfor %}
   ],
   "volunteer": [{}],
@@ -45,8 +49,12 @@ layout: null
     "area": {{ edu.course | jsonify }},
 	"startDate": {{ edu.startdate | jsonify }},
 	"endDate": {{ edu.enddate | jsonify }},
-	"summary": {{ edu.desc | jsonify }},
-	"highlights": []
+	"summary": {{ edu.summary | jsonify }},
+	"highlights": [
+		  {% for item in edu.highlights %}
+		  "{{ item.item }}"{% if forloop.last%}{% else %},{% endif %}
+		  {% endfor %}
+	]
 	  }{% if forloop.last%}{% else %},{% endif %}{% endfor %}
   ],
   "awards": [],
