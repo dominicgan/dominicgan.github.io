@@ -9,15 +9,25 @@
 .recent-work,
 .portfolio .list {
 
-	ul { @include outer-container(100%);}
+	ul {
+		@include outer-container(100%);
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
 
 	li:not([class$="desandro"]) {
 	// li {
 		@include span-columns(12);
+		float: initial;
+		margin-right: 0;
 		// box-shadow: $shadow1;
 
 		@include media(min-width $mob-min-width max-width $tab-min-width) {
 			@include span-columns(6);
+			float: initial;
+			// margin-right: 0;
 
 			&:nth-child(2n+2){
 				@include omega();
@@ -25,16 +35,19 @@
 		}
 		@include media(min-width $tab-min-width max-width $desk-min-width) {
 			@include span-columns(6);
+			float: initial;
+			// margin-right: 0;
 
 			&:nth-child(2n+2){
 				@include omega();
 			}
 		}
 		@include media($desk-min-width){
-			@include span-columns(3);
+			@include span-columns(4);
+			float: initial;
 
-			&:nth-child(4n+4){
-				@include omega();
+			&:nth-child(3n+3){
+				// @include omega();
 			}
 		}
 	}
@@ -97,6 +110,23 @@
 	}
 }
 
+.recent-work {
+	li:not([class$="desandro"]) {
+		@include media($desk-min-width) {
+			@include span-columns(3);
+			float: initial;
+
+			&:nth-child(3n+3){
+				margin-right: 2.35765%;
+			}
+
+			// &:nth-child(4n+4) {
+			// 	@include omega();
+			// }
+		}
+	}
+}
+
 .portfolio .navigation {
 	// $pf-link-color: shade($accent-color, 10%);
 	$pf-link-color: $base-color200;
@@ -152,12 +182,20 @@
 .portfolio .post-list.desandroed  {
 	display: inline-block;
 	width: 100%;
+	justify-content: initial;
+	align-items: initial;
+	flex-wrap: initial;
 	// position: relative;
 
 	li {
-		@include media($mob-min-width){
+		@include media($mob-min-width) {
 			margin-bottom: rem(20);
+			// margin-right: 2.55%;
 		}
+
+		// @include media($tab-min-width) {
+		// 	margin-right: 1.72%;
+		// }
 	}
 }
 
@@ -169,13 +207,13 @@
 	width: percentage(1);
 	overflow: hidden;
 
-	@include media($mob-min-width){ width: percentage(0.4745);}
-	@include media($tab-min-width){ width: percentage(0.3128);}
+	@include media($mob-min-width) { width: percentage(0.4745);}
+	@include media($tab-min-width) { width: percentage(0.3128);}
 	// @include media($hires-min-width){ width: percentage(0.230);}
 	// @include media($desk-min-width){ width: percentage(0.185);}
 
 	&.featured {
-		@include media($lap-min-width){ width: percentage(0.230 * 2 + 0.019);}
+		@include media($lap-min-width) { width: percentage(0.230 * 2 + 0.019);}
 	}
 
 	* {

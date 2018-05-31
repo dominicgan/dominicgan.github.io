@@ -247,11 +247,10 @@ span.header {
 
 .page-content-header {
   background: #dfe0e8;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(40, 56, 90, 0.88)), to(rgba(50, 71, 113, 0.88))), url(/images/hero-bg-2.jpg);
-  background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-2.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(40, 56, 90, 0.88)), to(rgba(50, 71, 113, 0.88))), url(/images/hero-bg-3.jpg);
+  background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-3.jpg);
   background-size: cover;
   background-position: center top;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(40, 56, 90, 0.88)), to(rgba(50, 71, 113, 0.88))), url(/images/hero-bg-3.jpg);
   background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-3.jpg);
   padding: 0 0.9375rem;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), 0% 100%);
@@ -454,8 +453,8 @@ span.header {
 
 .hero {
   background: #dfe0e8;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(40, 56, 90, 0.88)), to(rgba(50, 71, 113, 0.88))), url(/images/hero-bg-2.jpg);
-  background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-2.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(40, 56, 90, 0.88)), to(rgba(50, 71, 113, 0.88))), url(/images/hero-bg-3.jpg);
+  background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-3.jpg);
   background-size: cover;
   background-position: center top;
   padding-top: 0;
@@ -610,7 +609,18 @@ span.header {
 .portfolio .list ul {
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .recent-work ul::after,
   .portfolio .list ul::after {
     clear: both;
@@ -622,7 +632,9 @@ span.header {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
+  width: 100%;
+  float: initial;
+  margin-right: 0; }
   .recent-work li:not([class$="desandro"]):last-child,
   .portfolio .list li:not([class$="desandro"]):last-child {
     margin-right: 0; }
@@ -632,7 +644,8 @@ span.header {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 48.82117%;
+      float: initial; }
       .recent-work li:not([class$="desandro"]):last-child,
       .portfolio .list li:not([class$="desandro"]):last-child {
         margin-right: 0; }
@@ -645,7 +658,8 @@ span.header {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 48.82117%;
+      float: initial; }
       .recent-work li:not([class$="desandro"]):last-child,
       .portfolio .list li:not([class$="desandro"]):last-child {
         margin-right: 0; }
@@ -658,12 +672,10 @@ span.header {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%; }
+      width: 31.76157%;
+      float: initial; }
       .recent-work li:not([class$="desandro"]):last-child,
       .portfolio .list li:not([class$="desandro"]):last-child {
-        margin-right: 0; }
-      .recent-work li:not([class$="desandro"]):nth-child(4n+4),
-      .portfolio .list li:not([class$="desandro"]):nth-child(4n+4) {
         margin-right: 0; } }
 
 .recent-work .post-img,
@@ -711,6 +723,18 @@ span.header {
       margin-bottom: 0.25rem;
       width: auto;
       border: solid 1px #9b9b9b; }
+
+@media screen and (min-width: 1200px) {
+  .recent-work li:not([class$="desandro"]) {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    float: initial; }
+    .recent-work li:not([class$="desandro"]):last-child {
+      margin-right: 0; }
+    .recent-work li:not([class$="desandro"]):nth-child(3n+3) {
+      margin-right: 2.35765%; } }
 
 .portfolio .navigation .portfolio-filter,
 .portfolio .navigation .portfolio-sort {
@@ -773,7 +797,15 @@ span.header {
 
 .portfolio .post-list.desandroed {
   display: inline-block;
-  width: 100%; }
+  width: 100%;
+  -webkit-box-pack: initial;
+  -ms-flex-pack: initial;
+  justify-content: initial;
+  -webkit-box-align: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+  -ms-flex-wrap: initial;
+  flex-wrap: initial; }
   @media screen and (min-width: 640px) {
     .portfolio .post-list.desandroed li {
       margin-bottom: 1.25rem; } }
