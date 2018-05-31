@@ -676,6 +676,9 @@ span.header {
       float: initial; }
       .recent-work li:not([class$="desandro"]):last-child,
       .portfolio .list li:not([class$="desandro"]):last-child {
+        margin-right: 0; }
+      .recent-work li:not([class$="desandro"]):nth-child(3n+3),
+      .portfolio .list li:not([class$="desandro"]):nth-child(3n+3) {
         margin-right: 0; } }
 
 .recent-work .post-img,

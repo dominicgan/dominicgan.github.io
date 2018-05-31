@@ -47,7 +47,7 @@
 			float: initial;
 
 			&:nth-child(3n+3){
-				// @include omega();
+				@include omega();
 			}
 		}
 	}
