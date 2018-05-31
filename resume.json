@@ -73,7 +73,7 @@
     "studyType": "Student Exchange Program",
     "startDate": "2013-01-01",
     "endDate": "2013-06-01",
-    "gpa": ,
+    "gpa": null,
     "courses": [
       "Human Computer Interaction",
       "Interaction Design of Social Media"
@@ -87,7 +87,7 @@
     "keywords": [
       "HTML",
       "CSS",
-      "Javascript",
+      "Javascript"
     ]
   },{
     "name": "User Interface Design",
@@ -96,7 +96,7 @@
       "Web Design",
       "Prototyping",
       "Wireframing",
-      "Adobe Creative Suite",
+      "Adobe Creative Suite"
     ]
   }],
   "languages": [{
