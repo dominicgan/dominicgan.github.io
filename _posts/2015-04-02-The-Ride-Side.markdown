@@ -3,7 +3,7 @@ layout: post
 title:  "The Ride Side"
 date:   2015-04-02 10:00:00 +0800
 categories: project web-design wordpress
-attribution: Freelance project.
+attribution: Freelance
 link: http://www.therideside.com
 client: The Ride Side
 noindex: true
