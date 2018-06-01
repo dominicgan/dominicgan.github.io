@@ -18,6 +18,8 @@ Involved in project recovery, I assisted in resolving bugs and extending functio
 - Ticketing platform logic
 - Site-wide font-scaling for mobile devices
 - General alignment issues
+- Contributed towards front-end task automation script to improve performance
+	during development
 
 Coordinated the git workflow for daily releases between the backend and frontend team, as well as for external vendors involved in the project.
 

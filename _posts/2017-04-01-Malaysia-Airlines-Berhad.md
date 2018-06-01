@@ -19,7 +19,9 @@ Developed the user interface for the new Malaysia Airlines (MAB) website. Built 
 - Members Portal (Enrich)
 - Deals listing
 - Membership Catalog
+- Contributed towards front-end task automation script to improve performance
+	during development
 
 Also contributed towards styling and alignment fixes on the third-party booking platform (AMADEUS).
 
-Software stack: **Bootstrap Sass**, **SystemJS**, **Typescript**, **jQuery**, **Pug**, **Adobe Experience Manager (AEM)**.
+Software stack: **Gulp**, **Bootstrap Sass**, **SystemJS**, **Typescript**, **jQuery**, **Pug**, **Adobe Experience Manager (AEM)**.
