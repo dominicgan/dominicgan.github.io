@@ -9,19 +9,21 @@ layout: null
 	}{% if forloop.last %}{% else %},{% endif %}{% endfor %}
 	],
 	"projects": [{% for post in site.categories.project %}
-		"title": {{ post.title | jsonify }},
-		"url": {{ post.url | prepend: site.baseurl | jsonify }},
-		"date": {{ post.date | jsonify }},
-		"featured": {{ post.featured | jsonify }},
-		"categories": [{% for category in post.categories %}
-			{{ category | jsonify }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}
-		],
-		"coverImage": {
-			"xs": "{{ post.cover-image-index }}-xs.jpg",
-			"sm": "{{ post.cover-image-index }}-sm.jpg",
-			"md": "{{ post.cover-image-index }}-md.jpg",
-			"lg": "{{ post.cover-image-index }}-lg.jpg",
-			"src": "{{ post.cover-image-index }}-src.jpg"
+		{
+			"title": {{ post.title | jsonify }},
+			"url": {{ post.url | prepend: site.baseurl | jsonify }},
+			"date": {{ post.date | jsonify }},
+			"featured": {{ post.featured | jsonify }},
+			"categories": [{% for category in post.categories %}
+				{{ category | jsonify }}{% if forloop.last %}{% else %},{% endif %}{% endfor %}
+			],
+			"coverImage": {
+				"xs": "{{ post.cover-image-index }}-xs.jpg",
+				"sm": "{{ post.cover-image-index }}-sm.jpg",
+				"md": "{{ post.cover-image-index }}-md.jpg",
+				"lg": "{{ post.cover-image-index }}-lg.jpg",
+				"src": "{{ post.cover-image-index }}-src.jpg"
+			}
 		}{% if forloop.last %}{% else %},{% endif %}{% endfor %}
 	]
 }
