@@ -11,11 +11,8 @@ noindex: true
 cover-image: /images/project/gb-cover
 cover-image-index: /images/project/gb-cover
 
-image1: /images/project/gb-inner-1
-image2: 
-image3:
-image4:
-image5:
+gallery:
+ - image: /images/project/gb-inner-1
 ---
 
 Event site for the Go Beyond Challenge, an international architectural competition organised by the ONG Foundation. Event site was created to disseminate information about the event, as well as to provide a platform for participants to submit their entries.

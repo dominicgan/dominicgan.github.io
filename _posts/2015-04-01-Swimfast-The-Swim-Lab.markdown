@@ -11,11 +11,10 @@ noindex: true
 cover-image: /images/project/Swimfast
 cover-image-index: /images/project/Swimfast
 
-image1: /images/project/swimfast-inner-1
-image2: /images/project/swimfast-inner-2
-image3: /images/project/swimfast-inner-3
-image4:
-image5:
+gallery:
+ - image: /images/project/swimfast-inner-1
+ - image: /images/project/swimfast-inner-2
+ - image: /images/project/swimfast-inner-3
 ---
 
 Corporate websites for Swimfast & The Swim Lab, swimming schools based in Singapore.

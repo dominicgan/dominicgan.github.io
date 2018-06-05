@@ -9,8 +9,8 @@ noindex: true
 cover-image: /images/project/wrs
 cover-image-index: /images/project/wrs
 
-# image1: /images/project/domrae-inner-1
-# image2: /images/project/domrae-inner-2
+gallery:
+ # - image: 
 ---
 
 Involved in project recovery, I assisted in resolving bugs and extending functionality relating to the main website. Some of the components I worked on include:

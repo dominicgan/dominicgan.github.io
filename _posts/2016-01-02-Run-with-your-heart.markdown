@@ -11,11 +11,8 @@ noindex: true
 cover-image: /images/project/runwithyourheart
 cover-image-index: /images/project/runwithyourheart
 
-image1: /images/project/rwyh-inner-1
-image2: 
-image3:
-image4:
-image5:
+gallery:
+ - image: /images/project/rwyh-inner-1
 ---
 
 One-pager website for the Run with your heart charity event, held by Ong Foundation. 

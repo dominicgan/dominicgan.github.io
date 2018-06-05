@@ -11,11 +11,11 @@ noindex: true
 cover-image: /images/project/mototrbo-cover
 cover-image-index: /images/project/mototrbo-cover
 
-image1: /images/project/mototrbo-inner-1
-image2: /images/project/mototrbo-inner-2
-image3: /images/project/mototrbo-inner-3
-image4: /images/project/mototrbo-inner-4
-image5:
+gallery:
+ - image: /images/project/mototrbo-inner-1
+ - image: /images/project/mototrbo-inner-2
+ - image: /images/project/mototrbo-inner-3
+ - image: /images/project/mototrbo-inner-4
 ---
 
 Microsite to showcase/launch MOTOTRBO, Motorola’s range of radio systems.

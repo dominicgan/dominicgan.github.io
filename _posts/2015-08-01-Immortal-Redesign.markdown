@@ -11,11 +11,11 @@ noindex: true
 cover-image: /images/project/imm-cover
 cover-image-index: /images/project/imm-cover
 
-image1: /images/project/imm-inner-1
-image2: /images/project/imm-inner-2
-image3: /images/project/imm-inner-3
-image4: /images/project/imm-inner-4
-image5:
+gallery:
+ - image: /images/project/imm-inner-1
+ - image: /images/project/imm-inner-2
+ - image: /images/project/imm-inner-3
+ - image: /images/project/imm-inner-4
 ---
 
 Corporate site for Immortal The Design Station. Converted existing website design to a responsive, mobile friendly layout. 

@@ -11,11 +11,12 @@ noindex: true
 cover-image: /images/project/The-Ride-Side
 cover-image-index: /images/project/The-Ride-Side
 
-image1: /images/project/trs-inner-1
-image2: /images/project/trs-inner-2
-image3: /images/project/trs-inner-3
-image4: /images/project/trs-inner-4
-image5: /images/project/trs-inner-5
+gallery:
+ - image: /images/project/trs-inner-1
+ - image: /images/project/trs-inner-2
+ - image: /images/project/trs-inner-3
+ - image: /images/project/trs-inner-4
+ - image: /images/project/trs-inner-5
 ---
 
 Travel website for The Ride Side, a snowboarding tour agency operating out of Singapore.

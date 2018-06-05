@@ -9,8 +9,8 @@ noindex: true
 cover-image: /images/project/yurica
 cover-image-index: /images/project/yurica
 
-# image1: /images/project/domrae-inner-1
-# image2: /images/project/domrae-inner-2
+gallery:
+ # - image: 
 ---
 
 I built this custom wordpress/woocommerce template on top of the [**vccw**](http://vccw.cc/) boilerplate using **Pug**, **Sass** & **SystemJS**. 

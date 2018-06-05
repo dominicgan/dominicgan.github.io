@@ -11,11 +11,9 @@ noindex: true
 cover-image: /images/project/TuitioNize
 cover-image-index: /images/project/TuitioNize
 
-image1: /images/project/tui-inner-1
-image2: /images/project/tui-inner-2
-image3:
-image4:
-image5:
+gallery:
+ - image: /images/project/tui-inner-1
+ - image: /images/project/tui-inner-2
 ---
 
 Mobile app for Tuition/tutor matching service in Singapore.

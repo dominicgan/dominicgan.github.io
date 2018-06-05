@@ -9,8 +9,8 @@ noindex: true
 cover-image: /images/project/mab
 cover-image-index: /images/project/mab
 
-# image1: /images/project/domrae-inner-1
-# image2: /images/project/domrae-inner-2
+gallery:
+ # - image: 
 ---
 
 Developed the user interface for the new Malaysia Airlines (MAB) website. Built modules for the main website (integrated into AEM). Notable contributions include:

@@ -33,30 +33,13 @@ layout: inner
 		</div>
 
 		<div class="post-inner-images">
-			{% if page.image1 %}
-	        <img src="{{ page.image1 }}-xs.jpg" srcset="{{ page.image1 }}-sm.jpg 540w, {{ page.image1 }}-md.jpg 768w, {{ page.image1 }}-lg.jpg 1200w, {{ page.image1 }}-src.jpg 1440w" sizes="100vw" alt="Project image 1" title="Project image 1" data-featherlight="{{ page.image1 }}-src.jpg">
-			{% endif %}
-			{% if page.image2 %}
-	        <img src="{{ page.image2 }}-xs.jpg" srcset="{{ page.image2 }}-sm.jpg 540w, {{ page.image2 }}-md.jpg 768w, {{ page.image2 }}-lg.jpg 1200w, {{ page.image2 }}-src.jpg 1440w" sizes="100vw" alt="Project image 2" title="Project image 2" data-featherlight="{{ page.image2 }}-src.jpg">
-			{% endif %}
-			{% if page.image3 %}
-	        <img src="{{ page.image3 }}-xs.jpg" srcset="{{ page.image3 }}-sm.jpg 540w, {{ page.image3 }}-md.jpg 768w, {{ page.image3 }}-lg.jpg 1200w, {{ page.image3 }}-src.jpg 1440w" sizes="100vw" alt="Project image 3" title="Project image 3" data-featherlight="{{ page.image3 }}-src.jpg">
-			{% endif %}
-			{% if page.image4 %}
-	        <img src="{{ page.image4 }}-xs.jpg" srcset="{{ page.image4 }}-sm.jpg 540w, {{ page.image4 }}-md.jpg 768w, {{ page.image4 }}-lg.jpg 1200w, {{ page.image4 }}-src.jpg 1440w" sizes="100vw" alt="Project image 4"
-			title="Project image 4" data-featherlight="{{ page.image4 }}-src.jpg">
-			{% endif %}
-			{% if page.image5 %}
-	        <img src="{{ page.image5 }}-xs.jpg" srcset="{{ page.image5 }}-sm.jpg 540w, {{ page.image5 }}-md.jpg 768w, {{ page.image5 }}-lg.jpg 1200w, {{ page.image5 }}-src.jpg 1440w" sizes="100vw" alt="Project image 5" title="Project image 5" data-featherlight="{{ page.image5 }}-src.jpg">
-			{% endif %}
-		</div>
+			{% for image in page.gallery %}<img src="{{ image.image }}-xs.jpg" srcset="{{ image.image }}-sm.jpg 540w, {{ image.image }}-md.jpg 768w, {{ image.image }}-lg.jpg 1200w, {{ image.image }}-src.jpg 1440w" sizes="100vw" alt="Project image {{forloop.index}}" title="Project image {{forloop.index}}" data-featherlight="{{ image.image }}-src.jpg">
+			{% endfor %}</div>
 
 		<div class="post-skills">
 			<ul class="skill-list">
-				{% for category in page.categories %}
-				<li class="item">{{ category }}</li>
-				{% endfor %}
-			</ul>
+				{% for category in page.categories %}<li class="item">{{ category }}</li>
+				{% endfor %}</ul>
 		</div>
 
 	</div>
