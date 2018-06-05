@@ -8,7 +8,7 @@ layout: null
 		"name": {{ filter.name | jsonify }}
 	}{% if forloop.last %}{% else %},{% endif %}{% endfor %}
 	],
-	"projects": [{% for post in site.categories.project %}
+	"projects": [{% for post in site.projects %}
 		{
 			"title": {{ post.title | jsonify }},
 			"url": {{ post.url | prepend: site.baseurl | jsonify }},

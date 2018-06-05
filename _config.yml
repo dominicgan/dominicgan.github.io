@@ -8,6 +8,18 @@ title: Dominic Gan
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dominicgan.github.io" # the base hostname & protocol for your site
 
+# collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title
+
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+
 # Build settings
 markdown: kramdown
 

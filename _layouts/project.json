@@ -1,0 +1,28 @@
+---
+layout: null
+---
+{
+	"title": {{ page.title | jsonify }},
+	"date": {{ page.date | jsonify }},
+	"categories": [
+	{% for cat in page.categories %}{{ cat | jsonify }}{% if forloop.last%}{% else %},
+	{% endif %}{% endfor %}
+	],
+	"attribution": {{ page.attribution | jsonify }},
+	"link": {{ page.link | jsonify }},
+	"client": {{ page.client | jsonify }},
+	"robotsIndex": {{ page.noindex | jsonify }},
+	"coverImage": {{ page.cover-image | jsonify }},
+	"coverImageIndex": {{ page.cover-image-index | jsonify }},
+	"images": [
+	{% for img in page.gallery %}{
+	"xs": "{{ img.image }}-xs.jpg",
+	"sm": "{{ img.image }}-sm.jpg",
+	"md": "{{ img.image }}-md.jpg",
+	"lg": "{{ img.image }}-lg.jpg",
+	"src": "{{ img.image }}-src.jpg"
+	}{% if forloop.last%}{% else %},
+	{% endif %}{% endfor %}
+	],
+	"content": {{ content | jsonify }}
+}
