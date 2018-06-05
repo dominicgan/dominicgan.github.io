@@ -5,18 +5,8 @@
 
 # Site settings
 title: Dominic Gan
-subtitle: >
-  Front-end Developer, currently at <a href="https://www.mirumagency.com/singapore" target="_blank" rel="noopener" title="Mirum Agency">Mirum Agency</a>.
-email: dominicgangx@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Hey, I'm Dominic, a front-end developer based in Singapore!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dominicgan.github.io" # the base hostname & protocol for your site
-build-info: Built with Jekyll, Gulp & Sass.
-copyright: >
-  &copy; 2018 Dominic Gan. All Rights Reserved.
-# twitter_username: jekyllrb
-github_username:  dominicgan
 
 # Build settings
 markdown: kramdown

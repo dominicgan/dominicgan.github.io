@@ -1,5 +1,13 @@
 # Index yml file
 
+# meta info
+meta-description: > # this means to ignore newlines until "baseurl:"
+  Hey, I'm Dominic, a front-end developer based in Singapore!
+
+# section.hero
+banner-subtitle: >
+  Front-end Developer, currently at <a href="https://www.mirumagency.com/singapore" target="_blank" rel="noopener" title="Mirum Agency">Mirum Agency</a>.
+
 # section.about
 about-title: Hello!
 about-subtitle: 
