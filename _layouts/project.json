@@ -12,17 +12,29 @@ layout: null
 	"link": {{ page.link | jsonify }},
 	"client": {{ page.client | jsonify }},
 	"robotsIndex": {{ page.noindex | jsonify }},
-	"coverImage": {{ page.cover-image | jsonify }},
-	"coverImageIndex": {{ page.cover-image-index | jsonify }},
+	"coverImage": {
+		"xs": "{{ page.cover-image }}-xs.jpg",
+		"sm": "{{ page.cover-image }}-sm.jpg",
+		"md": "{{ page.cover-image }}-md.jpg",
+		"lg": "{{ page.cover-image }}-lg.jpg",
+		"src": "{{ page.cover-image }}-src.jpg"
+	},
+	"coverImageIndex": {
+		"xs": "{{ page.cover-image-index }}-xs.jpg",
+		"sm": "{{ page.cover-image-index }}-sm.jpg",
+		"md": "{{ page.cover-image-index }}-md.jpg",
+		"lg": "{{ page.cover-image-index }}-lg.jpg",
+		"src": "{{ page.cover-image-index }}-src.jpg"
+	},
 	"images": [
-	{% for img in page.gallery %}{
-	"xs": "{{ img.image }}-xs.jpg",
-	"sm": "{{ img.image }}-sm.jpg",
-	"md": "{{ img.image }}-md.jpg",
-	"lg": "{{ img.image }}-lg.jpg",
-	"src": "{{ img.image }}-src.jpg"
-	}{% if forloop.last%}{% else %},
-	{% endif %}{% endfor %}
+		{% for img in page.gallery %}{
+		"xs": "{{ img.image }}-xs.jpg",
+		"sm": "{{ img.image }}-sm.jpg",
+		"md": "{{ img.image }}-md.jpg",
+		"lg": "{{ img.image }}-lg.jpg",
+		"src": "{{ img.image }}-src.jpg"
+		}{% if forloop.last%}{% else %},
+		{% endif %}{% endfor %}
 	],
 	"content": {{ content | jsonify }}
 }
