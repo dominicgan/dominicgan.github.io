@@ -4,17 +4,11 @@
 - name: Prototyping
   class: prototype
 
-- name: Web Design
-  class: web-design
-
 - name: UI Design
   class: ui-design
 
-- name: Mobile App Design
+- name: Hybrid App Development
   class: mobile
-
-# - name: Case Study
-#   class: case-study
 
 - name: Wordpress
   class: wordpress

@@ -4,15 +4,11 @@
 meta-description: > # this means to ignore newlines until "baseurl:"
   Hey, I'm Dominic, a front-end developer based in Singapore!
 
-# section.hero
-banner-subtitle: >
-  Front-end Developer, currently at <a href="https://www.mirumagency.com/singapore" target="_blank" rel="noopener" title="Mirum Agency">Mirum Agency</a>.
-
 # section.about
 about-title: Hello!
 about-subtitle: 
 about-description: >
-  <p>My name's Dominic, and I'm a front-end developer currently working at Mirum Agency.</p>
+  <p>My name's Dominic, and I'm a front-end developer currently working at Accenture Interactive.</p>
 
   <p>I believe in creating clear and intuitive experiences through well designed interfaces. I am able to convert and visualize my designs into code; and I take pride in writing clean and scalable markup.</p>
 
@@ -20,7 +16,7 @@ about-description: >
 # section.recent-work
 recent-title: Recent Work
 recent-description: >
-  So here are some of the projects I've been working on recently:
+  Here are some of the projects I've been working on recently:
 
 # section.contact-me
 contact-title: Get in Touch

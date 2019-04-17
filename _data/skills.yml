@@ -9,30 +9,7 @@
 - name: PHP
 - name: Ruby/Rails
 - name: Git
-# - name: Website/User Interface Design
-# - name: Wireframing
-# - name: Rapid Prototyping
 - name: Adobe Creative Suite
-# - name: Wordpress
-# - name: Yii
-# - name: Client-side Development
-# - name: CSS3
-# - name: Markdown
-# - name: Ruby/Rails
-# - name: Liquid
-# - name: Jquery
-# - name: Bootstrap
-# - name: Foundation
-# - name: Bourbon
-# - name: Photoshop
-# - name: Illustrator
-# - name: Balsamiq
-- name: Sketch
-# - name: Justinmind
-# - name: Magento
+- name: Sketch/Zeplin
 
 
-# - name: Photography
-# - name: Mechanical keyboards
-# - name: Trackballs
-# - name: Football Manager

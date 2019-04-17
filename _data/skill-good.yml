@@ -1,33 +1,20 @@
 - name: HTML5/CSS3
 
 - name: Javascript frameworks
-  example: ES6, jQuery, SystemJS, React, Vue
+  example: ES6, jQuery, SystemJS, React, React Native, Vue
 
 - name: Front-end frameworks
   example: Bootstrap, Foundation
 
 - name: HTML Templating
-  example: Pug/Jade, Nunjucks, Liquid
+  example: Pug/Jade, Nunjucks, Liquid, Handlebars
 
 - name: CSS Pre-processors & frameworks
   example: Sass, Bourbon, Neat, Modular-scale
 
-- name: Node.js development tools
-  example: Gulp, Grunt, Express 
+- name: Node.js
+  example: Gulp, Grunt, Express
 
-- name: Wireframing
-  example: Sketch, Axure, Justinmind Prototyper, Pencil
-
-- name: Version control 
-  example: Git
-  
 - name: User Interface Design
-  example: Adobe Creative Suite, Sketch
+  example: Adobe Creative Suite, Sketch, Zeplin
 
-# - name: Office solutions (Microsoft office, Libre office, Google Docs suite, etc)
-
-
-# - name: Photography
-# - name: Mechanical keyboards
-# - name: Trackballs
-# - name: Football Manager

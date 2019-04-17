@@ -1,8 +1,16 @@
+- company: Accenture Interactive (Customer Experience)
+  role: Creative Technologist
+  startdate: 2018-08-20
+  enddate: present
+  period: Aug 2018 – Present
+  summary:
+  desc:
+
 - company: Mirum Agency Singapore
   role: Associate Consultant, Frontend
   startdate: 2017-03-13
   enddate: present
-  period: Mar 2017 – Present
+  period: Mar 2017 – Aug 2018
   summary: Frontend development focusing on AEM-based web applications. Built cross-browser compatible responsive websites for major clientele. Worked closely with a diverse team of backend engineers, designers and UX to rapidly build, iterate, test and deploy code.
   desc: >
     Building cross-browser compatible responsive websites for major clientele.
@@ -13,15 +21,15 @@
 
     Frontend development focusing on Adobe Experience Manager (AEM) based web applications.
   highlights:
-      - item: Malaysia Airlines Berhad 
-      - item: Wildlife Reserves of Singapore 
-      - item: HSBC Insurance 
+      - item: Malaysia Airlines Berhad
+      - item: Wildlife Reserves of Singapore
+      - item: HSBC Insurance
 
 - company: ONG&ONG Group Pte Ltd
   role: Web Application Designer
   startdate: 2015-09-01
   enddate: 2017-02-28
-  period: September 2015 – Feb 2017 
+  period: September 2015 – Feb 2017
   summary: In charge of web design and front-end development for the company's internal solutions/web presence.
   desc: >
     In charge of web design and front-end development for the company's internal solutions/web presence.
@@ -45,20 +53,20 @@
 
     Have successfully managed and contributed to over 30 website and mobile app projects within the last year to client satisfaction.
   highlights:
-      - item: Motorola Solutions MOTOTRBO 
-      - item: Passage New York 
+      - item: Motorola Solutions MOTOTRBO
+      - item: Passage New York
 
 - company: CrimsonLogic Pte Ltd
   role: Business Process Analyst (Intern)
   startdate: 2012-04-01
   enddate: 2012-06-30
   period: Summer 2012
-  summary: Business Process Analyst in the Solutions and Services Department of Project FRONTIER. 
+  summary: Business Process Analyst in the Solutions and Services Department of Project FRONTIER.
   desc: >
     Business Process Analyst in the Solutions and Services Department of Project FRONTIER – Project aiming to integrate more than 250 business license applications from 18 government agencies onto a common portal.
-    
-  
+
+
     Gathered user requirements through formal meetings with the different government agencies and collated sets of Software Requirement Specifications (SRS). Involved in the amendment and improvement of business processes within the SRS documentation.
   highlights:
-      - item: Requirement document migration 
+      - item: Requirement document migration
 

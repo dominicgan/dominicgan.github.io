@@ -47,7 +47,6 @@ A general overview:
 	  loading component scripts when requested instead of running everything on
 	  page load. Still on jquery, but looking to shift away
 - Future
-  - To convert this project to a reactjs based app (hot shit rn, might as well
-	  get in)
+  - To convert this project to a reactjs based app
   - currently working on it in a separate repo, hopefully to be implemented
 	  soon..
