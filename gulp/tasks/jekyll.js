@@ -1,23 +1,25 @@
-const gulp          = require('gulp');
-const browserSync   = require('browser-sync');
-const cp            = require('child_process');
-const jekyll        = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
-const messages      = {
+const gulp     = require('gulp');
+const bs       = require('browser-sync');
+const cp       = require('child_process');
+const jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+const messages = {
 	jekyllBuild: '<span style="color: grey"> Running: </span>  $ jekyll build'
 };
 
+function bsReload(cb) {
+	bs.reload();
+	return cb();
+}
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll-build', function (done) {
- 	browserSync.notify(messages.jekyllBuild);
- 	return cp.spawn( jekyll , ['build','--drafts'], {stdio: 'inherit'})
- 	.on('close', done);
+gulp.task('jekyllBuild', (done) => {
+ 	bs.notify(messages.jekyllBuild);
+ 	cp.spawn( jekyll , ['build', '--drafts', '--watch', '--incremental'], {stdio: 'inherit'});
+ 	return done();
 });
 
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
- 	browserSync.reload();
-});
+gulp.task('jekyllRebuild', gulp.series('jekyllBuild', bsReload));

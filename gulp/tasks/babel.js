@@ -9,7 +9,7 @@ const jshint = require('gulp-jshint');
 const uglify = require('gulp-uglify');
 const plumber = require('gulp-plumber');
 
-gulp.task("babel", function () {
+gulp.task('babelify', () => {
 	let polyfillSrc = gulp.src(polyfill)
 	.pipe(plumber())
 	.pipe(gulp.dest("./dist/js"));
@@ -48,6 +48,6 @@ gulp.task("babel", function () {
 	}))
 	.pipe(gulp.dest("./dist/js/npm"));
 
-	return merge(polyfillSrc, rawJs, moduleJs, npmJs)
-	.pipe(debug({title: 'babel-merge:'}));
+	return merge(polyfillSrc, rawJs, moduleJs, npmJs);
+	// .pipe(debug({title: 'babel-merge:'}));
 });

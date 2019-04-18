@@ -1,7 +1,8 @@
 const gulp          = require('gulp');
 const plumber       = require('gulp-plumber');
 const sass          = require('gulp-sass');
-const gutil         = require('gulp-util');
+const log     = require('fancy-log');
+const chalk   = require('chalk');
 const autoprefixer  = require('gulp-autoprefixer');
 const sourcemaps    = require('gulp-sourcemaps');
 const clip          = require('gulp-clip-empty-files');
@@ -10,13 +11,15 @@ const clone         = require('gulp-clone');
 const rename        = require('gulp-rename');
 const merge         = require('merge-stream');
 
+sass.compiler = require('node-sass');
+
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
-gulp.task('sass', function () {
+gulp.task('sass', () => {
    let source = gulp.src('./_scss/custom.scss')
    .pipe(plumber(function(error) {
-    gutil.log(gutil.colors.red(error.message));
+    log(chalk.red(error.message));
     this.emit('end');
 	}))
 	.pipe(sourcemaps.init()) // Start Sourcemaps

@@ -1,9 +1,10 @@
 const gulp = require('gulp');
+const log = require('fancy-log');
 const chalk = require('chalk');
 const systemjsBuilder = require('systemjs-builder');
 const uglify = require('gulp-uglify');
 
-gulp.task('bundle', function() {
+gulp.task('bundle', () => {
   let builder = new systemjsBuilder('./dist/js', './dist/js/config.js');
 
   builder.config({
@@ -24,9 +25,9 @@ gulp.task('bundle', function() {
     lowResSourceMaps: true,
     sourceMapContents: true
   }).then(function() {
-    return console.log(chalk.green('bundle.min.js: Build complete'));
+    return log(chalk.green('bundle.min.js: Build complete'));
   })["catch"](function(err) {
-    console.log(chalk.red('bundle..min.js: Build error'));
-    return console.log(err);
+    log(chalk.red('bundle..min.js: Build error'));
+    return log(err);
   });
 });

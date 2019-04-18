@@ -2,16 +2,19 @@ const gulp    = require('gulp');
 const chalk   = require('chalk');
 const npmPath = './node_modules/';
 
-gulp.task('copy.systemjs', function(){
+gulp.task('copysystemjs', () => {
 	return gulp.src('./node_modules/systemjs/dist/system.js')
 	.pipe(gulp.dest('./dist/js'))
 });
 
-gulp.task('copy.npm', function(){
+gulp.task('copynpm', () => {
 	return gulp.src([
 		npmPath + 'systemjs-plugin-css/css.js'
 	], { base: npmPath })
 	.pipe(gulp.dest('./js/npm'))
 });
 
-gulp.task('copy', ['copy.systemjs', 'copy.npm'], function(){});
+gulp.task('copy', (done) => {
+	gulp.parallel('copysystemjs', 'copynpm');
+	done();
+});

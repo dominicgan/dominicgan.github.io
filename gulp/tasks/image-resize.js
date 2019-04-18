@@ -1,19 +1,20 @@
-const gulp          = require('gulp');
-const gutil         = require('gulp-util');
-const plumber       = require('gulp-plumber');
-const imgResponsive = require('gulp-responsive');
+const gulp    = require('gulp');
+const log     = require('fancy-log');
+const chalk   = require('chalk');
+const plumber = require('gulp-plumber');
+const imgResp = require('gulp-responsive');
 
 /**
  * Resize uploaded images
  */
-gulp.task('proj-image-resize', function () {
+gulp.task('projImageResize', () => {
     return gulp.src('./images/project_src/*.{png,jpg}')
     .pipe(plumber(function(error) {
-        gutil.log(gutil.colors.red(error.message));
+        log(chalk.red(error.message));
         this.emit('end');
     }))
     .pipe(gulp.dest('./images/project/converted'))
-    .pipe(imgResponsive({
+    .pipe(imgResp({
         '*.jpg': [{
             width: 360,
             rename: { suffix: '-xs' },
