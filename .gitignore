@@ -10,3 +10,5 @@ bower_components/
 *.sublime-workspace
 *~
 *.swp
+.DS_store
+.jekyll-metadata
