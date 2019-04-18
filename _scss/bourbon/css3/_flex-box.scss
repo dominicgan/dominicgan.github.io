@@ -12,7 +12,7 @@
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox; // IE 10
-  display: box;
+  display: flex;
 }
 
 @mixin box-orient($orient: inline-axis) {
@@ -67,9 +67,8 @@
 // flex | inline-flex
   @if $value == "flex" {
     // 2009
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
+    // display: -webkit-box;
+    // display: -moz-box;
 
     // 2012
     display: -webkit-flex;

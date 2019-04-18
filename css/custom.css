@@ -286,11 +286,9 @@ span.header {
     background-image: linear-gradient(0deg, rgba(40, 56, 90, 0.88) 0%, rgba(50, 71, 113, 0.88) 100%), url(/images/hero-bg-4.jpg);
     background-position: center 60%; }
   .page-content-header .header-wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
     display: -moz-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -webkit-box-align: center;
     box-align: center;
@@ -474,11 +472,9 @@ span.header {
     max-width: 60rem;
     margin: 0 auto; }
   .hero .row {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
     display: -moz-flex;
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -webkit-box-align: end;
     box-align: end;
