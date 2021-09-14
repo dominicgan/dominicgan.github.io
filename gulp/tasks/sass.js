@@ -11,7 +11,7 @@ const clone         = require('gulp-clone');
 const rename        = require('gulp-rename');
 const merge         = require('merge-stream');
 
-sass.compiler = require('node-sass');
+sass.compiler = require('sass');
 
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)

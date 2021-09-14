@@ -1,5 +1,4 @@
 const gulp    = require('gulp');
-const chalk   = require('chalk');
 const npmPath = './node_modules/';
 
 gulp.task('copysystemjs', () => {
