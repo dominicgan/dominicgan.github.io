@@ -1,3 +1,4 @@
+![CodeQL](https://github.com/dominicgan/dominicgan.github.io/actions/workflows/codeql-analysis.yml/badge.svg)
 # Portfolio Site
 
 As in title, this is my portfolio/resume site!
