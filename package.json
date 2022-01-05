@@ -44,7 +44,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
-    "jshint": "^2.13.1",
+    "jshint": "^2.13.3",
     "merge-stream": "^2.0.0",
     "require-dir": "^1.2.0",
     "run-sequence": "^2.2.1",
