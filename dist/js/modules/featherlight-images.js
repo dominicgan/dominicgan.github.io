@@ -57,12 +57,6 @@ var FeatherlightImages = exports.FeatherlightImages = function () {
 		key: 'initFeatherlightImages',
 		value: function initFeatherlightImages() {
 			var _self = this;
-			// let href;
-
-			// href = _self.scope.attr('data-original');
-			// _self.scope.attr('data-featherlight',href);
-
-			// articleImg.featherlight();
 			_self.scope.featherlightGallery();
 		}
 	}]);

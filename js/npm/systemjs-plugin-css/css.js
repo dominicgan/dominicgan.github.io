@@ -144,7 +144,7 @@ else {
   };
 }
 
-// Because IE8?
+// IE8 Polyfill
 function filter(arrayLike, func) {
   var arr = []
   forEach(arrayLike, function(item){
@@ -154,7 +154,7 @@ function filter(arrayLike, func) {
   return arr;
 }
 
-// Because IE8?
+// IE8 Polyfill
 function forEach(arrayLike, func){
   for (var i = 0; i < arrayLike.length; i++) {
     func(arrayLike[i])

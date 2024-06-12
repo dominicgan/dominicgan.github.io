@@ -25,11 +25,3 @@ markdown: kramdown
 
 # Exclusions
 exclude: ["bower_components", "node_modules", "gulp", "gulpfile.js", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json", "README.md", "bower.json", "js", "_scss", ".sass-cache"]
-#gems
-# gems:
-  # - jekyll-srcset
-
-#jekyll-srcset settings
-# srcset:
-#   optipng: true
-#   cache: "/tmp/images"

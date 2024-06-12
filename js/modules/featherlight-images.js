@@ -30,12 +30,6 @@ export class FeatherlightImages {
 
 	initFeatherlightImages() {
 		let _self = this;
-		// let href;
-
-		// href = _self.scope.attr('data-original');
-		// _self.scope.attr('data-featherlight',href);
-
-		// articleImg.featherlight();
 		_self.scope.featherlightGallery();
 
 	}

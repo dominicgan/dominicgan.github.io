@@ -49,5 +49,4 @@ gulp.task('babelify', () => {
 	.pipe(gulp.dest("./dist/js/npm"));
 
 	return merge(polyfillSrc, rawJs, moduleJs, npmJs);
-	// .pipe(debug({title: 'babel-merge:'}));
 });
