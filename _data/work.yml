@@ -11,21 +11,22 @@
   startdate: 2019-12-01
   enddate: 2022-05-30 
   period: Dec 2019 – May 2022 
-  summary: I collaborate closely with designers to build and deliver design
-  systems, pushing the boundaries of what can be achieved with design in code.
-  My work focuses on creating cohesive, scalable design systems that enhance
-  both usability and accessibility, as well as ensuring these systems provide a
-  high quality developer experience for end users.
-  desc:
+  summary: 
+  desc: >
+    I collaborate closely with designers to build and deliver design
+    systems, pushing the boundaries of what can be achieved with design in code.
+
+
+    My work focuses on creating cohesive, scalable design systems that enhance
+    both usability and accessibility, as well as ensuring these systems provide a
+    high quality developer experience for end users.
 
 - company: Accenture Interactive (Customer Experience)
   role: Creative Technologist Analyst
   startdate: 2018-08-20
   enddate: 2019-11-30 
   period: Aug 2018 – Nov 2019
-  summary: I help to bring life to our design work, as quickly and tangibly as
-  possible, with an early understanding on feasibility and technical
-  implications.
+  summary: I help to bring life to our design work, as quickly and tangibly as possible, with an early understanding on feasibility and technical implications.
   desc:
 
 - company: Mirum Agency Singapore
