@@ -8,10 +8,13 @@ meta-description: > # this means to ignore newlines until "baseurl:"
 about-title: Hello!
 about-subtitle: 
 about-description: >
-  <p>My name's Dominic, and I'm a front-end developer currently working at Accenture Interactive.</p>
+  <p>Dominic is a creative technologist and lead frontend engineer based in
+  Singapore, with over 10 years of experience in frontend development and
+  digital design.</p>
 
-  <p>I believe in creating clear and intuitive experiences through well designed interfaces. I am able to convert and visualize my designs into code; and I take pride in writing clean and scalable markup.</p>
-
+  <p>He is experienced in architecting design systems and building enterprise
+  grade digital applications. He is highly adaptable, having worked agency,
+  consulting and in-house environments across the region.</p>
 
 # section.recent-work
 recent-title: Recent Work
