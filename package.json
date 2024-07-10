@@ -48,7 +48,7 @@
     "merge-stream": "^2.0.0",
     "require-dir": "^1.2.0",
     "run-sequence": "^2.2.1",
-    "sass": "^1.58.3",
+    "sass": "^1.77.7",
     "systemjs-builder": "^0.16.15",
     "systemjs-plugin-css": "~0.1.37"
   }
