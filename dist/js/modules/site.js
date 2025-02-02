@@ -17,7 +17,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-
 /**
  * @class Site
  * @author Dominic <dominicgangx@gmail.com>
@@ -33,8 +32,7 @@ var Site = exports.Site = function () {
 	_createClass(Site, [{
 		key: 'init',
 		value: function init() {
-			if (this.scope.length) {
-			}
+			if (this.scope.length) {}
 		}
 	}, {
 		key: 'initWow',

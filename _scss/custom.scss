@@ -1,12 +1,7 @@
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-@import 'core/oswald_italic';
-
-@import url(https://fonts.googleapis.com/css?family=Cardo:400,400italic,700);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700italic,700,900,900italic);
-// @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700italic,400italic,300italic,700,400,300);
-// @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 @import 'core/variables';
 @import 'core/mixins';
