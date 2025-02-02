@@ -1,3 +1,5 @@
+![CodeQL](https://github.com/dominicgan/dominicgan.github.io/actions/workflows/codeql-analysis.yml/badge.svg)
+
 # dominicgan.github.io
 
 ## Intro
