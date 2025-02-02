@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @include selection {
 	background-color: tint($base-color, 15%);
 	color: $white100;
@@ -79,7 +81,7 @@ span {
 	}
 
 	&.header {
-		margin-top: rem(30/2);
+		margin-top: rem(math.div(30,2));
 	}
 }
 

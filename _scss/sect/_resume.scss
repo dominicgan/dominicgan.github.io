@@ -7,8 +7,13 @@
 		margin: rem(30) 0;
 	}
 
-	.work-experience,
-	.education,
+	.grid {
+		display: grid;
+		max-width: $content-width;
+		margin: 0 auto;
+		grid-template-columns: 1fr;
+	}
+
 	.pretty-good,
 	.kinda-okay {
 		@include span-columns(12);
@@ -31,10 +36,6 @@
 		}
 	}
 
-	.content {
-		max-width: rem(400);
-	}
-
 	.item {
 		@include inline-block-container;
 		margin-bottom: rem(50);
@@ -46,10 +47,9 @@
 
 		.title {
 			font-family: $header-family;
-			font-size: rem(18);
-			font-style: italic;
+			font-size: rem(16);
 			font-weight: 400;
-			// font-weight: 500;
+			color: $base-color300;
 			line-height: 1.15;
 			margin-bottom: rem(10);
 			font-size: rem(20);

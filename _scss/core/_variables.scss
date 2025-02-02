@@ -1,13 +1,9 @@
-$cardo: "Cardo", Georgia, Times, serif;
-// $sourcesans: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$robotocond: "Roboto Condensed", "Helvetica Neue", Helvetica, sans-serif;
-// $sourcesans: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ibmplexsans: "IBM Plex Sans", "Helvetica Neue", Helvetica, sans-serif;
 $oswald: "Oswald", "Roboto Condensed", "Hevletica Neue", Helvetica, sans-serif;
 
-
 $header-family: $oswald;
-$body-family: $cardo;
-$suppl-family: $robotocond;
+$body-family: $ibmplexsans;
+$suppl-family: $ibmplexsans;
 
 $black100: tint(black, 3%);
 $black200: tint($black100, 15%);
