@@ -1,6 +1,6 @@
 const gulp          = require('gulp');
 const plumber       = require('gulp-plumber');
-const sass          = require('gulp-sass');
+const sass          = require('gulp-sass')(require('sass'));
 const log     = require('fancy-log');
 const chalk   = require('chalk');
 const autoprefixer  = require('gulp-autoprefixer');
@@ -25,7 +25,7 @@ gulp.task('sass', () => {
 	.pipe(sourcemaps.init()) // Start Sourcemaps
 	.pipe(sass().on('error', sass.logError))
 	.pipe(autoprefixer({
-		browsers: ['last 2 versions'],
+		"overrideBrowserslist": ['last 2 versions'],
 		cascade: false
 	}));
 
