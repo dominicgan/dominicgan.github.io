@@ -1,16 +1,18 @@
-<h2>Education</h2>
-<ul>
-  {% for edu in site.data.education %}
-  <li>
-    <h3>{{ edu.school }}</h3>
-    <p><strong>{{ edu.course }}</strong> ({{ edu.period }})</p>
-    <p>{{ edu.summary }}</p>
-    <div>{{ edu.desc | markdownify }}</div>
-    <ul>
-      {% for highlight in edu.highlights %}
-      <li>{{ highlight.item }}</li>
-      {% endfor %}
-    </ul>
-  </li>
-  {% endfor %}
-</ul>
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    {% for edu in site.data.education %}
+    <li>
+      <h3>{{ edu.school }}</h3>
+      <p><strong>{{ edu.course }}</strong> ({{ edu.period }})</p>
+      <p>{{ edu.summary }}</p>
+      <div>{{ edu.desc | markdownify }}</div>
+      <ul>
+        {% for highlight in edu.highlights %}
+        <li>{{ highlight.item }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

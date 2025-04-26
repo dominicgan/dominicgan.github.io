@@ -1,10 +1,12 @@
-<h2>Selected Works</h2>
-<ul>
-  {% for project in site.data.past-projects %}
-  <li>
-    <h3>{{ project.name }}</h3>
-    <p><strong>{{ project.when }}</strong></p>
-    <div>{{ project.description | markdownify }}</div>
-  </li>
-  {% endfor %}
-</ul>
+<section id="past-projects">
+  <h2>Selected Works</h2>
+  <ul>
+    {% for project in site.data.past-projects %}
+    <li>
+      <h3>{{ project.name }}</h3>
+      <p><strong>{{ project.when }}</strong></p>
+      <div>{{ project.description | markdownify }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

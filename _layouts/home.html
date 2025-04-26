@@ -1,23 +1,6 @@
-<!-- _layouts/default.html -->
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Dominic Gan
+---
 
-<head>
-    <meta charset="UTF-8" />
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-</head>
-
-<body>
-    {% include header.html %}
-    <main>
-    {% include about-me.html %}
-    {% include work-experience.html %}
-    {% include education.html %}
-    {% include past-projects.html %}
-        {{ content }}
-    </main>
-    {% include footer.html %}
-</body>
-
-</html>
+{{ content}}
