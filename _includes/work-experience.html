@@ -1,0 +1,25 @@
+<h2>Work Experience</h2>
+<ul>
+  {% for job in site.data.work %}
+  <li>
+    <h3>{{ job.company }}</h3>
+    <p><strong>{{ job.role }}</strong> ({{ job.period }})</p>
+    <p>{{ job.summary }}</p>
+    <div>{{ job.desc | markdownify }}</div>
+    {% if job.highlights %}
+    <ul>
+      {% for highlight in job.highlights %}
+      <li>{{ highlight.item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Skills</h2>
+<ul>
+  {% for skill in site.data.skills %}
+  <li>{{ skill.name }}</li>
+  {% endfor %}
+</ul>

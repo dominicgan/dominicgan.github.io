@@ -1,0 +1,17 @@
+- name: Project Alpha
+  when: 2023
+  description: >
+    Developed a **responsive web application** for managing tasks and schedules.  
+    Integrated with third-party APIs for real-time updates.
+
+- name: Beta Platform
+  when: 2022
+  description: >
+    Designed and implemented a **scalable e-commerce platform** using React and Node.js.  
+    Focused on improving **user experience** and **performance optimization**.
+
+- name: Gamma Analytics
+  when: 2021
+  description: >
+    Built a **data visualization dashboard** for analytics using D3.js and Vue.  
+    Enabled users to interact with complex datasets in an intuitive way.
