@@ -1,0 +1,28 @@
+<style>
+.sticky-nav {
+    padding: calc(var(--base-unit) * 2) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--background-color);
+}
+
+.sticky-nav__menu {
+    list-style: none;
+    display: flex;
+    gap: calc(var(--base-unit) * 2);
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-nav__menu-item {}
+
+</style>
+
+<nav class="sticky-nav">
+  <menu class="sticky-nav__menu">
+    <li class="sticky-nav__menu-item"><a href="#work-experience">Experience</a></li>
+    <li class="sticky-nav__menu-item"><a href="#education">Education</a></li>
+    <li class="sticky-nav__menu-item"><a href="#selected-works">Works</a></li>
+  </menu>
+</nav>
