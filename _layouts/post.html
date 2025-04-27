@@ -1,46 +1,16 @@
+<!-- filepath: /home/dominic/workspace/dominicgan.github.io/_layouts/post.html -->
 ---
-layout: inner
+layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting" data-component="['article']">
-	<div class="row">
-		<div class="post-meta">
-			<div class="post-meta__date-author">
-				<div class="date">
-					<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %Y" }}</time>
-				</div>
-				{% if page.author %}
-				<div class="author">
-					<span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-				</div>
-				{% endif %}
-			</div>
-			<div class="post-meta__attrib">
-			{% if page.attribution %}
-				{{ page.attribution }}
-			{% endif %}
-			{% if page.link %}
-				<a href="{{ page.link }}" title="Site URL" target="_blank" rel="noopener noreferrer" class="post-meta__site-link">Visit Site</a>
-			{% endif %}
-			</div>
-		</div>
 
-		<div class="post-cover-image">
-	        <img src="{{ page.cover-image-index }}-xs.jpg" srcset="{{ page.cover-image-index }}-sm.jpg 540w, {{	page.cover-image-index }}-md.jpg 768w, {{ page.cover-image-index }}-lg.jpg 1200w, {{ page.cover-image-index	}}-src.jpg 1440w" sizes="100vw" alt="{{ page.name }}" title="{{ page.name }}" data-featherlight="{{ page.cover-image-index }}-src.jpg">
-		</div>
-
-		<div class="post-content" itemprop="articleBody">
-			{{ content }}
-		</div>
-
-		<div class="post-inner-images">
-			{% for image in page.gallery %}<img src="{{ image.image }}-xs.jpg" srcset="{{ image.image }}-sm.jpg 540w, {{ image.image }}-md.jpg 768w, {{ image.image }}-lg.jpg 1200w, {{ image.image }}-src.jpg 1440w" sizes="100vw" alt="Project image {{forloop.index}}" title="Project image {{forloop.index}}" data-featherlight="{{ image.image }}-src.jpg">
-			{% endfor %}</div>
-
-		<div class="post-skills">
-			<ul class="skill-list">
-				{% for category in page.categories %}<li class="item">{{ category }}</li>
-				{% endfor %}</ul>
-		</div>
-
-	</div>
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <p class="post-meta">
+            Published on {{ page.date | date: "%B %d, %Y" }}
+        </p>
+    </header>
+    <section class="post-content">
+        {{ content }}
+    </section>
 </article>

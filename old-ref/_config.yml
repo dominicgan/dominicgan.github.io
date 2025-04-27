@@ -1,0 +1,27 @@
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Dominic Gan
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://dominicgan.github.io" # the base hostname & protocol for your site
+
+# collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:title
+
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+
+# Build settings
+markdown: kramdown
+
+# Exclusions
+exclude: ["bower_components", "node_modules", "gulp", "gulpfile.js", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json", "README.md", "bower.json", "js", "_scss", ".sass-cache"]

@@ -1,0 +1,37 @@
+<style>
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 16px;
+  margin-bottom: 16px;
+}
+</style>
+
+<section id="work-experience">
+  <h2>Experience</h2>
+  <ul>
+    {% for job in site.data.work %}
+    <li>
+      <h3>{{ job.company }}</h3>
+      <div class="title-bar"><strong>{{ job.role }}</strong> <span>{{ job.period }}</span></div>
+      {% if job.desc %}
+      <div data-testid="job-description">{{ job.desc | markdownify }}</div>
+      {% endif %}
+      {% if job.highlights %}
+      <ul>
+        {% for highlight in job.highlights %}
+        <li>{{ highlight.item }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Skills</h2>
+  <ul>
+    {% for skill in site.data.skills %}
+    <li>{{ skill.name }}</li>
+    {% endfor %}
+  </ul>
+</section>
